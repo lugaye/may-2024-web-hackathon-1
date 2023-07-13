@@ -1,0 +1,15 @@
+.SkeletonProfessional {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.SkeletonContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+}

@@ -1,0 +1,197 @@
+.Sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    z-index: 1;
+}
+
+.SidebarTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .5rem;
+
+    & .ProfilePic>img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        border: 2px solid var(--warning);
+        padding: .3rem;
+    }
+
+    & .ProfileName {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: .5rem;
+        color: var(--white);
+
+        & span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            & small {
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--gray);
+            }
+        }
+
+
+        & p {
+            font-size: 1rem;
+            font-weight: 500;
+
+            & small {
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--warning);
+            }
+        }
+
+        & .SocialIcons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            & a {
+                font-size: 1.5rem;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    color: var(--warning);
+                }
+            }
+        }
+    }
+}
+
+.SidebarItemLink {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem;
+    margin: .1rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: 0 0 3px var(--gray);
+
+
+    &.Active {
+        color: var(--warning);
+        box-shadow: 0 0 3px var(--warning);
+        transition: all .3s ease-in-out;
+        margin-left: 0;
+        animation: fadeIn .5s ease-in;
+
+        &::before {
+            content: '';
+            width: 3px;
+            height: 100%;
+            background-color: var(--warning);
+            border-radius: 5px;
+            margin-right: calc(1rem - 8px);
+            animation: animate .5s ease-in;
+
+
+        }
+    }
+
+    &:last-child {
+        margin-top: 2rem;
+    }
+
+    &:hover {
+        color: var(--warning);
+        box-shadow: 0 0 3px var(--warning);
+    }
+
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        margin-left: -1rem;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+/* animation */
+@keyframes animate {
+    0% {
+        margin-left: -50%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.SidebarItems {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem;
+    overflow: auto;
+    box-shadow: 0 0 5px var(--gray);
+    border-radius: 8px;
+
+    & .SidebarItem {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .5rem;
+        margin: .1rem;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+
+        cursor: pointer;
+        gap: .5rem;
+
+        &:hover {
+            color: var(--warning);
+        }
+
+        & .Icon {
+            font-size: 1.3rem;
+        }
+
+        & span {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+    }
+}
+
+.text-teal-300 {
+    --tw-text-opacity: 1;
+    color: rgb(94 234 212/var(--tw-text-opacity));
+}

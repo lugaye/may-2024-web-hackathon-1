@@ -1,0 +1,58 @@
+.Skeleton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+.skeletonItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden !important;
+}
+
+.SkeletonItemBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: .5rem;
+
+    & p {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+}
+
+.SkeletonBottomPart {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: .5rem;
+
+    & .SkeletonItemLink {
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+.SkeletonItemBottom {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}

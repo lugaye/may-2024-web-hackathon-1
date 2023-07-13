@@ -1,0 +1,281 @@
+.SkillsTop {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    & .SkillsLeft {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+.SkillsContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.SkillsRight {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .SkillsImage {
+        width: 100%;
+        height: 98%;
+        overflow: hidden;
+    }
+
+    & img {
+        width: 100%;
+        height: 101%;
+        object-fit: cover;
+    }
+}
+
+.SkillsBottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.Technical {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.TechnicalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    & h1 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+        color: var(--white);
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--txt-teal);
+            margin-top: .1rem;
+        }
+    }
+
+}
+
+.TechnicalContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.5s ease;
+}
+
+.TechnicalContentItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TechnicalContentItem.active {
+    opacity: 1;
+}
+
+.ItemLabel {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: .5rem;
+    gap: .5rem;
+
+    & h1 {
+        font-size: .7rem;
+        font-weight: 600;
+
+    }
+
+    & i {
+        font-size: .7rem;
+        color: var(--txt-teal);
+    }
+}
+
+.CarouselPagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    /* animation */
+    animation: fade 1s ease-in-out infinite;
+
+    & i {
+        font-size: 1rem;
+        cursor: pointer;
+        background: none;
+    }
+}
+
+.Progress {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+
+    & p {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+}
+
+.Bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-clear);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ProgressBar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--txt-teal);
+    border-radius: 5px;
+    overflow: hidden;
+    animation: counting 1s linear;
+    animation-fill-mode: forwards;
+}
+
+/* Counting Animation Styles */
+@keyframes counting {
+    from {
+        width: 0;
+    }
+}
+
+.ItemValue {
+    margin-top: 4px;
+}
+
+.CarouselControls {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.CarouselControlButton {
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-clear);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.CarouselPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.PaginationDot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--bg-clear);
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.PaginationDot.active {
+    background-color: var(--txt-teal);
+}
+
+.Professional {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex;
+    gap: 1rem;
+    border-left: 2px solid var(--p-color);
+
+    & .ProfessionalTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: var(--txt-teal);
+            }
+        }
+    }
+}
+
+.ProfessionalContent {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.ProfessionalContentItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(3) {
+        margin-top: .3rem;
+    }
+
+    &:nth-child(4) {
+        margin-top: .3rem;
+    }
+}

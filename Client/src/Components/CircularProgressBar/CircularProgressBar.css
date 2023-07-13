@@ -1,0 +1,40 @@
+.circular-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    overflow: visible;
+}
+
+.circular-progress-bar {
+    fill: none;
+    stroke: var(--txt-teal);
+    stroke-width: 4;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+.circular-progress-percentage {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    fill: var(--p-color);
+    text-anchor: middle;
+}
+
+.circular-progress-text {
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    fill: var(--p-color);
+    text-anchor: middle;
+    word-wrap: break-word;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}

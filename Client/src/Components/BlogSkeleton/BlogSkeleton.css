@@ -1,0 +1,29 @@
+.BlogSkeleton {
+    width: 49%;
+}
+
+.SkeletonBlog {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.BlogSkeletonLeft{
+    width: 35%;
+    height: 100%;
+}
+
+.SkeletonBlogRight{
+    width: 65%;
+    height: 100%;
+}
+
+.SkeletonBlogDescription{
+    width: 100%;
+    height: 100%;
+
+    & p{
+        width: 100%;
+        height: 100%;
+    }
+}
