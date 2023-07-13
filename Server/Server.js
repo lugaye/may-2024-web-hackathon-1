@@ -11,7 +11,7 @@ app.use(express.json());
 // routes
 app.use(cors(
     {
-        origin: "http://localhost:5173"
+        origin: "https://app.netlify.com/sites/vermillion-yeot-ae1436/deploys/64b05dc20c3c5e3ee207422f",
     }
 
 ));
