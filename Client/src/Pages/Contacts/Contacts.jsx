@@ -32,7 +32,7 @@ const Contacts = () => {
 		setSending(true);
 
 		axios
-			.post("http://localhost:4000/api/sendMail", {
+			.post("https://quaint-portfolio.vercel.app/api/sendMail", {
 				senderName,
 				senderEmail,
 				subject,
