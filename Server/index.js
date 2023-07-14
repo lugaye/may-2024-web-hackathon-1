@@ -11,7 +11,7 @@ app.use(express.json());
 // routes
 app.use(cors(
     {
-        origin: "https://64b05fc165181e489777e8ca--vermillion-yeot-ae1436.netlify.app",
+        origin: "https://quaint.kitchen360.co.ke",
     }
 
 ));
