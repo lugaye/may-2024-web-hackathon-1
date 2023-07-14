@@ -20,6 +20,10 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 // send mail
 router.post("/sendMail", async (req, res) => {
 	try {
+		const timestamp = new Date().toLocaleString("en-US", {
+			timeZone: "Africa/Nairobi",
+		});
+
 		const { senderName, senderEmail, message, subject } = req.body;
 
 		const accessToken = await oAuth2Client.getAccessToken();
@@ -134,7 +138,7 @@ router.post("/sendMail", async (req, res) => {
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2" style="padding: 12px">
+				<td colspan="2" style="padding: 12px;border: 1px solid #888888;border-radius: 5px;margin-bottom:16px">
 					<h3
 						style="
 							color: white;
@@ -145,30 +149,29 @@ router.post("/sendMail", async (req, res) => {
 					>
 						${subject}
 						<p style="font-size: 12px; color: #ffc107; font-weight: 600">
-							${senderName} (${senderEmail})
+							${senderName}
+							<span
+								style="color: #888888; font-size: 12px"
+							> ${senderEmail}</span>
 						</p>
 					</h3>
 					<p
 						style="
 							color: #888888;
 							font-size: 14px;
-							border: 1px solid #888888;
-							border-radius: 5px;
 							padding: 5px;
 						"
 					>
-					${message}
+						${message}
 					</p>
 					<br />
 					<span style="color: #888888; font-size: 14px">Best Regards,</span>
 					<p style="color: #888888; font-size: 14px">
-						${senderName}<br />
-						<span
+						${senderName}<br /><span
 							id="timestamp"
 							style="color: #ffc107; font-size: 12px; font-weight: 500"
+							>${timestamp}</span
 						>
-							${timestamp}
-						</span>
 					</p>
 				</td>
 			</tr>
@@ -280,7 +283,8 @@ router.post("/sendMail", async (req, res) => {
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2" style="padding: 12px">
+				<td colspan="2" style="padding: 12px;border: 1px solid #888888;
+							border-radius: 5px;">
 					<h3
 						style="
 							color: white;
@@ -294,8 +298,7 @@ router.post("/sendMail", async (req, res) => {
 					<p style="
 							color: #888888;
 							font-size: 14px;
-							border: 1px solid #888888;
-							border-radius: 5px;
+							
 							padding: 5px;
 						">
 						Thank you for reaching out to me. I want to personally acknowledge
