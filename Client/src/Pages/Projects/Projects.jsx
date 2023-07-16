@@ -7,7 +7,7 @@ const Projects = () => {
 	const [projects, setProjects] = React.useState([]);
 	// fetch projects from database
 	React.useEffect(() => {
-		axios.get("http://localhost:4000/api/projects").then((res) => {
+		axios.get("https://quaint-portfolio.vercel.app/api/projects").then((res) => {
 			setProjects(res.data);
 		});
 	}, []);

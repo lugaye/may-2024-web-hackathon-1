@@ -41,8 +41,11 @@ mongoose
 		app.use("/api/products", productRoute);
 
 		// start the server
-		app.listen(port, () => {
-			console.log(`listening on port ${port}`);
+		const server = app.listen(port, () => {
+			console.log(`Listening on port ${port}`);
 		});
+
+		// Export the server instance
+		module.exports = server;
 	})
 	.catch((err) => console.log(err));

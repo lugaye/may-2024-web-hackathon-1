@@ -18,7 +18,7 @@ const Products = () => {
 	// fetch products from database
 	useEffect(() => {
 		axios
-			.get("http://localhost:4000/api/products")
+			.get("https://quaint-portfolio.vercel.app/api/products")
 			.then((res) => {
 				setProducts(res.data);
 			})

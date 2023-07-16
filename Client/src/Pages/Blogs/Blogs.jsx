@@ -15,7 +15,7 @@ const Blogs = () => {
 
 	// fetch blogs from database
 	React.useEffect(() => {
-		axios.get("http://localhost:4000/api/blogs").then((res) => {
+		axios.get("https://quaint-portfolio.vercel.app/api/blogs").then((res) => {
 			setBlogs(res.data);
 		});
 	}, []);
