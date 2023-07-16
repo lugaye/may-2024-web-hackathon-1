@@ -22,10 +22,6 @@ app.use(
 	})
 );
 
-app.get("/", (req, res) => {
-	res.send("Hello World!");
-});
-
 // connect to MongoDB using promises
 mongoose
 	.connect(process.env.MONGO_URI, {
@@ -34,7 +30,9 @@ mongoose
 	})
 	.then(() => {
 		console.log("MongoDB connected");
-
+		app.get("/", (req, res) => {
+			res.send("Hello World!");
+		});
 		// routes
 		app.use("/api", mailRoute);
 		app.use("/api/projects", projectRoute);
