@@ -279,3 +279,82 @@
         margin-top: .3rem;
     }
 }
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .SkillsTop {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .SkillsLeft {
+        width: 100% !important;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SkillsRight {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & .SkillsImage {
+            width: 100%;
+            height: 98%;
+            overflow: hidden;
+        }
+
+        & img {
+            width: 100%;
+            height: 101%;
+            object-fit: cover;
+        }
+    }
+
+    .SkillsBottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .Technical {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .TechnicalTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Professional {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-left: none;
+    }
+}

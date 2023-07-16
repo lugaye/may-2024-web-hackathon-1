@@ -10,7 +10,7 @@ const SkillsSkeleton = ({ renderProfessionalItems }) => {
 			highlightColor="rgba(255, 255, 255, 0.05)"
 			animationSpeed={1}
 		>
-			<div className="SkillsTop">
+			<div className="SkillsTop SkillsSkele">
 				<div className="SkillsLeft">
 					<div className="SkillsContent">
 						<p>
@@ -25,12 +25,12 @@ const SkillsSkeleton = ({ renderProfessionalItems }) => {
 				</div>
 			</div>
 			<div className="SkillsBottom">
-				<div className="Technical">
+				<div className="Technical SkeletonTechnical">
 					<div className="TechnicalTitle">
 						<Skeleton width={250} className="TopSkeleton" />
 					</div>
 					<div className="TechnicalContent">
-						<Skeleton count={3} height={15} width={370} />
+						<Skeleton count={3} height={15} width={370} className="" />
 					</div>
 				</div>
 				<div

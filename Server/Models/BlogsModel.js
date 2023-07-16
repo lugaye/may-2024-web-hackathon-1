@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// create a schema for the project
-const projectSchema = new Schema(
+// create a schema for the blog
+const blogSchema = new Schema(
 	{
 		name: {
 			type: String,
@@ -35,16 +35,23 @@ const projectSchema = new Schema(
 			trim: true,
 			minlength: 3,
 		},
-		type: {
-			type: String,
+		starred: {
+			type: Boolean,
 			required: true,
 			trim: true,
 			minlength: 3,
 		},
-		users: {
-			type: String,
+		reads: {
+			type: Number,
 			required: true,
 			trim: true,
+			minlength: 3,
+		},
+		likes: {
+			type: Number,
+			required: true,
+			trim: true,
+			minlength: 3,
 		},
 	},
 	{
@@ -52,4 +59,4 @@ const projectSchema = new Schema(
 	}
 );
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.model("Blog", blogSchema);

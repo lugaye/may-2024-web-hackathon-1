@@ -1,17 +1,16 @@
 import React from "react";
 import "./Projects.css";
-import { projectsData } from "../../../Data";
+import axios from "axios";
 import Project from "./Project";
 
 const Projects = () => {
-	const [isLoading, setIsLoading] = React.useState(true);
-
+	const [projects, setProjects] = React.useState([]);
+	// fetch projects from database
 	React.useEffect(() => {
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 1000);
+		axios.get("http://localhost:4000/api/projects").then((res) => {
+			setProjects(res.data);
+		});
 	}, []);
-
 	return (
 		<div className="Main">
 			<div className="Container">
@@ -19,8 +18,8 @@ const Projects = () => {
 					<h1>Projects</h1>
 				</div>
 				<div className="ProjectItems">
-					{projectsData.map((item, index) => (
-						<Project item={item} key={index} isLoading={isLoading} />
+					{projects.map((project) => (
+						<Project key={project._id} item={project} />
 					))}
 				</div>
 			</div>

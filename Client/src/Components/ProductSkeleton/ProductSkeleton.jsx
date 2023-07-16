@@ -10,53 +10,103 @@ const ProductSkeleton = ({ product }) => {
 			highlightColor="rgba(255, 255, 255, 0.05)"
 			animationSpeed={1}
 		>
-			<div className="SkeletonProduct">
-				<Skeleton height={130} width={260} />
-				<span>
-					<Skeleton width={150} className="ProductTitle" />
-				</span>
-				<div className="SkeletonBody">
-					<p>
-						<Skeleton count={2} height={10} width={260} />
-					</p>
-				</div>
-				<div className="ProductBottom">
-					<div className="TopSide">
-						{product.price !== "Free" ? (
-							<p className="ProductPrice">
-								<Skeleton width={50} />
-							</p>
-						) : (
-							<p className="ProductPrice">
-								<Skeleton width={50} />
-							</p>
-						)}
-						<div className="Ratings">
-							{Array(5)
-								.fill()
-								.map((_, index) => (
-									<SkeletonTheme
-										key={index}
-										baseColor="rgba(255, 255, 255, 0.1)"
-										highlightColor="rgba(255, 255, 255, 0.05)"
-										animationSpeed={1}
-									>
-										<i className="fas fa-star"></i>
-									</SkeletonTheme>
-								))}
+			{window.innerWidth > 768 ? (
+				<div className="SkeletonProduct">
+					<Skeleton height={130} width={260} />
+					<span>
+						<Skeleton width={150} className="ProductTitle" />
+					</span>
+					<div className="SkeletonBody">
+						<p>
+							<Skeleton count={2} height={10} width={260} />
+						</p>
+					</div>
+					<div className="ProductBottom">
+						<div className="TopSide">
+							{product.price !== "Free" ? (
+								<p className="ProductPrice">
+									<Skeleton width={50} />
+								</p>
+							) : (
+								<p className="ProductPrice">
+									<Skeleton width={50} />
+								</p>
+							)}
+							<div className="Ratings">
+								{Array(5)
+									.fill()
+									.map((_, index) => (
+										<SkeletonTheme
+											key={index}
+											baseColor="rgba(255, 255, 255, 0.1)"
+											highlightColor="rgba(255, 255, 255, 0.05)"
+											animationSpeed={1}
+										>
+											<i className="fas fa-star"></i>
+										</SkeletonTheme>
+									))}
+							</div>
+						</div>
+						<div className="SkeletonTags flex">
+							{product.tags.map((tag) => (
+								<div className="SkeletonTag" py-1 px-1>
+									<p>
+										<Skeleton width={30} height={7} />
+									</p>
+								</div>
+							))}
 						</div>
 					</div>
-					<div className="SkeletonTags flex">
-						{product.tags.map((tag) => (
-							<div className="SkeletonTag" py-1 px-1>
-								<p>
-									<Skeleton width={30} height={7} />
+				</div>
+			) : (
+				<div className="SkeletonProduct">
+					<Skeleton height={180} width={400} />
+					<span>
+						<Skeleton width={250} className="ProductTitle" />
+					</span>
+					<div className="SkeletonBody">
+						<p>
+							<Skeleton count={3} height={10} width={400} />
+						</p>
+					</div>
+					<div className="ProductBottom">
+						<div className="TopSide">
+							{product.price !== "Free" ? (
+								<p className="ProductPrice">
+									<Skeleton width={100} />
 								</p>
+							) : (
+								<p className="ProductPrice">
+									<Skeleton width={100} />
+								</p>
+							)}
+							<div className="Ratings">
+								{Array(5)
+									.fill()
+									.map((_, index) => (
+										<SkeletonTheme
+											key={index}
+											baseColor="rgba(255, 255, 255, 0.1)"
+											highlightColor="rgba(255, 255, 255, 0.05)"
+											animationSpeed={1}
+										>
+											<i className="fas fa-star"></i>
+										</SkeletonTheme>
+									))}
 							</div>
-						))}
+						</div>
+						<div className="SkeletonTags flex">
+							{product.tags.map((tag) => (
+								<div className="SkeletonTag" py-1 px-1>
+									<p>
+										<Skeleton width={70} height={10} />
+									</p>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
-			</div>
+			)}
 		</SkeletonTheme>
 	);
 };

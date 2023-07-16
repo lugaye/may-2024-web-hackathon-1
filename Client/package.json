@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.7",
+    "antd": "^5.7.0",
     "axios": "^1.4.0",
     "framer-motion": "^10.12.18",
     "nodemailer": "^6.9.3",

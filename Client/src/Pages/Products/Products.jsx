@@ -1,30 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
-import { productsData } from "../../../Data";
 import Product from "../../Components/Product/Product";
 import ProductSkeleton from "../../Components/ProductSkeleton/ProductSkeleton";
+import axios from "axios";
 
 const Products = () => {
-	const [isLoading, setIsLoading] = React.useState(true);
+	const [products, setProducts] = useState([]);
+	const [isLoading, setIsLoading] = useState(true);
+	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		setTimeout(() => {
 			setIsLoading(false);
 		}, 1000);
 	}, []);
 
+	// fetch products from database
+	useEffect(() => {
+		axios
+			.get("http://localhost:4000/api/products")
+			.then((res) => {
+				setProducts(res.data);
+			})
+			.catch((error) => {
+				console.error("Error fetching products:", error);
+				throw error;
+			});
+	}, []);
+
+	const handleModalOpen = () => {
+		setIsModalOpen(true);
+	};
+	
+
 	return (
 		<div className="Main">
 			<div className="Container">
+				<div className="Title">
+					<h1>Products</h1>
+				</div>
 				<div className="Products">
-					{productsData.map((product) => (
-						<>
+					{products.map((product) => (
+						<React.Fragment key={product.id}>
 							{isLoading ? (
-								<ProductSkeleton key={product.id} product={product} />
+								<ProductSkeleton product={product} />
 							) : (
-								<Product key={product.id} product={product} />
+								<Product product={product}
+									isModalOpen={isModalOpen}
+								 />
 							)}
-						</>
+						</React.Fragment>
 					))}
 				</div>
 			</div>

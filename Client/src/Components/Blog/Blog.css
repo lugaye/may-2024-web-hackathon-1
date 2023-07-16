@@ -142,7 +142,7 @@
 
 .BlogDescription {
     width: 100%;
-    height: 100%;
+    height: 10%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -150,19 +150,24 @@
     & p {
         font-size: .8rem;
         color: var(--p-color);
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
 }
 
 .Star {
     width: 100%;
-    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: .5rem;
+    margin: .3rem 0;
 
     & i {
-        font-size: 1rem;
+        font-size: .6rem;
         color: var(--warning);
     }
 }
@@ -195,4 +200,87 @@
             transition: all .3s ease-in-out;
         }
     }
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .Blog {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .BlogLeft {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        & .BlogImage {
+            width: 100%;
+            height: 90%;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .LeftMore {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            & .LeftTop {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex;
+
+            }
+
+            & .LeftBottom {
+                width: 100%;
+            }
+        }
+    }
+
+    .BlogRight {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: .3rem 0;
+    }
+
+    .BlogDescription {
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .BlogLink {
+        display: flex;
+        color: var(--txt-teal);
+
+        & a {
+            font-size: .7rem;
+            color: var(--txt-teal);
+        }
+    }
+
 }

@@ -1,3 +1,5 @@
+import axios from "axios";
+
 // navbar data
 export const navData = [
 	{
@@ -233,82 +235,6 @@ export const professionalSkillsData = [
 		id: 8,
 		title: "Decision Making",
 		value: 70,
-	},
-];
-
-// projects data
-import codax from "./src/assets/codax.png";
-import agrisolve from "./src/assets/agrisolve.png";
-import saveLeo from "./src/assets/saveleo.png";
-import kitchen from "./src/assets/Kitchen.png";
-import amazon from "./src/assets/amazon.jpeg";
-import kdp from "./src/assets/kdp.png";
-export const projectsData = [
-	{
-		id: 1,
-		title: "AgriSolve E-Commerce",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: agrisolve,
-		users: 100,
-		tag: "Commercial",
-		tech: ["MERN", "Redux", "Stripe", "MPesa"],
-		link: "https://64a9a4a990908322a0ade04c--agrisolve.netlify.app/",
-	},
-	{
-		id: 2,
-		title: "CoDax Shop",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: codax,
-		tag: "Collaboration",
-		users: "Public",
-		tech: ["MERN", "Redux", "Stripe"],
-		link: "https://candid-hotteok-7b47c3.netlify.app/",
-	},
-	{
-		id: 3,
-		title: "Kitchen360 By JK",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: kitchen,
-		users: "Public",
-		tag: "Commercial",
-		tech: ["React", "Redux", "Firebase", "Stripe"],
-		link: "https://kitchen360.co.ke/",
-	},
-	{
-		id: 4,
-		title: "KDP Data Analysis",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: kdp,
-		users: "Public",
-		tag: "Freelance",
-		tech: ["Ipynb", "Pandas", "Numpy", "Matplotlib", "yfinance"],
-		link: "https://github.com/Techsupport254/KDP",
-	},
-	{
-		id: 5,
-		title: "Save Leo",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: saveLeo,
-		users: "Public",
-		tag: "Personal",
-		tech: ["MERN", "Redux", "Stripe", "MPesa"],
-		link: "https://github.com/Techsupport254/savings-plan-app",
-	},
-	{
-		id: 6,
-		title: "Amazon Stock Price Analysis",
-		description:
-			"An e-commerce website built using React, Redux, Node.js, Express, MongoDB, and Stripe.",
-		image: amazon,
-		users: "Public",
-		tag: "Freelance",
-		tech: ["Tableau", "Python", "Pandas"],
-		link: "https://public.tableau.com/app/profile/victor.quaint/viz/AmazonStockPriceAnalysis/Dashboard1",
 	},
 ];
 

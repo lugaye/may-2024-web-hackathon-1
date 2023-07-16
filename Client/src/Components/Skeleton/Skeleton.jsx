@@ -11,43 +11,83 @@ const SkeletonBody = () => {
 			animationSpeed={1}
 		>
 			<div className="skeleton">
-				<div className="skeletonItem">
-					<div className="ItemTop">
-						<Skeleton height={140} width={275} />
-						<span>
-							<Skeleton width={150} />
-						</span>
-					</div>
-					<div className="SkeletonItemBody">
-						<p>
-							<Skeleton count={3} height={10} width={275} />
-						</p>
-					</div>
-					<div className="SkeletonBottomPart">
-						<div className="SkeletonItemLink">
+				{window.innerWidth > 768 ? (
+					<div className="skeletonItem">
+						<div className="ItemTop">
+							<Skeleton height={140} width={275} />
 							<span>
-								<Skeleton width={200} height={10} />
+								<Skeleton width={150} />
 							</span>
 						</div>
-						<div className="Tag">
-							<span>
-								<Skeleton width={50} />
-							</span>
+						<div className="SkeletonItemBody">
+							<p>
+								<Skeleton count={3} height={10} width={275} />
+							</p>
+						</div>
+						<div className="SkeletonBottomPart">
+							<div className="SkeletonItemLink">
+								<span>
+									<Skeleton width={200} height={10} />
+								</span>
+							</div>
+							<div className="Tag">
+								<span>
+									<Skeleton width={50} />
+								</span>
+							</div>
+						</div>
+						<div className="SkeletonItemBottom">
+							<div className="BottomTech">
+								<span>
+									<Skeleton width={200} />
+								</span>
+							</div>
+							<div className="Users">
+								<span>
+									<Skeleton width={50} />
+								</span>
+							</div>
 						</div>
 					</div>
-					<div className="SkeletonItemBottom">
-						<div className="BottomTech">
+				) : (
+					<div className="skeletonItem">
+						<div className="ItemTop">
+							<Skeleton height={180} width={370} />
 							<span>
-								<Skeleton width={200} />
+								<Skeleton width={250} />
 							</span>
 						</div>
-						<div className="Users">
-							<span>
-								<Skeleton width={50} />
-							</span>
+						<div className="SkeletonItemBody">
+							<p>
+								<Skeleton count={4} height={10} width={375} />
+							</p>
+						</div>
+						<div className="SkeletonBottomPart">
+							<div className="SkeletonItemLink">
+								<span>
+									<Skeleton width={250} height={10} />
+								</span>
+							</div>
+							<div className="Tag">
+								<span>
+									<Skeleton width={70} />
+								</span>
+							</div>
+						</div>
+						<div className="SkeletonItemBottom">
+							<div className="BottomTech">
+								<span>
+									<Skeleton width={250} />
+								</span>
+							</div>
+							<div className="Users">
+								<span>
+									<Skeleton width={60} />
+								</span>
+							</div>
 						</div>
 					</div>
-				</div>
+				)}
 			</div>
 		</SkeletonTheme>
 	);

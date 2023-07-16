@@ -12,7 +12,15 @@ const AppSkeleton = () => {
 		>
 			<div className="AppSkeleton">
 				<div className="AppSkeletonContainer">
-					<Skeleton className="AppSkeletonItem" height={580} width={920} />
+					{window.innerWidth > 768 ? (
+						<Skeleton className="AppSkeletonItem" height={580} width={920} />
+					) : (
+						<Skeleton
+							className="AppSkeletonItem"
+							height={900}
+							width={window.innerWidth - 10}
+						/>
+					)}
 				</div>
 			</div>
 		</SkeletonTheme>

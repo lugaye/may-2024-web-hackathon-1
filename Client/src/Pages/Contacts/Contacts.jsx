@@ -107,7 +107,7 @@ const Contacts = () => {
 								<a href="" target="_blank" rel="noreferrer">
 									<i className="fab fa-facebook"></i>
 								</a>
-								<a href="" target="_blank" rel="noreferrer">
+								<a href="https://www.instagram.com/quaint_algorithm/" target="_blank" rel="noreferrer">
 									<i className="fab fa-instagram"></i>
 								</a>
 								<a href="" target="_blank" rel="noreferrer">
@@ -126,7 +126,6 @@ const Contacts = () => {
 					<div className="ContactsRight">
 						<div className="Message">
 							<h2>Send a message</h2>
-
 							<form onSubmit={handleSubmit} action="">
 								<div className="FormRow">
 									<label htmlFor="name">Name</label>

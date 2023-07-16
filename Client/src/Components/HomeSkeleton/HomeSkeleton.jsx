@@ -20,19 +20,31 @@ const HomeSkeleton = () => {
 							<p>
 								<Skeleton count={5} height={10} width={370} />
 							</p>
-							<div className="SkeletonBottom">
-								<button>
-                                    <Skeleton width={100} height={30} />
-								</button>
-								<button>
-                                    <Skeleton width={100} height={30} />
-								</button>
-							</div>
+							{window.innerWidth > 768 && (
+								<div className="SkeletonBottom">
+									<button>
+										<Skeleton width={100} height={30} />
+									</button>
+									<button>
+										<Skeleton width={100} height={30} />
+									</button>
+								</div>
+							)}
 						</div>
 						<div className="SkeletonRight">
 							<Skeleton height={300} width={350} />
 						</div>
 					</div>
+					{window.innerWidth < 768 && (
+						<div className="SkeletonBottom">
+							<button>
+								<Skeleton width={100} height={30} />
+							</button>
+							<button>
+								<Skeleton width={100} height={30} />
+							</button>
+						</div>
+					)}
 				</div>
 			</div>
 		</SkeletonTheme>

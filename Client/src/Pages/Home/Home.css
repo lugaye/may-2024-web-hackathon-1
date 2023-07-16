@@ -36,7 +36,7 @@
         width: 50%;
         height: 100%;
 
-        & p{
+        & p {
             font-size: 1rem;
             font-weight: 500;
         }
@@ -95,4 +95,40 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--white);
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .Home {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .HomeContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .HomeTop {
+        flex-direction: column;
+        height: 80%;
+        gap: 1rem;
+
+        & .HomeTopLeft {
+            width: 100%;
+            height: 50%;
+        }
+
+        & .HomeTopRight {
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .HomeBottom {
+        flex-direction: row;
+        gap: 1rem;
+    }
 }

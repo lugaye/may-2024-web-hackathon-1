@@ -107,7 +107,7 @@ router.post("/sendMail", async (req, res) => {
 					</div>
 					<br />
 					<a
-						href="https://www.linkedin.com/in/victor-kirui-9b0b3b1a0/"
+						href="https://www.linkedin.com/in/victor-kirui-193aa4222/"
 						target="_blank"
 						style="margin-right: 10px"
 					>
@@ -117,7 +117,7 @@ router.post("/sendMail", async (req, res) => {
 							style="width: 30px; height: 30px"
 						/>
 					</a>
-					<a href="" target="_blank" style="margin-right: 10px">
+					<a href="https://github.com/Techsupport254" target="_blank" style="margin-right: 10px">
 						<img
 							src="https://img.icons8.com/fluent/48/000000/github.png"
 							alt="Github"
@@ -125,7 +125,7 @@ router.post("/sendMail", async (req, res) => {
 						/>
 					</a>
 					<a
-						href="https://www.instagram.com/victor_kirui_/"
+						href="https://www.instagram.com/quaint_algorithm/"
 						target="_blank"
 						style="margin-right: 10px"
 					>
@@ -252,7 +252,7 @@ router.post("/sendMail", async (req, res) => {
 					</div>
 					<br />
 					<a
-						href="https://www.linkedin.com/in/victor-kirui-9b0b3b1a0/"
+						href="https://www.linkedin.com/in/victor-kirui-193aa4222/"
 						target="_blank"
 						style="margin-right: 10px"
 					>
@@ -262,7 +262,7 @@ router.post("/sendMail", async (req, res) => {
 							style="width: 30px; height: 30px"
 						/>
 					</a>
-					<a href="" target="_blank" style="margin-right: 10px">
+					<a href="https://github.com/Techsupport254" target="_blank" style="margin-right: 10px">
 						<img
 							src="https://img.icons8.com/fluent/48/000000/github.png"
 							alt="Github"
@@ -270,7 +270,7 @@ router.post("/sendMail", async (req, res) => {
 						/>
 					</a>
 					<a
-						href="https://www.instagram.com/victor_kirui_/"
+						href="https://www.instagram.com/quaint_algorithm/"
 						target="_blank"
 						style="margin-right: 10px"
 					>
