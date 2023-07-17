@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const mailRoute = require("./Routes/MailRoute");
 const projectRoute = require("./Routes/ProjectRoute");
+const blogsRoute = require("./Routes/BlogsRoute");
+const productRoute = require("./Routes/ProductRoute");
 
 app.use(express.json());
 
@@ -34,6 +36,8 @@ mongoose
 		// routes
 		app.use("/api", mailRoute);
 		app.use("/api/projects", projectRoute);
+		app.use("/api/blogs", blogsRoute);
+		app.use("/api/products", productRoute);
 
 		// start the server
 		app.listen(port, () => {
