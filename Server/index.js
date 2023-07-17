@@ -15,11 +15,6 @@ const projectRoute = require("./Routes/ProjectRoute");
 const blogsRoute = require("./Routes/BlogsRoute");
 const productRoute = require("./Routes/ProductRoute");
 
-app.use("/api", mailRoute);
-app.use("/api/projects", projectRoute);
-app.use("/api/blogs", blogsRoute);
-app.use("/api/products", productRoute);
-
 // Connect to MongoDB
 mongoose
 	.connect(process.env.MONGO_URI, {
@@ -28,6 +23,12 @@ mongoose
 	})
 	.then(() => {
 		console.log("MongoDB connection established");
+		// routes
+		app.use("/api", mailRoute);
+		app.use("/api/projects", projectRoute);
+		app.use("/api/blogs", blogsRoute);
+		app.use("/api/products", productRoute);
+		
 		// Start the server
 		app.listen(port, () => {
 			console.log(`Server running on port ${port}`);
