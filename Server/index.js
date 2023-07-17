@@ -9,12 +9,6 @@ const mongoose = require("mongoose");
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
-// Routes
-const mailRoute = require("./Routes/MailRoute");
-const projectRoute = require("./Routes/ProjectRoute");
-const blogsRoute = require("./Routes/BlogsRoute");
-const productRoute = require("./Routes/ProductRoute");
-
 // Connect to MongoDB
 mongoose
 	.connect(process.env.MONGO_URI, {
@@ -24,10 +18,10 @@ mongoose
 	.then(() => {
 		console.log("MongoDB connection established");
 		// routes
-		app.use("/api", mailRoute);
-		app.use("/api/projects", projectRoute);
-		app.use("/api/blogs", blogsRoute);
-		app.use("/api/products", productRoute);
+		app.use("/api", require("./Routes/MailRoute.js"));
+		app.use("/api/projects", require("./Routes/ProjectRoute.js"));
+		app.use("/api/blogs", require("./Routes/BlogsRoute.js"));
+		app.use("/api/products", require("./Routes/ProductRoute.js"));
 
 		// Start the server
 		app.listen(port, () => {
