@@ -46,3 +46,21 @@ mongoose
 	.catch((err) => {
 		console.error("MongoDB connection error:", err);
 	});
+
+// Home route
+app.get("/", (req, res) => {
+	res.send("Hello World!");
+});
+
+// 404 route
+app.use((req, res) => {
+	res.status(404).send("404: Page not found");
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).send("500: Internal Server Error");
+});
+
+module.exports = app;
