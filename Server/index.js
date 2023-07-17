@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT || 5000;
-const mongoose = require("mongoose");
 const cors = require("cors");
 const mailRoute = require("./Routes/MailRoute");
 const projectRoute = require("./Routes/ProjectRoute");
@@ -27,23 +26,12 @@ app.get("/", (req, res) => {
 });
 
 // Set up routes
-app.use("/api/mail", mailRoute);
-app.use("/api/projects", projectRoute); // Placeholder for project route
-app.use("/api/blogs", blogsRoute); // Placeholder for blogs route
-app.use("/api/products", productRoute); // Placeholder for product route
+app.use("/api", mailRoute);
+app.use("/api/projects", projectRoute);
+app.use("/api/blogs", blogsRoute);
+app.use("/api/products", productRoute);
 
-// Connect to MongoDB using promises
-mongoose
-	.connect(process.env.MONGO_URI, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
-	.then(() => {
-		console.log("MongoDB connected");
-
-		// Start the server
-		app.listen(port, () => {
-			console.log(`Listening on port ${port}`);
-		});
-	})
-	.catch((err) => console.log(err));
+// Start the server
+app.listen(port, () => {
+	console.log(`Listening on port ${port}`);
+});
