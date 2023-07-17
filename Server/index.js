@@ -4,20 +4,10 @@ require("dotenv").config();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
 const mongoose = require("mongoose");
-const router = express.Router();
 
 // Middleware
 app.use(express.json());
-app.use(router);
-app.use(
-	cors({
-		origin: [
-			"https://quaint.kitchen360.co.ke",
-			"https://quaint.kitchen360.co.ke/",
-			"http://localhost:5173",
-		],
-	})
-);
+app.use(cors({ origin: "*" }));
 
 // Routes
 const mailRoute = require("./Routes/MailRoute");
@@ -50,11 +40,6 @@ mongoose
 // Home route
 app.get("/", (req, res) => {
 	res.send("Hello World!");
-});
-
-// 404 route
-app.use((req, res) => {
-	res.status(404).send("404: Page not found");
 });
 
 // Error handler
