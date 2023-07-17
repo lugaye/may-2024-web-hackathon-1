@@ -28,7 +28,7 @@ mongoose
 		app.use("/api/projects", projectRoute);
 		app.use("/api/blogs", blogsRoute);
 		app.use("/api/products", productRoute);
-		
+
 		// Start the server
 		app.listen(port, () => {
 			console.log(`Server running on port ${port}`);
@@ -43,10 +43,31 @@ app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
 
-// Error handler
+// Error handling middleware
 app.use((err, req, res, next) => {
 	console.error(err.stack);
 	res.status(500).send("500: Internal Server Error");
+});
+
+// Error handling for routes
+app.use("/api", (err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).json({ error: "Internal Server Error" });
+});
+
+app.use("/api/projects", (err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).json({ error: "Internal Server Error" });
+});
+
+app.use("/api/blogs", (err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).json({ error: "Internal Server Error" });
+});
+
+app.use("/api/products", (err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).json({ error: "Internal Server Error" });
 });
 
 module.exports = app;
