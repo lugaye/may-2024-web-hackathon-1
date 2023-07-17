@@ -26,8 +26,10 @@ app.get("/", (req, res) => {
 });
 
 // connect to MongoDB using promises
+const MONGO_URI =
+	"mongodb+srv://OptiSoft:PHAyTp3oLZoNlINf@optisoft.97dvunu.mongodb.net/OptiSoft?retryWrites=true&w=majority";
 mongoose
-	.connect(process.env.MONGO_URI, {
+	.connect(MONGO_URI, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
