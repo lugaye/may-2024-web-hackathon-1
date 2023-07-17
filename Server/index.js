@@ -11,7 +11,7 @@ const productRoute = require("./Routes/ProductRoute");
 
 app.use(express.json());
 
-// routes
+// Enable CORS
 app.use(
 	cors({
 		origin: [
@@ -22,7 +22,17 @@ app.use(
 	})
 );
 
-// connect to MongoDB using promises
+app.get("/", (req, res) => {
+	res.send("Hello World!");
+});
+
+// Set up routes
+app.use("/api/mail", mailRoute);
+app.use("/api/projects", projectRoute); // Placeholder for project route
+app.use("/api/blogs", blogsRoute); // Placeholder for blogs route
+app.use("/api/products", productRoute); // Placeholder for product route
+
+// Connect to MongoDB using promises
 mongoose
 	.connect(process.env.MONGO_URI, {
 		useNewUrlParser: true,
@@ -30,21 +40,10 @@ mongoose
 	})
 	.then(() => {
 		console.log("MongoDB connected");
-		app.get("/", (req, res) => {
-			res.send("Hello World!");
-		});
-		// routes
-		app.use("/api", mailRoute);
-		app.use("/api/projects", projectRoute);
-		app.use("/api/blogs", blogsRoute);
-		app.use("/api/products", productRoute);
 
-		// start the server
+		// Start the server
 		app.listen(port, () => {
 			console.log(`Listening on port ${port}`);
 		});
 	})
-	.catch((err) => {
-		console.log("Error connecting to MongoDB:");
-		console.error(err);
-	});
+	.catch((err) => console.log(err));
