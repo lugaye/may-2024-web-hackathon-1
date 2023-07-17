@@ -7,6 +7,8 @@ const mailRoute = require("./Routes/MailRoute");
 const projectRoute = require("./Routes/ProjectRoute");
 const blogsRoute = require("./Routes/BlogsRoute");
 const productRoute = require("./Routes/ProductRoute");
+const mongoose = require("mongoose");
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
@@ -27,11 +29,22 @@ app.get("/", (req, res) => {
 
 // Set up routes
 app.use("/api", mailRoute);
-app.use("/api/projects", projectRoute);
-app.use("/api/blogs", blogsRoute);
-app.use("/api/products", productRoute);
 
-// Start the server
-app.listen(port, () => {
-	console.log(`Listening on port ${port}`);
-});
+// connect to MongoDB using promises
+mongoose
+	.connect(process.env.MONGO_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => {
+		console.log("MongoDB connection established");
+		// set up routes after the database connection is established
+		app.use("/api/projects", projectRoute);
+		app.use("/api/blogs", blogsRoute);
+		app.use("/api/products", productRoute);
+
+		app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+	})
+	.catch((err) => {
+		console.error("MongoDB connection error:", err);
+	});
