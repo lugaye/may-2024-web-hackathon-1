@@ -4,10 +4,8 @@ require("dotenv").config();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
 const mailRoute = require("./Routes/MailRoute");
-const projectRoute = require("./Routes/ProjectRoute");
-const blogsRoute = require("./Routes/BlogsRoute");
-const productRoute = require("./Routes/ProductRoute");
 const mongoose = require("mongoose");
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
@@ -29,28 +27,21 @@ app.get("/", (req, res) => {
 // Set up routes
 app.use("/api", mailRoute);
 
-// Connect to MongoDB using promises
-const connectToDatabase = async () => {
-	try {
-		const connection = await mongoose.createConnection(process.env.MONGO_URI, {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		});
-
+// connect to MongoDB using promises
+mongoose
+	.connect(process.env.MONGO_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => {
 		console.log("MongoDB connection established");
+		// set up routes after the database connection is established
+		app.use("/api/projects", require("./Routes/ProjectRoute"));
+		app.use("/api/blogs", require("./Routes/BlogsRoute"));
+		app.use("/api/products", require("./Routes/ProductRoute"));
 
-		// Set up routes after the database connection is established
-		app.use("/api/projects", projectRoute);
-		app.use("/api/blogs", blogsRoute);
-		app.use("/api/products", productRoute);
-
-		// Start the server
-		app.listen(port, () => {
-			console.log(`Server running on port ${port}`);
-		});
-	} catch (err) {
+		app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+	})
+	.catch((err) => {
 		console.error("MongoDB connection error:", err);
-	}
-};
-
-connectToDatabase();
+	});
