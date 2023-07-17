@@ -5,18 +5,17 @@ require("dotenv").config();
 const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 const cors = require("cors");
-const mailRoute = require("./Routes/MailRoute");
 
 app.use(express.json());
 
-// routes
+// Enable CORS for specified origins
 app.use(
 	cors({
 		origin: ["https://quaint.kitchen360.co.ke", "http://localhost:5173"],
 	})
 );
 
-// connect to MongoDB using promises
+// Connect to MongoDB using promises
 mongoose
 	.connect(process.env.MONGO_URI, {
 		useNewUrlParser: true,
@@ -27,10 +26,8 @@ mongoose
 		app.get("/", (req, res) => {
 			res.send("Hello World!");
 		});
-		// routes
-		app.use("/api", mailRoute);
 
-		// start the server
+		// Start the server
 		app.listen(port, () => {
 			console.log(`Listening on port ${port}`);
 		});
