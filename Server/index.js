@@ -1,3 +1,4 @@
+// index.js
 const express = require("express");
 const app = express();
 require("dotenv").config();
@@ -11,10 +12,7 @@ app.use(express.json());
 // routes
 app.use(
 	cors({
-		origin: [
-			"https://quaint.kitchen360.co.ke",
-			"http://localhost:5173",
-		],
+		origin: ["https://quaint.kitchen360.co.ke", "http://localhost:5173"],
 	})
 );
 
@@ -41,3 +39,5 @@ mongoose
 		console.log("Error connecting to MongoDB:");
 		console.error(err);
 	});
+
+module.exports = app;
