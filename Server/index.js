@@ -5,7 +5,6 @@ const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 const cors = require("cors");
 const mailRoute = require("./Routes/MailRoute");
-const projectRoute = require("./Routes/ProjectRoute");
 
 app.use(express.json());
 
@@ -14,7 +13,6 @@ app.use(
 	cors({
 		origin: [
 			"https://quaint.kitchen360.co.ke",
-			"https://quaint.kitchen360.co.ke/",
 			"http://localhost:5173",
 		],
 	})
@@ -33,7 +31,6 @@ mongoose
 		});
 		// routes
 		app.use("/api", mailRoute);
-		app.use("/api/projects", projectRoute);
 
 		// start the server
 		app.listen(port, () => {
