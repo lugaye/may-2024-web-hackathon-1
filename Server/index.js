@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 const cors = require("cors");
 const mailRoute = require("./Routes/MailRoute");
@@ -21,20 +22,17 @@ app.use(
 	})
 );
 
-app.get("/", (req, res) => {
-	res.send("Hello World!");
-});
-
 // connect to MongoDB using promises
-const MONGO_URI =
-	"mongodb+srv://OptiSoft:PHAyTp3oLZoNlINf@optisoft.97dvunu.mongodb.net/OptiSoft?retryWrites=true&w=majority";
 mongoose
-	.connect(MONGO_URI, {
+	.connect(process.env.MONGO_URI, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
 	.then(() => {
 		console.log("MongoDB connected");
+		app.get("/", (req, res) => {
+			res.send("Hello World!");
+		});
 		// routes
 		app.use("/api", mailRoute);
 		app.use("/api/projects", projectRoute);
@@ -42,11 +40,11 @@ mongoose
 		app.use("/api/products", productRoute);
 
 		// start the server
-		const server = app.listen(process.env.PORT || 5000, () => {
-			console.log(`Listening on port ${server.address().port}`);
+		app.listen(port, () => {
+			console.log(`Listening on port ${port}`);
 		});
-
-		// Export the server instance
-		module.exports = server;
 	})
-	.catch((err) => console.log(err));
+	.catch((err) => {
+		console.log("Error connecting to MongoDB:");
+		console.error(err);
+	});
