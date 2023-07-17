@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -10,28 +11,32 @@ app.use(cors({ origin: "*" }));
 
 // connect to MongoDB using promises
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("MongoDB connection established");
+	.connect(process.env.MONGO_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => {
+		console.log("MongoDB connection established");
 
-    // set up routes after the database connection is established
-    app.use("/api", require("./Routes/MailRoute"));
-    app.use("/api/projects", require("./Routes/ProjectRoute"));
-    app.use("/api/blogs", require("./Routes/BlogsRoute"));
-    app.use("/api/products", require("./Routes/ProductRoute"));
+		// set up routes after the database connection is established
+		app.use("/api", require("./Routes/MailRoute"));
+		app.use("/api/projects", require("./Routes/ProjectRoute"));
+		app.use("/api/blogs", require("./Routes/BlogsRoute"));
+		app.use("/api/products", require("./Routes/ProductRoute"));
 
-    // define a `/` route that will simply send the text "Hello, world!" to the browser
-    app.get("/", (req, res) => {
-      res.send("Hello, world!");
-    });
+		// debug the connection
+		mongoose.connection.on("error", (err) => {
+			console.error("MongoDB connection error:", err);
+		});
 
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-  })
-  .catch((err) => {
-    console.error("MongoDB connection error:", err);
-  });
+		app.get("/", (req, res) => {
+			res.send("Hello, world!");
+		});
+
+		app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+	})
+	.catch((err) => {
+		console.error("MongoDB connection error:", err);
+	});
 
 module.exports = app;
