@@ -26,22 +26,11 @@ app.get("/", (req, res) => {
 
 // Set up routes
 app.use("/api", mailRoute);
+app.use("/api/projects", require("./Routes/ProjectRoute"));
+app.use("/api/blogs", require("./Routes/BlogsRoute"));
+app.use("/api/products", require("./Routes/ProductRoute"));
 
-// connect to MongoDB using promises
-mongoose
-	.connect(process.env.MONGO_URI, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
-	.then(() => {
-		console.log("MongoDB connection established");
-		// set up routes after the database connection is established
-		app.use("/api/projects", require("./Routes/ProjectRoute"));
-		app.use("/api/blogs", require("./Routes/BlogsRoute"));
-		app.use("/api/products", require("./Routes/ProductRoute"));
-
-		app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-	})
-	.catch((err) => {
-		console.error("MongoDB connection error:", err);
-	});
+// start the server
+app.listen(port, () => {
+	console.log(`Listening on port ${port}`);
+});
