@@ -20,9 +20,7 @@ mongoose
 
 		// set up routes after the database connection is established
 		app.use("/api", require("./Routes/MailRoute"));
-		app.use("/api/projects", require("./Routes/ProjectRoute"));
-		app.use("/api/blogs", require("./Routes/BlogsRoute"));
-		app.use("/api/products", require("./Routes/ProductRoute"));
+		
 
 		// debug the connection
 		mongoose.connection.on("error", (err) => {
