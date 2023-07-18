@@ -31,7 +31,7 @@
 
 .Socials {
     height: auto;
-    width: auto;
+    width: calc(auto + 1rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,7 +250,8 @@ textarea {
         width: 100%;
         height: auto;
     }
-    .Message{
+
+    .Message {
         width: 100%;
         border: 1px solid var(--p-color);
         border-radius: .5rem;

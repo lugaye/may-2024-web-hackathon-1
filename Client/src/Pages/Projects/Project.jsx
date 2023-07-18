@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SkeletonBody from "../../Components/Skeleton/Skeleton";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const Project = ({ item }) => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -14,6 +15,10 @@ const Project = ({ item }) => {
 	return (
 		<>
 			<div className="Project">
+				<Helmet>
+					<title>{item.name} | Quaint</title>
+					<meta name="description" content={item.description} />
+				</Helmet>
 				{isLoading ? (
 					<SkeletonBody />
 				) : (

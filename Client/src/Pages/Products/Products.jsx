@@ -3,6 +3,7 @@ import "./Products.css";
 import Product from "../../Components/Product/Product";
 import ProductSkeleton from "../../Components/ProductSkeleton/ProductSkeleton";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Products = () => {
 	const [products, setProducts] = useState([]);
@@ -31,10 +32,13 @@ const Products = () => {
 	const handleModalOpen = () => {
 		setIsModalOpen(true);
 	};
-	
 
 	return (
 		<div className="Main">
+			<Helmet>
+				<title>Products | Quaint</title>
+				<meta name="description" content="View our products and services, OptiSoft." />
+			</Helmet>
 			<div className="Container">
 				<div className="Title">
 					<h1>Products</h1>
@@ -45,9 +49,7 @@ const Products = () => {
 							{isLoading ? (
 								<ProductSkeleton product={product} />
 							) : (
-								<Product product={product}
-									isModalOpen={isModalOpen}
-								 />
+								<Product product={product} isModalOpen={isModalOpen} />
 							)}
 						</React.Fragment>
 					))}

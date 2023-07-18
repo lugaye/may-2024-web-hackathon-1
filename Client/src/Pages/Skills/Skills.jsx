@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Skills.css";
 import Dev from "../../assets/dev.svg";
 import { professionalSkillsData, technicalSkillsData } from "../../../Data";
@@ -8,25 +8,26 @@ import { Fade, Zoom } from "@mui/material";
 import { motion } from "framer-motion";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import { Helmet } from "react-helmet";
 
 const Skills = () => {
-	const [isLoading, setIsLoading] = React.useState(true);
-
-	React.useEffect(() => {
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 1000);
-	}, []);
-	const carouselItemsPerPage = 3;
-	const professionalItemsPerPage = 4;
+	const [isLoading, setIsLoading] = useState(true);
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [currentProfessionalSlide, setCurrentProfessionalSlide] = useState(0);
+	const carouselItemsPerPage = 3;
+	const professionalItemsPerPage = 4;
 	const totalSlides = Math.ceil(
 		technicalSkillsData.length / carouselItemsPerPage
 	);
 	const totalProfessionalSlides = Math.ceil(
 		professionalSkillsData.length / professionalItemsPerPage
 	);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 1000);
+	}, []);
 
 	const handleSlideChange = (slideIndex) => {
 		setCurrentSlide(slideIndex);
@@ -86,6 +87,27 @@ const Skills = () => {
 		));
 	};
 
+	const autoScrollSlides = () => {
+		const interval = setInterval(() => {
+			setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+		}, 5000);
+
+		const professionalInterval = setInterval(() => {
+			setCurrentProfessionalSlide(
+				(prevSlide) => (prevSlide + 1) % totalProfessionalSlides
+			);
+		}, 5000);
+
+		return () => {
+			clearInterval(interval);
+			clearInterval(professionalInterval);
+		};
+	};
+
+	useEffect(() => {
+		autoScrollSlides();
+	}, []);
+
 	return (
 		<SkeletonTheme
 			baseColor="rgba(255, 255, 255, 0.1)"
@@ -93,6 +115,13 @@ const Skills = () => {
 			animationSpeed={1}
 		>
 			<div className="Main">
+				<Helmet>
+					<title>Skills | Portfolio</title>
+					<meta
+						name="description"
+						content="I possess a strong proficiency in crafting visually appealing and responsive web interfaces, developing dynamic applications, and implementing robust backend solutions. My commitment to staying updated with industry trends enables me to deliver impactful web experiences that drive successful projects."
+					/>
+				</Helmet>
 				<div className="Container">
 					{isLoading ? (
 						<SkillsSkeleton

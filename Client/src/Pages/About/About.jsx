@@ -5,6 +5,7 @@ import { Stepper, Step, StepLabel, Zoom, Fade } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import { aboutBottomData, servicesData } from "../../../Data";
 import AboutSkeleton from "../../Components/AboutSkeleton/AboutSkeleton";
+import { Helmet } from "react-helmet";
 
 const About = () => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -22,6 +23,14 @@ const About = () => {
 
 	return (
 		<div className="Main">
+			<Helmet>
+				<title>About | Quaint</title>
+				<meta
+					name="description"
+					content="I am a versatile Full Stack Web Developer with 2 years experience. Passionate about integrating Machine Learning concepts into web development for innovative and user-centric solutions. Seeking frontend development opportunities to leverage my skills and create impactful web experiences."
+				/>
+			</Helmet>
+
 			<div className="Container">
 				{isLoading ? (
 					<AboutSkeleton

@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import axios from "axios";
 import Project from "./Project";
-
+import { Helmet } from "react-helmet";
 const Projects = () => {
 	const [projects, setProjects] = React.useState([]);
 	// fetch projects from database
@@ -13,6 +13,13 @@ const Projects = () => {
 	}, []);
 	return (
 		<div className="Main">
+			<Helmet>
+				<title>Projects | Quaint</title>
+				<meta
+					name="description"
+					content="View our projects both from OptiSoft and personal level."
+				/>
+			</Helmet>
 			<div className="Container">
 				<div className="Title">
 					<h1>Projects</h1>

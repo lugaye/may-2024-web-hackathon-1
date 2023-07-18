@@ -3,6 +3,7 @@ import "./Home.css";
 import Undraw from "../../assets/react-undraw.svg";
 import HomeSkeleton from "../../Components/HomeSkeleton/HomeSkeleton.JSX";
 import { Fade, Zoom } from "@mui/material";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
 	const [isLoading, setIsLoading] = React.useState(true);
@@ -33,6 +34,13 @@ const Home = () => {
 
 	return (
 		<div className="Home">
+			<Helmet>
+				<title>Home | Quaint</title>
+				<meta
+					name="description"
+					content="I'm Victor Quaint, CEO, OptiSoft and a Full Stack Developer with expertise in MERN stack and a Machine Learning Engineer. I combine my passion for building robust web applications with my knowledge of machine learning algorithms to create innovative solutions. Explore my work and projects to see how I bring creativity and technical expertise together."
+				/>
+			</Helmet>
 			{isLoading ? (
 				<HomeSkeleton />
 			) : (

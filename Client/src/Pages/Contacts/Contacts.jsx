@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Contacts.css";
 import contact from "../../assets/contact.svg";
 import axios from "axios";
+import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 
 const Contacts = () => {
 	const [senderName, setSenderName] = useState("");
@@ -67,15 +69,27 @@ const Contacts = () => {
 
 	return (
 		<div className="Main">
+			<Helmet>
+				<title>Contacts | Quaint</title>
+				<meta
+					name="description"
+					content="Contact us for any queries, suggestions or feedback."
+				/>
+			</Helmet>
 			<div className="Container">
 				<div className="Title">
 					<h1>Contacts</h1>
 				</div>
 				<div className="ContactsInfo">
 					<div className="ContactsLeft">
-						<div className="ContactImage">
+						<motion.div
+							className="ContactImage"
+							initial={{ opacity: 0, scale: 0 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ duration: 0.5 }}
+						>
 							<img src={contact} alt="contact" />
-						</div>
+						</motion.div>
 						<div className="Socials">
 							<div className="SocialsTop">
 								<div className="ContactRow">
@@ -107,7 +121,11 @@ const Contacts = () => {
 								<a href="" target="_blank" rel="noreferrer">
 									<i className="fab fa-facebook"></i>
 								</a>
-								<a href="https://www.instagram.com/quaint_algorithm/" target="_blank" rel="noreferrer">
+								<a
+									href="https://www.instagram.com/quaint_algorithm/"
+									target="_blank"
+									rel="noreferrer"
+								>
 									<i className="fab fa-instagram"></i>
 								</a>
 								<a href="" target="_blank" rel="noreferrer">
