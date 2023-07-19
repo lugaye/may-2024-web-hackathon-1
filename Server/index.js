@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
+app.use("/api", require("./Routes/MailRoute"));
+
 // connect to MongoDB using promises
 mongoose
 	.connect(process.env.MONGO_URI, {
@@ -20,7 +22,7 @@ mongoose
 		console.log("MongoDB connection established");
 		// set up routes after the database connection is established
 		app.get("/", (req, res) => res.send("API running"));
-		app.use("/api", require("./Routes/MailRoute"));
+
 		app.use("/api/projects", require("./Routes/ProjectRoute"));
 		app.use("/api/blogs", require("./Routes/BlogsRoute"));
 		app.use("/api/products", require("./Routes/ProductRoute"));
