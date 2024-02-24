@@ -64,11 +64,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: #888;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #fff;
 }
 
 ::-webkit-scrollbar-thumb:hover {

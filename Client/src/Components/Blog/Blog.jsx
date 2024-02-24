@@ -2,6 +2,8 @@ import React from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import "react-loading-skeleton/dist/skeleton.css";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
 const Blog = ({ item, isLoading }) => {
 	const getTimeLabel = (date) => {
@@ -19,14 +21,55 @@ const Blog = ({ item, isLoading }) => {
 	};
 
 	return (
-		<>
+		<SkeletonTheme
+			baseColor="rgba(255, 255, 255, 0.1)"
+			highlightColor="rgba(255, 255, 255, 0.05)"
+			animationSpeed={1}
+		>
 			{isLoading ? (
 				<div className="BlogSkeleton">
-					{/* ... your skeleton loading component */}
+					<div className="BlogContainer">
+						<div className="BlogLeft">
+							<div className="BlogImage">
+								<Skeleton height={100} width={150} />
+							</div>
+							<div className="LeftMore">
+								<Skeleton count={2} height={20} width={100} />
+							</div>
+						</div>
+						<div className="BlogRight">
+							<motion.div className="BlogTitle">
+								<Skeleton height={20} width={230} />
+							</motion.div>
+							<div className="BlogDescription">
+								<p>
+									<Skeleton count={4} height={10} width={250} />
+								</p>
+							</div>
+							<div className="Star">
+								<Skeleton height={20} width={20} />
+							</div>
+							<div className="Tags">
+								{item.tags.map((tag, index) => (
+									<motion.div
+										className="Tag flex items-center bg-teal-400/10 px-1 py-0.5  leading-5 text-teal-300"
+										key={index}
+										initial={{ opacity: 0, x: -20 }}
+										animate={{ opacity: 1, x: 0 }}
+										transition={{ delay: 0.6, duration: 0.5 }}
+									>
+										<p>
+											<Skeleton height={10} width={60} />
+										</p>
+									</motion.div>
+								))}
+							</div>
+						</div>
+					</div>
 				</div>
 			) : (
 				<motion.div
-					className="Blog"
+					className="BlogContainer"
 					onClick={() => window.open(item.link, "_blank")}
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={{ opacity: 1, scale: 1 }}
@@ -114,7 +157,7 @@ const Blog = ({ item, isLoading }) => {
 					</div>
 				</motion.div>
 			)}
-		</>
+		</SkeletonTheme>
 	);
 };
 

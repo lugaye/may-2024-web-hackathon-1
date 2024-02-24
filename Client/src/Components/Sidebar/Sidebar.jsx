@@ -81,7 +81,7 @@ const Sidebar = ({ sidebarToggle, handleSidebarItemClick }) => {
 								<i className="fas fa-envelope"></i>
 							</a>
 							<a
-								href="https://www.instagram.com/quaint_algorithm/"
+								href="https://www.instagram.com/kirui.dev/"
 								target="_blank"
 								rel="noreferrer"
 							>

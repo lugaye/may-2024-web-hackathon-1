@@ -36,7 +36,9 @@ const Blogs = () => {
 				</div>
 				<div className="BlogItems">
 					{blogs.map((blog) => (
-						<Blog key={blog._id} item={blog} isLoading={isLoading} />
+						<div className="Blog">
+							<Blog key={blog._id} item={blog} isLoading={isLoading} />
+						</div>
 					))}
 				</div>
 			</div>

@@ -32,11 +32,11 @@ const Project = ({ item }) => {
 							<motion.img
 								src={item.image}
 								alt={item.name}
-								whileHover={{ scale: 1.1 }}
+								whileHover={{ scale: 1.05 }}
 							/>
-							<span>{item.name}</span>
 						</div>
 						<div className="ItemBody">
+							<span>{item.name}</span>
 							<p>{item.description}</p>
 						</div>
 						<div className="BottomPart">
