@@ -314,45 +314,44 @@
 
       <!-- Contact Section -->
       <section class="contact" id="contact">
-            
+
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- web3forms.com Access Key -->
+          <input type="hidden" name="access_key" value="43c9e142-62d3-4ed8-85ca-e5bf52a7399f">
+      
           <div class="input_box">
             <div class="input_field">
-              <input type="text" placeholder="Full Name" required>
+              <input type="text" name="name" placeholder="Full Name" required>
               <span class="focus"></span>
             </div>
-
+      
             <div class="input_field">
-              <input type="text" placeholder="Email" required>
+              <input type="email" name="email" placeholder="Email" required>
               <span class="focus"></span>
             </div>
-
+      
             <div class="input_field">
-              <input type="number" placeholder="Mobile Number" required>
+              <input type="number" name="phone" placeholder="Mobile Number" required>
               <span class="focus"></span>
             </div>
-
+      
             <div class="input_field">
-              <input type="text" placeholder="Email Subject" required>
+              <input type="text" name="subject" placeholder="Email Subject" required>
               <span class="focus"></span>
             </div>
-
-            
           </div>
-
-
-
-        <div class="textarea_field">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-          <span class="focus"></span>
-        </div>
-
-        <div class="btn_box btns">
-          <button type="submit" class="button">
-            <p>Submit</p>
-          </button>
-        </div>
+      
+          <div class="textarea_field">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <span class="focus"></span>
+          </div>
+      
+          <div class="btn_box btns">
+            <button type="submit" class="button">
+              <p>Submit</p>
+            </button>
+          </div>
         </form>
       </section>
     </div>
