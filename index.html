@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: serif, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0.5em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #b8b526;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        h2 {
+            color: #000000;
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em 0;
+            border-bottom: 1px solid #d88a8a;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            width: 30%;
+            margin: 1em 0;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .project img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project h3 {
+            margin: 0.5em 0;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .social-media {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media li {
+            display: inline;
+            margin: 0 0.5em;
+        }
+
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>KAZUNGU REAGAN</h1>
+            <p>Brief Bio: I am a lifelong learner dedicated to the pursuit of knowledge and self-improvement with a passion for continuous education.</p>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://www.google.com/imgres?q=none%20word&imgurl=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F923078641575014400%2FIU3TdQ40_400x400.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fstudionone&docid=sRra0jAJqZHzUM&tbnid=WHm1t5yCe3sLNM&vet=12ahUKEwiDmcDr44GHAxU5MlkFHbePBpkQM3oECHYQAA..i&w=400&h=400&hcb=2&ved=2ahUKEwiDmcDr44GHAxU5MlkFHbePBpkQM3oECHYQAA" alt="Project 1">
+                    <h3>Project Title</h3>
+                    <p>I have no ongoing project at the moment.</p>
+                    
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Technical Skill 1: Computer Operation</li>
+                <li>Technical Skill 2: Writing</li>
+                <li>Non-Technical Skill: Adaptability</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Data Entry Specialist</h3>
+                <p>Aron Life General Trading Co. LTD</p>
+                <p>Responsible for accurately and efficiently inputing data into the company's computers and database.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Degree, Makerere University</p>
+            <p>2020</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact Information: ouledireagan@gmail.com, +211980177805</p>
+            <ul class="social-media">
+                
+                <li><a href="https://github.com/kazreagan">GitHub</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
