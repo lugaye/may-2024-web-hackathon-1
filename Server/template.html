@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email Confirmation</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+				background-color: rgb(18, 27, 48);
+			}
+			.container {
+				width: 100%;
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: rgb(18, 27, 48);
+			}
+			/* Add your additional styles here */
+		</style>
+	</head>
+	<body>
+		<table class="container">
+			<tr>
+				<td style="text-align: center; width: 30%; padding: 8px">
+					<!-- Replace with your company logo -->
+					<img
+						src="https://th.bing.com/th/id/OIP.dO84tDNGord9OlwEpZMntgHaHa?rs=1&pid=ImgDetMain"
+						alt="Company Logo"
+						style="
+							width: 100px;
+							height: 100px;
+							border-radius: 50%;
+							object-fit: cover;
+							border: 2px solid #ffc107;
+							padding: 5px;
+						"
+					/>
+				</td>
+				<td style="text-align: left; vertical-align: center; padding-left: 8px">
+					<!-- Replace with your company information -->
+					<div
+						style="
+							color: white;
+							font-size: 18px;
+							font-weight: 600;
+							margin-bottom: 10px;
+							gap: 10px;
+						"
+					>
+						Victor Kipkorir Kirui
+					</div>
+					<div style="color: #fff; font-size: 12px; font-weight: 600">
+						+254 716 404 137
+					</div>
+					<div style="color: #fff; font-size: 16px; font-weight: 600">
+						<span> CEO OPTISOFT </span>
+					</div>
+					<br />
+					<!-- Replace with your social media links -->
+					<a
+						href="https://www.linkedin.com/in/victor-kirui-193aa4222/"
+						target="_blank"
+						style="margin-right: 10px"
+					>
+						<img
+							src="https://img.icons8.com/fluent/48/000000/linkedin.png"
+							alt="LinkedIn"
+							style="width: 30px; height: 30px"
+						/>
+					</a>
+					<a
+						href="https://github.com/Techsupport254"
+						target="_blank"
+						style="margin-right: 10px"
+					>
+						<img
+							src="https://img.icons8.com/fluent/48/000000/github.png"
+							alt="Github"
+							style="width: 30px; height: 30px"
+						/>
+					</a>
+					<a
+						href="https://www.instagram.com/quaint_algorithm/"
+						target="_blank"
+						style="margin-right: 10px"
+					>
+						<img
+							src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+							alt="Instagram"
+							style="width: 30px; height: 30px; border-radius: 50%"
+						/>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td
+					colspan="2"
+					style="
+						padding: 12px;
+						border: 1px solid #888888;
+						border-radius: 5px;
+						margin-bottom: 16px;
+					"
+				>
+					<h3
+						style="
+							color: white;
+							font-size: 12px;
+							font-weight: 600;
+							margin: 16px 0;
+						"
+					>
+						Thank you for contacting me, ${senderName}!
+					</h3>
+					<p style="color: #888888; font-size: 14px; padding: 5px">
+						I will get back to you as soon as possible.
+					</p>
+					<p style="color: #888888; font-size: 14px; padding: 5px">
+						If your inquiry is urgent, please fill out the form below or call me
+						directly at
+						<a href="tel:+254716404137" style="color: #ffc107"
+							>+254 716 404 137</a
+						>.
+					</p>
+					<br />
+					<iframe
+						width="640px"
+						height="480px"
+						src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAATmkbdpUNFdIUjlYVUVKSFY2REI1OFBVMjA2WFZXVy4u&embed=true"
+						frameborder="0"
+						marginwidth="0"
+						marginheight="0"
+						style="border: none; max-width: 100%; max-height: 100vh"
+						allowfullscreen
+						webkitallowfullscreen
+						mozallowfullscreen
+						msallowfullscreen
+					>
+					</iframe>
+					<span style="color: #888888; font-size: 14px">Best Regards,</span>
+					<p style="color: #888888; font-size: 14px">
+						Victor Kipkorir Kirui
+						<br />
+						<span
+							id="timestamp"
+							style="color: #ffc107; font-size: 12px; font-weight: 500"
+							>${timestamp}</span
+						>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

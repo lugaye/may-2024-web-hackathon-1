@@ -1,0 +1,49 @@
+.SkeletonProfessional {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.SkeletonContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .SkillsSkele {
+        margin-top: 2rem;
+    }
+
+    .SkeletonContent {
+        width: 100%;
+        height: 50%;
+    }
+
+    .SkeletonTechnical {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .SkeletonProfessional {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .SkeletonContent {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+}
