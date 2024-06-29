@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelvin Murithi</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Assets/kelvin-favicon.png"
+      type="image/jpg"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Kelvin Murithi</a>
+        <div onclick="hideNavBar()" class="nav_menu" id="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a onclick="hideNavBar()" href="#about" class="nav_link">
+                <i class="bx bx-right-top-arrow-circle"></i>
+                <span>About</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a onclick="hideNavBar()" href="#experience" class="nav_link">
+                <i class="bx bx-right-top-arrow-circle"></i>
+                <span>Experience</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a onclick="hideNavBar()" href="#skills" class="nav_link">
+                <i class="bx bx-right-top-arrow-circle"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+
+            <li class="nav_item">
+              <a onclick="hideNavBar()" href="#projects" class="nav_link">
+                <i class="bx bx-right-top-arrow-circle"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+
+            
+
+            <li class="nav_item">
+              <a onclick="hideNavBar()" href="#contact" class="nav_link">
+                <i class="bx bx-right-top-arrow-circle"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- close button -->
+          <div class="nav_close" id="nav_close">
+            <i onclick="hideNavBar()" class="bx bx-x"></i>
+          </div>
+
+          <div class="nav_socials">
+            <a
+              href="https://github.com/kev065"
+              target="_blank"
+              class="nav_social_link"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/kayoi"
+              target="_blank"
+              class="nav_social_link"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="nav_toggle" id="nav_toggle">
+          <i onclick="showNavbar()" class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- About Me Section -->
+      <section id="about" class="wrapper">
+        <div class="testimonial">
+          <article>
+            <h1>About <span>Me</span></h1>
+            <img src="./Assets/photo-2.png" alt="" />
+            <blockquote>
+              I am a passionate <em>Software Developer</em> with a keen eye for
+              design and a knack for coding. I specialize in building sleek,
+              responsive websites that not only look great but also perform
+              flawlessly across devices. Whether you're looking to launch a
+              brand-new site, revamp an existing one, or optimize for
+              performance, I'm here to turn your vision into reality. Let's
+              collaborate and bring your digital dreams to life!
+            </blockquote>
+            <h5>Kelvin Murithi</h5>
+            <p>Software Developer</p>
+          </article>
+        </div>
+      </section>
+
+
+
+      <!-- Projects Section -->
+      <section id="projects" class="projectscontainer">
+        <h2>My Projects</h2>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Stock Market Analysis Terminal</p>
+            <p class="text-body">This application provides users with tools to analyze the stock market. It's designed to help users make sense of complex financial 
+              data and provide insights into which stocks to buy or sell. Enables a user to create an account, add stocks to their watchlist, check stock info and 
+              metrics, leave ratings & comments, and view the best & worst performing days for each stock in the Dow Jones Industrial Average in the past week.</p>
+          </div>
+          <button class="card-button"><a target="_blank" href="https://github.com/kev065/market-master">View Repository</a></button>
+        </div>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Free Games Web App</p>
+            <p class="text-body">This project is a website that enables users to browse exciting free to play games from different developers, filtering by 
+              platform, genre and popularity..</p>
+          </div>
+          <button class="card-button"><a target="_blank" href="https://kev065.github.io/free-games-web-app/">View Website</a></button>
+        </div>
+
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Human Resource Management System</p>
+            <p class="text-body"> This is an application that provides a comprehensive software solution for HR. It provides functionalities for managing employee 
+              information, leaves, education, experience, goals, payslips, documents, training, and more.
+          </p>
+          </div>
+          <button class="card-button"><a target="_blank" href="https://github.com/kev065/HRS">View Repository</a></button>
+        </div>
+
+
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+            
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+          <div class="input_box">
+            <div class="input_field">
+              <input type="text" placeholder="Full Name" required>
+              <span class="focus"></span>
+            </div>
+
+            <div class="input_field">
+              <input type="text" placeholder="Email" required>
+              <span class="focus"></span>
+            </div>
+
+            <div class="input_field">
+              <input type="number" placeholder="Mobile Number" required>
+              <span class="focus"></span>
+            </div>
+
+            <div class="input_field">
+              <input type="text" placeholder="Email Subject" required>
+              <span class="focus"></span>
+            </div>
+
+            
+          </div>
+
+
+
+        <div class="textarea_field">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn_box btns">
+          <button type="submit" class="button">
+            <p>Submit</p>
+          </button>
+        </div>
+        </form>
+      </section>
+    </div>
+      
+
+<!-- Footer -->
+    <footer class="footer">
+      <div class="footer_text">
+        <p>&copy; 2024 Kelvin Murithi | All rights reserved.</p>
+      </div>
+
+      <div class="footer_icon_top">
+        <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
