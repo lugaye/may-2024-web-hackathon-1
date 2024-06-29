@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
  .menu li a:hover{
-    background-color: #052523;
+    background-color: transparent;
     color: #F5F5DC;
     transition: all 0.3s ease-in-out;
 } 
@@ -202,5 +202,101 @@ h1, h2, h3, h4, h5, h6{
     .menu a:hover{
         background-color: rgba(255,255,255,0.2);
         transition: background-color 0.3s ease;
+    }
+}
+
+/* HERO SECTION */
+.hero-section {
+    text-align: center;
+    background: url(images/hero-back.jpg);
+    background-color: #138B84;
+    background-size: auto; 
+    background-blend-mode: luminosity;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.hero-avatar {
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #138B84;
+    }
+    50% {
+        box-shadow: 0 0 20px #138B84;
+    }
+    100% {
+        box-shadow: 0 0 10px #138B84;
+    }
+}
+
+.hero-avatar img {
+    border-radius: 50%; 
+    border: 20px solid #138B84; 
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 15px;
+    filter: brightness(90%) contrast(110%) saturate(150%);
+    animation: glow 2s infinite ease-in-out; 
+}
+.hero-text h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+.hero-text p{
+    margin-top: 6px;
+    font-weight: 200;
+}
+.hero-socials{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .hero-avatar img {
+        max-width: 400px;
+        
+    }
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .hero-socials {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-avatar img {
+        max-width: 300px;
+    }
+    .hero-text h1 {
+        font-size: 25px;
+    }
+    .hero-text p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .hero-socials {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
     }
 }
