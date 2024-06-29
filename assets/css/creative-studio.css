@@ -39,7 +39,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Fira Sans", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Cmyier New", monospace;
 }
 
 *,
@@ -188,7 +188,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Cmyier New", monospace;
   font-size: 1em;
 }
 
@@ -10652,7 +10652,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Cmyier New", monospace !important;
 }
 
 .text-justify {
@@ -12004,7 +12004,7 @@ section .section-title {
   bottom: 0;
   left: 50%;
   width: 1px;
-  background-color: #ddd; /* Or any color that fits your design */
+  background-color: #ddd; /* Or any color that fits ymy design */
 }
 
 #education .resume-title {
@@ -12087,7 +12087,7 @@ section .section-title {
   font-weight: bold;
 }
 
-/* Adjust progress bar colors based on your design */
+/* Adjust progress bar colors based on ymy design */
 
 
 #experience {

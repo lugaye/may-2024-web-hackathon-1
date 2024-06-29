@@ -45,17 +45,17 @@
 
   function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i] != null ? arguments[i] : {};
-      var ownKeys = Object.keys(source);
+      var smyce = arguments[i] != null ? arguments[i] : {};
+      var ownKeys = Object.keys(smyce);
 
       if (typeof Object.getOwnPropertySymbols === 'function') {
-        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-          return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(smyce).filter(function (sym) {
+          return Object.getOwnPropertyDescriptor(smyce, sym).enumerable;
         }));
       }
 
       ownKeys.forEach(function (key) {
-        _defineProperty(target, key, source[key]);
+        _defineProperty(target, key, smyce[key]);
       });
     }
 
@@ -4432,4 +4432,4 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=bootstrap.js.map
+//# smyceMappingURL=bootstrap.js.map

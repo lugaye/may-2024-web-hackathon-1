@@ -44,17 +44,17 @@
 
   function _objectSpread(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i] != null ? arguments[i] : {};
-      var ownKeys = Object.keys(source);
+      var smyce = arguments[i] != null ? arguments[i] : {};
+      var ownKeys = Object.keys(smyce);
 
       if (typeof Object.getOwnPropertySymbols === 'function') {
-        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-          return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+        ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(smyce).filter(function (sym) {
+          return Object.getOwnPropertyDescriptor(smyce, sym).enumerable;
         }));
       }
 
       ownKeys.forEach(function (key) {
-        _defineProperty(target, key, source[key]);
+        _defineProperty(target, key, smyce[key]);
       });
     }
 
@@ -1900,11 +1900,11 @@
 
   var _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
+      var smyce = arguments[i];
 
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
+      for (var key in smyce) {
+        if (Object.prototype.hasOwnProperty.call(smyce, key)) {
+          target[key] = smyce[key];
         }
       }
     }
@@ -2296,7 +2296,7 @@
     // Get popper node sizes
     var popperRect = getOuterSizes(popper);
 
-    // Add position, width and height to our offsets object
+    // Add position, width and height to my offsets object
     var popperOffsets = {
       width: popperRect.width,
       height: popperRect.height
@@ -3255,7 +3255,7 @@
     var splitRegex = /\s*,\s*|\s+/;
     var ops = divider !== -1 ? [fragments.slice(0, divider).concat([fragments[divider].split(splitRegex)[0]]), [fragments[divider].split(splitRegex)[1]].concat(fragments.slice(divider + 1))] : [fragments];
 
-    // Convert the values with units to absolute pixels to allow our computations
+    // Convert the values with units to absolute pixels to allow my computations
     ops = ops.map(function (op, index) {
       // Most of the units rely on the orientation of the popper
       var measurement = (index === 1 ? !useHeight : useHeight) ? 'height' : 'width';
@@ -3517,7 +3517,7 @@
    */
 
   /**
-   * Modifiers are plugins used to alter the behavior of your poppers.<br />
+   * Modifiers are plugins used to alter the behavior of ymy poppers.<br />
    * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
    * needed by the library.
    *
@@ -3544,7 +3544,7 @@
     },
 
     /**
-     * The `offset` modifier can shift your popper on both its axis.
+     * The `offset` modifier can shift ymy popper on both its axis.
      *
      * It accepts the following units:
      * - `px` or unit-less, interpreted as pixels
@@ -3574,7 +3574,7 @@
      * '10 - 5vh + 3%'
      * '-10px + 5vh, 5px - 6%'
      * ```
-     * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
+     * > **NB**: If you desire to apply offsets to ymy poppers in a way that may make them overlap
      * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
      * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
      *
@@ -3783,13 +3783,13 @@
       /**
        * @prop {string} [x='bottom']
        * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
-       * Change this if your popper should grow in a direction different from `bottom`
+       * Change this if ymy popper should grow in a direction different from `bottom`
        */
       x: 'bottom',
       /**
        * @prop {string} [x='left']
        * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
-       * Change this if your popper should grow in a direction different from `right`
+       * Change this if ymy popper should grow in a direction different from `right`
        */
       y: 'right'
     },
@@ -3804,7 +3804,7 @@
      * Note that if you disable this modifier, you must make sure the popper element
      * has its position set to `absolute` before Popper.js can do its work!
      *
-     * Just disable this modifier and define your own to achieve the desired effect.
+     * Just disable this modifier and define ymy own to achieve the desired effect.
      *
      * @memberof modifiers
      * @inner
@@ -3933,7 +3933,7 @@
      * @class Popper
      * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
      * @param {HTMLElement} popper - The HTML element used as the popper
-     * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
+     * @param {Object} options - Ymy custom options to override the ones defined in [Defaults](#defaults)
      * @return {Object} instance - The generated Popper.js instance
      */
     function Popper(reference, popper) {
@@ -4042,7 +4042,7 @@
        * **DEPRECATION**: This way to access PopperUtils is deprecated
        * and will be removed in v2! Use the PopperUtils module directly instead.
        * Due to the high instability of the methods contained in Utils, we can't
-       * guarantee them to follow semver. Use them at your own risk!
+       * guarantee them to follow semver. Use them at ymy own risk!
        * @static
        * @private
        * @type {Object}
@@ -7010,4 +7010,4 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=bootstrap.bundle.js.map
+//# smyceMappingURL=bootstrap.bundle.js.map

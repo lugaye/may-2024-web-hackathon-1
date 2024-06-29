@@ -87,7 +87,7 @@ $theme-color-interval:      8%;
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150;
 
-// Customize the light and dark text colors for use in our YIQ color contrast function.
+// Customize the light and dark text colors for use in my YIQ color contrast function.
 $yiq-text-dark:             $gray-900;
 $yiq-text-light:            $white;
 
@@ -112,7 +112,7 @@ $body-color:                $gray-700;
 
 // Fonts
 $font-family-sans-serif:      'Fira Sans', sans-serif;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Cmyier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 
 // Font, line-height, and color for body text, headings, and more.

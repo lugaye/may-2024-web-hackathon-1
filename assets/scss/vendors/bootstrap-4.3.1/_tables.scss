@@ -161,7 +161,7 @@
 // Responsive tables
 //
 // Generate series of `.table-responsive-*` classes for configuring the screen
-// size of where your table will overflow.
+// size of where ymy table will overflow.
 
 .table-responsive {
   @each $breakpoint in map-keys($grid-breakpoints) {
