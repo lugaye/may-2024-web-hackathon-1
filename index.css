@@ -443,7 +443,7 @@ font-size: 48px;
     display: block;
     margin: auto;
     letter-spacing: 1.5px;
-  }
+}
 
 .skills .skills_row{
     display: flex;
@@ -492,53 +492,28 @@ font-size: 48px;
     background: var(--secondary-color);
 }
 
-.skills_column:nth-child(1) .skills_content .progress:nth-child(1) .bar span{
-    width: 90%;
+/* Set default width for "Beginner" level */
+.skills_content .progress .bar span {
+    width: 25%;
 }
 
-.skills_column:nth-child(1) .skills_content .progress:nth-child(2) .bar span{
-    width: 70%;
+/* Override width for "Intermediate" level */
+.skills_content .progress:has(h3 span[data-level="Intermediate"]) .bar span {
+    width: 50%;
 }
 
-.skills_column:nth-child(1) .skills_content .progress:nth-child(3) .bar span{
-    width: 65%;
-}
-
-.skills_column:nth-child(1) .skills_content .progress:nth-child(4) .bar span{
+/* Override width for "Advanced" level */
+.skills_content .progress:has(h3 span[data-level="Advanced"]) .bar span {
     width: 75%;
 }
 
-.skills_column:nth-child(1) .skills_content .progress:nth-child(5) .bar span{
-    width: 65%;
+/* Override width for "Expert" level */
+.skills_content .progress:has(h3 span[data-level="Expert"]) .bar span {
+    width: 100%;
 }
 
-.skills_column:nth-child(1) .skills_content .progress:nth-child(6) .bar span{
-    width: 70%;
-}
 
-.skills_column:nth-child(2) .skills_content .progress:nth-child(1) .bar span{
-    width: 60%;
-}
 
-.skills_column:nth-child(2) .skills_content .progress:nth-child(2) .bar span{
-    width: 70%;
-}
-
-.skills_column:nth-child(2) .skills_content .progress:nth-child(3) .bar span{
-    width: 65%;
-}
-
-.skills_column:nth-child(2) .skills_content .progress:nth-child(4) .bar span{
-    width: 80%;
-}
-
-.skills_column:nth-child(2) .skills_content .progress:nth-child(5) .bar span{
-    width: 75%;
-}
-
-.skills_column:nth-child(2) .skills_content .progress:nth-child(6) .bar span{
-    width: 70%;
-}
 /* Projects Section */
 
 
