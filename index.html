@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css"> 
+</head>
+<body>
+    
+  <nav id="desktop-nav">
+    <div class="logo">
+        <span id="welcomeMessage">Hello</span> 😁
+    </div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+  </nav>
+
+ 
+  <nav id="hamburger-nav">
+    <div class="logo" style="text-align: center;">
+      <span id="welcomeMessageMobile">Hello</span> 😁
+  </div>
+    
+    <div class="hamburger-menu">
+
+        <div class="hamburger-icon " onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>         
+    </div>
+    
+  </nav>
+
+  
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile.png" alt="Alvin Nathey's profile picture" style="border-radius: 50%;" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Alvin Nathey</h1>
+      <p class="section__text__p2">Developer ^_^</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png" 
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/alvin-nathey-893792257/'" 
+          target="_blank"
+          title="My LinkedIn"/>
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/AlvinNathey'" 
+          target="_blank"
+          title="My GitHub"/>
+      </div>
+    </div>
+</section>
+
+
+ 
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      
+      <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="./assets/developer-icon.png" alt="Developer icon" class="icon" style="size: 150px;"/>
+              
+                <p>I'm a developer focused on web development<br>
+                  Age: <span id="age"></span><br>
+                  Location: Nairobi, Ke<br>
+                  Interests: Book reading and discovering new technologies</p>
+            </div>
+        </div>
+    </div>
+      
+     
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Bachelor of science in informatics and computer science</p>
+           <h5>Strathmore university</h5>
+            <b>From:</b><p>July 2022 - <i>present</i></p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>Volunteered working at Kenya Works Foundation that helps the community</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+</section>
+
+  
+  <br><br>
+  <hr>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>English</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kiswahili</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spanish</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Database Management</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>OracleDB</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <hr>
+  </section>
+  
+
+  
+<section id="projects">
+  <div style="text-align: center;">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+  </div>
+
+  <div class="projects-container">
+    <!-- Project one -->
+    <div class="experiencer-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://github.com/AlvinNathey/weather/" target="_blank">
+              <img src="./assets/weather.jpg" alt="Project 1" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Weather 1.0</h2>
+          <div class="description">My first 'weather app'</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project two -->
+    <div class="experiencer-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://github.com/AlvinNathey/drug-dispensing-tool" target="_blank">
+              <img src="./assets/drug.jpg" alt="Project 2" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Drug dispenser</h2>
+          <div class="description">A platform that facilitates drug dispensing</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project three -->
+    <div class="experiencer-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://wweatherr.vercel.app" target="_blank">
+              <img src="./assets/weather2.jpg" alt="Project 3" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Weather 2.0</h2>
+          <div class="description">A working weather app where if you search a location u get its weather forecast</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project four -->
+    <div class="experiencer-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://github.com/AlvinNathey/bookvault" target="_blank">
+              <img src="./assets/bookvault.png" alt="Project 4" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Bookvault</h2>
+          <div class="description">Search for any book,get more details about the book and u can add it to 'want to read' , 'have read'  or favourite </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project five -->
+    <div class="experiencer-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <a href="https://github.com/AlvinNathey/drug-dispensing-tool" target="_blank">
+              <img src="./assets/pills-falling.jpg" alt="Project 5" class="project-img" />
+            </a>
+          </div>
+          <h2 class="experience-sub-title project-title">Drug dispenser API</h2>
+          <div class="description">API for drug dispenser with token authentication</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:kariukialvin32@gmail.com">kariukialvin32@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/alvin-nathey-893792257/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div id="scrollToTopButton">
+          <img src="assets/upp.png" alt="Scroll to top">
+      </div>
+        <nav>
+          <div class="nav-linker-container">
+            <ul class="nav-linker">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+       
+        <p class="copyright">Copyright &#169; 2024 Alvin Nathey. All Rights Reserved.</p>
+      </footer>
+      
+    <script src="script.js"></script>
+
+    <script>
+      //Displaying the welcome message in different languages
+      const welcomeMessages = [
+          "Hello",          // English
+          "Hujambo",        // Swahili
+          "Bonjour",        // French
+          "Hola",           // Spanish
+          "こんにちは",     // Japanese
+          "你好",           // Chinese (Simplified)
+          "مرحبا",         // Arabic
+          "नमस्ते",        // Hindi
+          "Ciao",           // Italian
+          "Salve",          // Latin
+          "Cześć"           // Polish
+      ];
+      
+      let currentIndex = 0;
+      
+      function updateWelcomeMessage() {
+          const welcomeElement = document.getElementById("welcomeMessage");
+       
+          const currentMessage = welcomeMessages[currentIndex];
+         
+          welcomeElement.textContent = currentMessage;
+        
+          currentIndex = (currentIndex + 1) % welcomeMessages.length;
+      }
+      
+     
+      updateWelcomeMessage();
+      
+
+      setInterval(updateWelcomeMessage, 2000);
+
+      const welcomeMessagesMobile = [
+        "Hello",          // English
+        "Hujambo",        // Swahili
+        "Bonjour",        // French
+        "Hola",           // Spanish
+        "こんにちは",     // Japanese
+        "你好",           // Chinese (Simplified)
+        "مرحبا",         // Arabic
+        "नमस्ते",        // Hindi
+        "Ciao",           // Italian
+        "Salve",          // Latin
+        "Cześć"           // Polish
+    ];
+
+    // For displaying the welcome message for mobile users
+    let currentIndexMobile = 0; //
+
+    function updateWelcomeMessageMobile() {
+        const welcomeElementMobile = document.getElementById("welcomeMessageMobile");
+
+        const currentMessageMobile = welcomeMessagesMobile[currentIndexMobile];
+
+        welcomeElementMobile.textContent = currentMessageMobile; 
+
+        currentIndexMobile = (currentIndexMobile + 1) % welcomeMessagesMobile.length;
+    }
+
+    updateWelcomeMessageMobile();
+
+    setInterval(updateWelcomeMessageMobile, 2000);
+
+    //When i scroll the opacity changes so that some of the other details is visible
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('desktop-nav');
+    const hamburgerNav = document.getElementById('hamburger-nav');
+
+    function adjustOpacity() {
+        let scrollY = window.pageYOffset;
+        let maxOpacity = 0.4;
+        let opacity = Math.max(0.2, maxOpacity - (scrollY / 100));
+        nav.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+        hamburgerNav.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+    }
+
+    window.addEventListener('scroll', adjustOpacity);
+    adjustOpacity();
+});
+
+
+
+// Function to check if an element is in the viewport or not
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to show/hide the scroll-to-top button based on scroll position and footer visibility
+window.onscroll = function() {
+    var footer = document.querySelector("footer");
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+    
+    if (isElementInViewport(footer)) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+};
+
+// Function to scroll to the top when the button is clicked
+document.getElementById("scrollToTopButton").onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+};
+
+//Function to solve the age issue
+function calculateAge(dateOfBirth) {
+  const dob = new Date(dateOfBirth);
+  const now = new Date();
+  
+  let age = now.getFullYear() - dob.getFullYear();
+  
+  const monthDiff = now.getMonth() - dob.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < dob.getDate())) {
+    age--;
+  }
+  
+  return age;
+}
+
+const dateOfBirth = "2003-01-10";
+const age = calculateAge(dateOfBirth);
+document.getElementById("age").textContent = age;
+      
+      
+  
+  </script>
+</body>
+</html>
