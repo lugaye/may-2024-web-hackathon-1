@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 import { navData } from "../../../Data";
 import { Link } from "react-router-dom";
@@ -6,11 +6,13 @@ import Quaint from "../../assets/quaint.png";
 import { motion } from "framer-motion";
 
 const Sidebar = ({ sidebarToggle, handleSidebarItemClick }) => {
-	const [toggle, setToggle] = React.useState(false);
-	const [active, setActive] = React.useState(
+	// State for toggling sidebar visibility and managing active menu item
+	const [toggle, setToggle] = useState(false);
+	const [active, setActive] = useState(
 		localStorage.getItem("activeItem") || "Home"
 	);
 
+	// Handle click on sidebar item
 	const handleClick = (e) => {
 		const selectedItem = e.target.innerText;
 		setActive(selectedItem);
@@ -18,12 +20,9 @@ const Sidebar = ({ sidebarToggle, handleSidebarItemClick }) => {
 		localStorage.setItem("activeItem", selectedItem); // Store the active item in local storage
 	};
 
-	React.useEffect(() => {
-		if (sidebarToggle) {
-			setToggle(true);
-		} else {
-			setToggle(false);
-		}
+	// Effect to toggle sidebar based on sidebarToggle prop
+	useEffect(() => {
+		setToggle(sidebarToggle);
 	}, [sidebarToggle]);
 
 	return (
@@ -80,39 +79,31 @@ const Sidebar = ({ sidebarToggle, handleSidebarItemClick }) => {
 							>
 								<i className="fas fa-envelope"></i>
 							</a>
-							<a
-								href="https://www.instagram.com/kirui.dev/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<i className="fab fa-instagram"></i>
-							</a>
 						</div>
 					</div>
 				</div>
 				<div className="SidebarItems">
-					{navData.map((item, index) => {
-						return (
-							<Link
-								key={index}
-								to={item.path}
-								className={`SidebarItemLink ${
-									active === item.title ? "Active" : ""
-								}`}
-								onClick={handleClick}
+					{/* Mapping through navigation data to render sidebar links */}
+					{navData.map((item, index) => (
+						<Link
+							key={index}
+							to={item.path}
+							className={`SidebarItemLink ${
+								active === item.title ? "Active" : ""
+							}`}
+							onClick={handleClick}
+						>
+							<motion.div
+								className="SidebarItem"
+								whileHover={{ scale: 1.05 }}
+								whileTap={{ scale: 0.95 }}
 							>
-								<motion.div
-									className="SidebarItem"
-									whileHover={{ scale: 1.05 }}
-									whileTap={{ scale: 0.95 }}
-								>
-									{item.item}
-									<div className="Icon text-teal-300 ">{item.icon}</div>
-									<span>{item.title}</span>
-								</motion.div>
-							</Link>
-						);
-					})}
+								{item.item}
+								<div className="Icon text-teal-300 ">{item.icon}</div>
+								<span>{item.title}</span>
+							</motion.div>
+						</Link>
+					))}
 				</div>
 			</div>
 		</div>

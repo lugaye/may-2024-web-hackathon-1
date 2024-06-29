@@ -5,15 +5,14 @@ const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const db = process.env.MONGO_URI;
 
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 
 // connect to MongoDB using promises
 mongoose
-	.connect(
-		"mongodb+srv://OptiSoft:PHAyTp3oLZoNlINf@optisoft.97dvunu.mongodb.net/OptiSoft?retryWrites=true&w=majority"
-	)
+	.connect(db)
 
 	.then(() => {
 		console.log("MongoDB connection established");

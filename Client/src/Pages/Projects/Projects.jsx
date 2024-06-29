@@ -10,13 +10,11 @@ const Projects = () => {
 	const [error, setError] = useState(null);
 
 	useEffect(() => {
-		// Fetch projects from the API
 		const fetchProjects = async () => {
 			try {
-				const response = await axios.get(
-					"https://quaint-portfolio.vercel.app/api/projects"
-				);
+				const response = await axios.get("http://localhost:4000/api/projects");
 				setProjects(response.data);
+				setError(null); // Reset error state on successful fetch
 			} catch (error) {
 				setError("An error occurred while fetching projects.");
 			} finally {
@@ -43,7 +41,7 @@ const Projects = () => {
 				<div className="ProjectItems">
 					{loading ? (
 						<div className="Load">
-							<i class="fa-solid fa-circle-notch fa-spin"></i>
+							<i className="fas fa-circle-notch fa-spin"></i>
 						</div>
 					) : error ? (
 						<p>{error}</p>

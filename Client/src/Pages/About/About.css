@@ -119,6 +119,16 @@
     }
 }
 
+.MuiStepConnector-line {
+    border-left: 2px solid var(--txt-teal);
+    border-radius: 5px;
+    position: relative;
+    /* calculate the top and height, they shoule be touching the StepperTitle */
+    top: -10%;
+    height: 120%;
+
+}
+
 .StepperLabelActive {
     border-radius: 5px;
     border: 1px solid var(--txt-teal);

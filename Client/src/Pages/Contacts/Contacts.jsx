@@ -206,6 +206,20 @@ const Contacts = () => {
 						</div>
 					</div>
 				</div>
+				<iframe
+					title="Forms Office Embed"
+					width="100%"
+					height="100%"
+					src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAATmkbdpUNFdIUjlYVUVKSFY2REI1OFBVMjA2WFZXVy4u&embed=true"
+					frameBorder="0"
+					marginWidth="0"
+					marginHeight="0"
+					style={{ border: "none", maxWidth: "100%", maxHeight: "100vh" }}
+					allowFullScreen
+					webkitAllowFullScreen
+					mozAllowFullScreen
+					msAllowFullScreen
+				></iframe>
 			</div>
 		</div>
 	);

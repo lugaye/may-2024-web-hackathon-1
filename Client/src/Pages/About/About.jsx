@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./About.css";
 import WebDev from "../../assets/web-dev.svg";
 import { Stepper, Step, StepLabel, Zoom, Fade } from "@mui/material";
@@ -8,14 +8,39 @@ import AboutSkeleton from "../../Components/AboutSkeleton/AboutSkeleton";
 import { Helmet } from "react-helmet";
 
 const About = () => {
-	const [isLoading, setIsLoading] = React.useState(true);
+	const [isLoading, setIsLoading] = useState(true);
+	const [activeStep, setActiveStep] = useState(0);
+	const [countValues, setCountValues] = useState([]);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		setTimeout(() => {
 			setIsLoading(false);
 		}, 1000);
 	}, []);
-	const [activeStep, setActiveStep] = React.useState(0);
+
+	useEffect(() => {
+		// Initialize count values for each item in aboutBottomData
+		const initialCountValues = aboutBottomData.map((item) => ({
+			title: item.title,
+			count: 0,
+		}));
+		setCountValues(initialCountValues);
+
+		// Update each count value over time
+		const interval = setInterval(() => {
+			setCountValues((prevCountValues) =>
+				prevCountValues.map((item, index) => ({
+					...item,
+					count:
+						item.count < aboutBottomData[index].value
+							? item.count + 1
+							: item.count,
+				}))
+			);
+		}, 100);
+
+		return () => clearInterval(interval);
+	}, []);
 
 	const handleClick = (index) => {
 		setActiveStep(index === activeStep ? null : index);
@@ -124,18 +149,26 @@ const About = () => {
 							</div>
 						</div>
 						<div className="AboutBottom">
-							{aboutBottomData.map((item, index) => (
+							{countValues.map((item, index) => (
 								<div className="AboutBottomItem" key={index}>
-									<div className="AboutBottomItemIcon">{item.icon}</div>
+									<div className="AboutBottomItemIcon">
+										{aboutBottomData[index].icon}
+									</div>
 									<div className="AboutBottomItemText">
-										<h4>{item.title}</h4>
-										{item.title === "Experience" ? (
-											<p>
-												<p>{item.value} yrs +</p>
-											</p>
-										) : (
-											<p>{item.value} +</p>
-										)}
+										<h4>{aboutBottomData[index].title}</h4>
+										<AnimatePresence initial={false}>
+											<motion.p
+												key={item.count}
+												initial={{ opacity: 0 }}
+												animate={{ opacity: 1 }}
+												exit={{ opacity: 0 }}
+												transition={{ duration: 0.5 }}
+											>
+												{item.title === "Experience"
+													? `${item.count} yrs +`
+													: `${item.count} +`}
+											</motion.p>
+										</AnimatePresence>
 									</div>
 								</div>
 							))}

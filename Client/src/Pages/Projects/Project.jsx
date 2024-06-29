@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SkeletonBody from "../../Components/Skeleton/Skeleton";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 const Project = ({ item }) => {
-	const [isLoading, setIsLoading] = React.useState(true);
+	const [isLoading, setIsLoading] = useState(true);
 
-	React.useEffect(() => {
-		setTimeout(() => {
+	useEffect(() => {
+		const timer = setTimeout(() => {
 			setIsLoading(false);
 		}, 1000);
+
+		return () => clearTimeout(timer); // Cleanup timeout on unmount
 	}, []);
+
 	return (
 		<>
 			<div className="Project">
@@ -42,9 +45,9 @@ const Project = ({ item }) => {
 						<div className="BottomPart">
 							<motion.div className="ItemLink" whileHover={{ scale: 1.05 }}>
 								<i className="fas fa-link"></i>
-								<Link to={item.link} target="_blank" rel="noopener noreferrer">
+								<a href={item.link} target="_blank" rel="noopener noreferrer">
 									{item.name}
-								</Link>
+								</a>
 							</motion.div>
 							<div className="Tag">
 								<i className="fas fa-tag"></i>
