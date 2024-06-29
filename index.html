@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amos Kinoi Mbithi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Amos Kinoi Mbithi</h1>
+        <p>Nairobi, Kenya</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="bio" class="slide-section">
+            <h2>Bio</h2>
+            <p>A future where cutting-edge advancements in artificial intelligence (AI) and robotics are poised to revolutionize healthcare, improving patient diagnostic processes and efficient patient care.</p>
+            <p>Interests: Prompt Engineering, Software Engineering, Web Development, Bioinformatics</p>
+            <p>Location: Nairobi, Kenya Britam towers, Upperhill</p>
+            <p>Contact: <a href="https://github.com/a-mbithi" target="_blank">a-mbithi</a></p>
+        </section>
+
+        <section id="portfolio" class="slide-section">
+            <h2>Portfolio</h2>
+            <div class="project-container">
+                <div class="project">
+                    <h3>Africamedica</h3>
+                    <img src="https://cdn.vectorstock.com/i/500p/11/87/window-house-with-stethoscope-for-clinic-hospital-vector-50691187.avif" alt="Africamedica Logo">
+                </div>
+                <div class="project">
+                    <h3>Pendocare</h3>
+                    <img src="https://cdn.vectorstock.com/i/500p/25/77/health-care-logo-template-medical-health-care-vector-33952577.avif" alt="Pendocare Logo">
+                </div>
+                <div class="project">
+                    <h3>Afyanzuri</h3>
+                    <img src="https://cdn.vectorstock.com/i/preview-1x/45/32/lungs-color-logo-designs-concept-colorful-modern-vector-34104532.webp" alt="Afyanzuri Logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="slide-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Web Development - HTML, JavaScript, CSS</li>
+                        <li>Python</li>
+                        <li>Database</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Non-Technical Skills</h3>
+                    <ul>
+                        <li>Creative</li>
+                        <li>Critical Thinking</li>
+                        <li>Artistic</li>
+                        <li>Innovative</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="slide-section">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Africamedica - Health Systems Manager</h3>
+                <p>Role Description: Managed health systems ensuring seamless integration and efficient operations.</p>
+            </div>
+            <div class="job">
+                <h3>Pendocare - Frontend Developer</h3>
+                <p>Role Description: Developed and maintained the front end of the healthcare platform, ensuring a user-friendly experience.</p>
+            </div>
+            <div class="job">
+                <h3>Afyanzuri - Lead Bioinformatics Officer</h3>
+                <p>Role Description: Led bioinformatics initiatives, focusing on data analysis and application of computational methods to biological data.</p>
+            </div>
+        </section>
+
+        <section id="education" class="slide-section">
+            <h2>Education</h2>
+            <p>PLP Scholarship: Junior Software Developer</p>
+            <p>University of Nairobi: BSc. Medical Bioinformatics</p>
+        </section>
+
+        <section id="contact" class="slide-section">
+            <h2>Contact Me</h2>
+            <form action="http://localhost:3000/submit_contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray('.slide-section').forEach((section, index) => {
+            gsap.from(section, {
+                x: index % 2 === 0 ? '-100%' : '100%',
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 80%',
+                    end: 'top 20%',
+                    scrub: 1,
+                }
+            });
+        });
+    </script>
+</body>
+</html>
