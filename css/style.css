@@ -1,0 +1,69 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section Settings */
+.header {
+    width: 100%;
+    height: 68px;
+    background-color: #030712;
+}
+
+/* Hero Section Settings */
+.hero {
+    width: 100%;
+    height: calc(100vh - 68px);
+    background-color: #030712;
+}
+
+/* About Section Settings */
+.about {
+    width: 100%;
+    height: 962px;
+    background-color: #111827;
+}
+
+/* Skills Section Settings */
+.skills {
+    width: 100%;
+    height: 560px;
+    background-color: #030712;
+}
+
+/* Experiences Section Settings */
+.experience {
+    width: 100%;
+    height: 1140px;
+    background-color: #111827;
+}
+
+/* Project Section Settings */
+.project {
+    width: 100%;
+    height: 1840px;
+    background-color: #030712;
+}
+
+/* Testimonials Section Settings */
+.testimonial {
+    width: 100%;
+    height: 740px;
+    background-color: #111827;
+}
+
+/* Testimonials Section Settings */
+.contact {
+    width: 100%;
+    height: calc(560px - 68px);
+    background-color: #030712;
+}
+
+/* Footer Section Settings */
+.footer {
+    width: 100%;
+    height: 68px;
+    background-color: #111827;
+}
