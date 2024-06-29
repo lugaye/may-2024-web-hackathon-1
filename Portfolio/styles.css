@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6{
     border-bottom: 1px solid #F5F5DC;
 }
 
+/* Add responsiveness */
 @media (max-width:768px){
     .toggle{
         display: block;
@@ -212,7 +213,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #138B84;
     background-size: auto; 
     background-blend-mode: luminosity;
-    height: 110vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,6 +263,8 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     gap: 10px;
 }
+
+/* Add responsiveness */
 @media (max-width: 768px) {
     .hero-avatar img {
         max-width: 400px;
@@ -299,4 +302,104 @@ h1, h2, h3, h4, h5, h6{
         justify-content: center;
         font-size: 25px;
     }
+}
+
+/* MAIN BODY */
+.container{
+    background-color: #052523;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: -120px;
+    box-sizing: border-box;
+    padding: 20px;
+   
+}
+
+.about-me-heading{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ABOUT ME SECTION */
+.about-me-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.about-me-description p{
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+
+}
+.about-me-description a{
+    background-color: #0C5450;
+    text-decoration: none;
+    color: #F5F5DC;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: 600;  
+    transition: all 0.3s ease-in-out; 
+}
+.about-me-description a:hover{
+    background-color: #138B84
+}
+
+.about-me-image-container{
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 320px;
+}
+.image-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 270px;
+    background-color: #0C5450;
+    opacity: 0.7;
+    transform: rotate(19deg);
+    transform-origin: top left;
+    transition: transform 0.3s ease-out;
+}
+.about-me-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 270px;
+    transform: rotate(10deg);
+    transform-origin: top left;
+    filter: brightness(80%) contrast(120%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-me-image:hover{
+    width: 220px;
+    height: 290px;
+    cursor: pointer;
+    transform: rotate(8deg) translate(5px, 5px);
+}
+
+.push-pin{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    filter: brightness(690%);
 }
