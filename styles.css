@@ -1,0 +1,287 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #6C7A89;
+    color: #fff;
+    padding: 20px;
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Content styles */
+.content {
+    margin-left: 230px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #6C7A89;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #777;
+}
+
+/* About Me section styles */
+.about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #E0E7E9;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.profile-img {
+    border-radius: 50%;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Skills section styles */
+.skills {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #E0E7E9;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Experience section styles */
+.experience {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.job {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Education section styles */
+.education {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e9e9e9;
+}
+
+.education h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.education-info {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.education-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    font-size: 1em;
+}
+
+.social-links a {
+    color: #007bff; /* Bootstrap's default blue color */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 4px 0;
+    background-color: #6C7A89;
+    color: #fff;
+    position: relative;
+    bottom: auto;
+    width: auto;
+}
