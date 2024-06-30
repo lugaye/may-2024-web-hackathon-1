@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin Makori</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="portfolioContainer">
+        
+        <section class="profileContainer" id="home">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navBarItems">
+                    <a href="#home"><li class="navBarItem">Home</li></a>
+                    <a href="#about"><li class="navBarItem">About</li></a>
+                    <a href="#services"><li class="navBarItem">Services</li></a>
+                    <a href="#projects"><li class="navBarItem">Projects</li></a>
+                    <a href="#contact"><li class="navBarItem">Contact</li></a>
+                </ul>
+            </nav>
+
+            <div class="profile fade-in" id="about">
+                <div class="profile" id="about">
+                    <img src="/images/myPic.jpg" alt="" class="profileImg">
+                    <div>
+                        <p>Software Engineer</p>
+                        <h3>Franklin Makori</h3>
+                    </div>
+                </div>
+    
+                <div class="info">
+                    <div class="infoLeft">
+                        <div class="leftTop">
+                            <p style="color: white;">I provide creative solutions to turn your Ideas into digital reality.</p>
+                        </div>
+                        <div class="leftBottom">
+                            <p>Reach out to me</p>
+                            <div class="socials">
+                               
+                                <a href="https://wa.me/+254758540650" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/foma-tech" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/foma-tech" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/fomatech" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                                <a href="https://t.me/foma-tech" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                                <a href="https://discord.com/invite/your-invite-code" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+                                <a href="https://github.com/MakoriFranklin" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                                <a href="mailto:franklinmakori795@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="infoRight">
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <div class="skill">
+                                <img src="/images/html.png" alt="">
+                                <h5>HTML</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/css.png" alt="">
+                                <h5>CSS</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/scss.jpeg" alt="">
+                                <h5>SCSS</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/javascript.png" alt="">
+                                <h5>Javascript</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/react.png" alt="">
+                                <h5>React</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/nextjs.png" alt="">
+                                <h5>Next Js</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/nodejs.png" alt="">
+                                <h5>Node Js</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/flutter.png" alt="">
+                                <h5>Flutter</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/html.png" alt="">
+                                <h5>React Native</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/git.png" alt="">
+                                <h5>GIT</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/mongodb.png" alt="">
+                                <h5>MongoDb</h5>
+                            </div>
+                            <div class="skill">
+                                <img src="/images/mySQL.png" alt="">
+                                <h5>mySQL</h5>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+    
+                <div class="work">
+                    <div class="workItem">
+                        <p style="color: white;" id="experienceCount" data-target="2">0</p>
+                        <h3>Years of experience</h3>
+                    </div>
+                    <div class="workItem">
+                        <p style="color: white;" id="projectsCount" data-target="100">0</p>
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="workItem">
+                        <p style="color: white;" id="clientsCount" data-target="30">0</p>
+                        <h3>Clients</h3>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </section>
+
+        
+    </div>
+
+    <!-- Services section -->
+    <div class="profile fade-in" id="about">
+        <section id="services">
+            <h3>Services that I offer</h3>
+           
+           <div class="serviceWrapper">
+           
+                <div class="service">
+                    <img src="/images/mobile.jpeg" alt="">
+                    <h4>Mobile apps development</h4>
+                    <p>Building intuitive and robust mobile applications for both Android and iOS platforms.
+    
+                    </p>
+                    <a href="#contact">Inquire</a>
+                </div>
+                <div class="service">
+                    <img src="/images/webdeve.jpeg" alt="">
+                    <h4>Website Development</h4>
+                    <p>Creating responsive, user-friendly websites tailored to your needs using the latest technologies.</p>
+                    <a href="#contact">Inquire</a>
+                </div>
+                <div class="service">
+                    <img src="/images/videoeditting.jpeg" alt="">
+                    <h4>Vidio Editting</h4>
+                    <p>Crafting engaging and professional videos to bring your stories and ideas to life.</p>
+                    <a href="#contact">Inquire</a>
+                </div>
+                <div class="service">
+                    <img src="/images/graphicsdesign.jpeg" alt="">
+                    <h4>Graphics Design</h4>
+                    <p>esigning visually appealing graphics to effectively communicate your brand's message.</p>
+                    <a href="#contact">Inquire</a>
+                </div>
+                
+           </div>
+           
+        </section>
+    </div>
+   
+    <!-- Services section end -->
+
+
+    <!-- Projects section start -->
+    <div class="profile fade-in" id="about">
+        <section id="projects">
+            <h3>My Projects</h3>
+            <button class="arrow left-arrow">&#9664;</button>
+           <div class="projectsWrapper">
+           
+                <div class="project">
+                    <img src="/images/facebookClone.png" alt="">
+                    <h4>Facebook Clone</h4>
+                    <p style="color: white;">Developed a social media platform with user profiles, friend connections, posts, comments, and real-time updates.</p>
+                    <a href="https://github.com/MakoriFranklin/Facebook_clone" target="_blank">View Code</a>
+                </div>
+                <div class="project">
+                    <img src="/images/realestate.jpeg" alt="">
+                    <h4>Real Estate Website</h4>
+                    <p style="color: white;"> Built a real estate app for browsing properties, viewing listings, and contacting agents, with advanced search and filtering.</p>
+                    <a href="https://github.com/MakoriFranklin/Real-Estate-web-App" target="_blank">View Code</a>
+                </div>
+                <div class="project">
+                    <img src="/images/ecommerce.png" alt="">
+                    <h4>Ecommerce</h4>
+                    <p style="color: white;"> Developed a fully functional ecommerce website with product listings, shopping cart, user authentication,</p>
+                    <a href="https://github.com/MakoriFranklin/ecommerce-advance-filtering-project" target="_blank">View Code</a>
+                </div>
+                <div class="project">
+                    <img src="/images/company website.jpeg" alt="">
+                    <h4>Company Website</h4>
+                    <p style="color: white;">Created a professional company website showcasing business services and products with a responsive design.</p>
+                    <a href="https://www.fomatechnologies.co.ke/" target="_blank">View Site</a>
+                </div>
+                
+           </div>
+           <button class="arrow right-arrow">&#9654;</button>
+        </section>
+        
+    </div>
+    
+    
+    <!-- Projects section end -->
+
+
+    
+
+    <!-- Contact start -->
+    <div class="profile fade-in" id="about">
+        <section id="contact">
+            <h4>Contact Me</h4>
+            <div class="contactWrapper">
+                <form action="">
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                    </div>
+                   <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                   </div>
+                   <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                   </div>
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea name="message" cols="30" id="" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+    
+                <div class="contacts">
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <!-- Contact form end -->
+    <footer>
+        <div class="foorterleft">
+            <div class="socials">
+                           
+                <a href="https://wa.me/+254758540650" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/foma-tech" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/foma-tech" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/fomatech" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://t.me/foma-tech" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="https://discord.com/invite/your-invite-code" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+                <a href="https://github.com/MakoriFranklin" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:franklinmakori795@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footerCenter">
+            <p>&copy; <span id="currentYear"></span> Franklin Makori. All rights reserved.</p>
+        </div>
+
+        <div class="foooterRight">
+            Email: franklinmakori795@gmail.com
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
