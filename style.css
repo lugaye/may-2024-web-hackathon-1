@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: #080808;
+    background-color:black;
     color: white;
 }
 
@@ -23,7 +23,7 @@ body{
     background-position: center;
 }
 
-.coontiner{
+.container{
     padding: 10px 10%;
 }
 
@@ -37,6 +37,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 nav ul li{
@@ -51,4 +52,104 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-txt{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-txt h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-txt h1 span{
+    color: orange;
+}
+
+/*-------about-----*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first-col{
+    flex-basis: 35%;
+}
+
+.first-col img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.second-col{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.skills{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.tab::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab.active-link::after{
+    width: 70%;
+}
+
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-content ul li span{
+    color: orange;
+    font-size: 25px;
 }
