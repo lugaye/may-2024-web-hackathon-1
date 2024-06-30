@@ -90,5 +90,11 @@
   .email-link:hover {
     text-decoration: underline;
   }
+ol {
+    justify-content: center;
+}
+ul{
+    justify-content: center;
+}
   
   
