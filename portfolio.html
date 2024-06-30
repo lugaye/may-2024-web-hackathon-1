@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- //The title of my 1 page Portfolio. -->
+    <title>Brian Kyalo | Portfolio</title>
+
+    <!-- // Links the CSS file to this html documnet. -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- // Adds the functionality of being able to add icons using fontawesome. -->
+    <script
+      src="https://kit.fontawesome.com/4b6660ad47.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- // Enables the use of googlefonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-------------The first section of my portfolio---
+     It contains a logo, navbar and header text.
+     This components are uniquely identified by id's or classes.
+     -------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/3.png" class="logo" alt="No img found" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-txt">
+          <p>Frontend & Backend Developer</p>
+          <h1>
+            Hello I am <span>Brian Kyalo.</span><br />
+            A Mobile and Website developer <br />
+            from Kenya
+            <img class="image1" src="images/kenya.png" alt="No img." />
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------The second section of my portfolio, About 
+   It contains two columns on for the image and description.
+   ----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/121.jpg" alt="no img." />
+          </div>
+          <div class="about-col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate and skilled developer with expertise in both
+              frontend and backend technologies, I thrive on creating seamless
+              and dynamic web applications. With a keen eye for design and user
+              experience, I excel in crafting responsive, visually appealing
+              interfaces using HTML, CSS, and JavaScript. On the backend, my
+              proficiency in languages such as Python, Node.js, and PHP enables
+              me to develop robust, scalable, and secure server-side
+              applications. My ability to bridge the gap between design and
+              functionality allows me to deliver comprehensive solutions that
+              meet client needs and drive user engagement.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                 <!-- Skills entry-->
+                <li>
+                  <span>Frontend | Backend</span> <br />
+                  I design robust web and mobile application based on user
+                  requirements and mordern requirements.
+                </li>
+                 <!-- Skills entry-->
+                <li>
+                  <span>Python | Django</span> <br />
+                  I have the skills to manage you Python application using
+                  Django NoSQL database that offers Database Management
+                  functionality.
+                </li>
+                 <!-- Skills entry-->
+                <li>
+                  <span>UI/UX | Figma</span> <br />
+                  Using Figma i can design for you prototypes of the project you
+                  are aspiring to build and even simulate different
+                  functionalities.
+                </li>
+                 <!-- Skills entry-->
+                <li>
+                  <span>Dart | Flutter</span> <br />
+                  Using this wonderful language and framework I can develop
+                  Cross-platform Mobile applications using firebase as my
+                  backend that are responsive and provide user engagement.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Experience Tab Content Section -->
+            <!-- This section contains a list of experiences and skills related to my career/education. -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <!-- Experience entry-->
+                <li>
+                  <span>2019 - 2022 | Mobile Application</span> <br />
+                  Took a comprehensive training program focused on Mobile
+                  application development using Flutter and Dart, covering
+                  advanced UI design, state management, and backend integration.
+                </li>
+                <!-- Experience entry-->
+                <li>
+                  <span>2011 - 2024 | Frontend Development</span> <br />
+                  Implemented responsive and user-friendly web interfaces using
+                  HTML, CSS, and JavaScript, focusing on performance and
+                  accessibility.
+                </li>
+                <!-- Experience entry-->
+                <li>
+                  <span>2018 - 2019 | Backend Development</span> <br />
+                  Built and maintained robust backend systems using Node.js and
+                  Express, handling RESTful API development, authentication, and
+                  data storage.
+                </li>
+                <!-- Experience entry-->
+                <li>
+                  <span>2021 - 2022 | API Integration</span> <br />
+                  Integrated third-party APIs, enhancing application
+                  functionality with features like payment processing,
+                  geolocation services, and social media connectivity.
+                </li>
+                <!-- Experience entry-->
+                <li>
+                  <span>2019 - 2021 | Project Management</span> <br />
+                  Led cross-functional project teams, managed project timelines,
+                  and ensured successful project delivery using Agile
+                  methodologies and tools like JIRA.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Education Tab Content Section -->
+            <!-- This section contains a list of educations and skills related to my career/education. -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <!-- Education entry-->
+                <li>
+                  <span>2021 - 2026 | Strathmore University</span> <br />
+                  An Undergraduate Degree of Informatics and computer science.
+                </li>
+                <!-- Education entry-->
+                <li>
+                  <span>2024 - 2024 | PLP Africa</span> <br />
+                  A Scholarship program for Computer science. Learnt and aquired
+                  certificates on dart and flutter and web development.
+                </li>
+                <!-- Education entry-->
+                <li>
+                  <span>2018 - 2021 | Nairobi School</span> <br />
+                  An Alumini to the school where I attained a B+ on my KCSE.
+                </li>
+                <!-- Education entry-->
+                <li>
+                  <span>2021 - 2026 | JKUAT Towers</span> <br />
+                  A deplomer course which I successful completed and attained a
+                  certificates.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <!-- This section showcases services offered, Each service description highlights key skills and technologies used. -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services I offer</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-vuejs"></i>
+            <h2>Frontend development with VUE.js</h2>
+            <p>
+              I am highly skilled in frontend development using Vue.js, a
+              versatile JavaScript framework renowned for its simplicity and
+              effectiveness in building modern web applications. With expertise
+              in Vue's component-based architecture, I specialize in creating
+              responsive and dynamic user interfaces that prioritize user
+              experience and engagement. I proficiently integrate Vue.js with
+              backend technologies, implement efficient state management using
+              Vuex, and ensure seamless navigation using Vue Router. My Vue.js
+              proficiency enables me to deliver scalable frontend solutions
+              tailored to diverse project needs.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-laravel"></i>
+            <h2>Backend Development with Laravel</h2>
+            <p>
+              Proficient in backend development with Laravel, a robust PHP
+              framework recognized for its elegant syntax and comprehensive
+              feature set in creating web applications. I specialize in building
+              scalable and secure backend systems that support complex business
+              logic and data processing. I excel in utilizing Laravel's MVC
+              architecture to streamline development, enhance code organization,
+              and ensure maintainability. My skills include database management
+              with Eloquent ORM, API development for seamless integration, and
+              implementing authentication and authorization mechanisms.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Data Analytics with Python and Django</h2>
+            <p>
+              Skilled in data analytics using Python, a versatile programming
+              language widely utilized for its powerful libraries and tools in
+              extracting insights from data. With expertise in Python, I
+              specialize in performing comprehensive data analysis, including
+              data cleaning, manipulation, and visualization using libraries
+              such as Pandas, NumPy, and Matplotlib/Seaborn. I am proficient in
+              statistical analysis, machine learning techniques, and predictive
+              modeling, leveraging libraries like Scikit-learn and TensorFlow.
+              My experience includes working with large datasets, applying data
+              mining algorithms, and interpreting results to drive informed
+              business decisions.
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <!-- This section showcases selected work projects, each featuring an image, project title, and brief description. -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/img1.png" alt="No img found." />
+            <div class="layer">
+              <h3>Sproutly Farm Manager Application</h3>
+              <p>
+                An application that helps mordern farmers around Kenya to
+                Manager their farms and grow thier profits.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/img2.jpg" alt="No img found." />
+            <div class="layer">
+              <h3>KilimaGold the golden taste</h3>
+              <p>
+                An application that helps mordern farmers around Kenya to
+                Manager their farms and grow thier profits.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/img3.jpg" alt="No img found." />
+            <div class="layer">
+              <h3>
+                TogetherInPeace an application that helps separated couples plan
+                for thier children
+              </h3>
+              <p>
+                An application that helps mordern farmers around Kenya to
+                Manager their farms and grow thier profits.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <!-- This section provides contact information and a form for users to reach out to me which is connected to a mysql table. -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="column-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> brianmuthama15@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +254705659252</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <!-- // Contains a button that allows viewers to Download my cv. -->
+            <a href="./cv/BrianKyalo_CV.pdf" class="btn2">Download CV</a>
+          </div>
+
+          <div class="column-right">
+            <form action="submitForm.php" method="post">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter A message"
+              ></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <!-- This section displays copyright information and acknowledgment of the creator. -->
+    <div id="copyright">
+      <p>
+        copyright © Brian Kyalo 2024. All rights reserved. Made with
+        <i class="fa-solid fa-heart"></i>
+      </p>
+    </div>
+
+    <!-- JavaScript for Tab Navigation -->
+    <!-- This script handles tab navigation functionality by toggling active classes based on user interaction. -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        // Remove 'active-link' class from all tab links
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        // Remove 'active-tab' class from all tab contents
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        // Add 'active-link' class to the clicked tab link
+        event.currentTarget.classList.add("active-link");
+        // Display the corresponding tab content by adding 'active-tab' class
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
