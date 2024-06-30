@@ -97,7 +97,7 @@ $theme-color-interval:      8% !default;
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150 !default;
 
-// Customize the light and dark text colors for use in my YIQ color contrast function.
+// Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark:             $gray-900 !default;
 $yiq-text-light:            $white !default;
 
@@ -185,7 +185,7 @@ $paragraph-margin-bottom:   1rem !default;
 
 // Grid breakpoints
 //
-// Define the minimum dimensions at which ymy layout will change,
+// Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
@@ -271,7 +271,7 @@ $embed-responsive-aspect-ratios: join(
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Cmyier New", monospace !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 

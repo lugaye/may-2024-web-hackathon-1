@@ -101,7 +101,7 @@ p {
 
 // Abbreviations
 //
-// 1. Duplicate behavior to the data-* attribute for my tooltip plugin
+// 1. Duplicate behavior to the data-* attribute for our tooltip plugin
 // 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
 // 3. Add explicit cursor to indicate changed behavior.
 // 4. Remove the bottom border in Firefox 39-.
@@ -238,7 +238,7 @@ pre {
 //
 
 figure {
-  // Apply a consistent margin strategy (matches my type styles).
+  // Apply a consistent margin strategy (matches our type styles).
   margin: 0 0 1rem;
 }
 
@@ -433,7 +433,7 @@ progress {
 }
 
 [type="search"] {
-  // This overrides the extra rounded corners on search inputs in iOS so that my
+  // This overrides the extra rounded corners on search inputs in iOS so that our
   // `.form-control` class can properly style them. Note that this cannot simply
   // be added to `.form-control` as it's not specific enough. For details, see
   // https://github.com/twbs/bootstrap/issues/11586.
