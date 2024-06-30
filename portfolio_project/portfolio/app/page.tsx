@@ -1,5 +1,9 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import About from "./components/About";
+import Qualifications from "./components/Qualifications";
+import Skills from "./components/Skills";
+
 
 export default function Home() {
     return (
@@ -10,8 +14,9 @@ export default function Home() {
           <HeroSection />
         </div>
         </section>
-  
-        
+        <About/>
+        <Qualifications/>
+        <Skills/>
       </main>
     );
   }
