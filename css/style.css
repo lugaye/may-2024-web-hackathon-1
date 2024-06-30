@@ -346,51 +346,11 @@ body {
     align-self: stretch;
 }
 
-/* .skills .section_title {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-self: stretch;
-margin-bottom: 30px;
-}
-
-.skills h4 {
-    display: flex;
-padding: 4px 20px;
-justify-content: center;
-align-items: center;
-border-radius: 12px;
-background: #374151;
-color: #D1D5DB;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-} */
-
-/* .skills .section_desc {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-self: stretch;
-
-} */
-
-/* .skills .section_desc p {
-    color: #D1D5DB;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-margin-bottom: 30px;
-} */
 
 .skills .skill_icons {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 50px;
     flex-wrap: wrap;
     margin: 0 80px 0 80px;
@@ -399,6 +359,26 @@ margin-bottom: 30px;
 .skills .skill_icons .icon_card {
     width: 150px;
     height: 150px;
+    text-align: center;
+    line-height: 4;
+}
+
+.skills i {
+    width: 64px;
+    height: 64px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.skills .skill_icons p {
+    color:#D1D5DB;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 2;
+text-align: center;
+margin-left: 20px;
 }
 
 /* Experiences Section Settings */
@@ -705,11 +685,96 @@ line-height: 2;
 
 
 
-/* Testimonials Section Settings */
+/* Contact Section Settings */
 .contact {
     width: 100%;
     height: calc(560px - 68px);
     background-color: #030712;
+    display: flex;
+    padding: 96px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.contact .contact_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    margin: 40px;
+}
+
+.contact .contact_desc p {
+    max-width: 576px;
+    align-self: stretch;
+    color:#D1D5DB;
+    text-align: center  !important;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.contact .handles {
+    display: flex;
+padding: 0px 32px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 48px;
+align-self: stretch;
+}
+
+.handles .email, .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.handles .email h2, .phone h2 {
+    color:#F9FAFB;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.3;
+    letter-spacing: -0.72px;
+    margin: 0 20px 0 20px;
+}
+
+.platforms h5 {
+    color:#D1D5DB;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 50px 0 15px 0;
+}
+
+.platforms ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    list-style: none;
+}
+
+.platforms ul li a {
+    display: flex;
+align-items: center;
+gap: 4px;
+display: flex;
+padding: 6px;
+line-height: 0.5;
 }
 
 /* Footer Section Settings */
@@ -717,4 +782,28 @@ line-height: 2;
     width: 100%;
     height: 68px;
     background-color: #111827;
+    display: flex;
+    padding: 24px 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footer .copyright {
+    display: flex;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+}
+
+.footer .copyright p {
+    color:#D1D5DB;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 2;
+color:#D1D5DB;
+margin-left: 5px;
 }
