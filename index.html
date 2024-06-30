@@ -5,53 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lewis Andanje Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.0/collection/components/icon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/icon.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
     <link rel="stylesheet" href="static/css/style.css">
     <style>
         .navbar-height {
             height: 64px; /* Adjust this value to match the actual height of your navbar */
         }
-        /* Custom button hover color */
-    .hover\:bg-primary-dark:hover {
-        background-color: #0056b3; /* Adjust this color as needed */
-    }
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+        .hover\:bg-primary-dark:hover {
+            background-color: #0056b3; /* Adjust this color as needed */
         }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-    }
-
-    .animate-fade-in-up {
-        animation: fadeInUp 1s ease-out forwards;
-    }
-
-    .delay-1s {
-        animation-delay: 1s;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
         }
-        to {
-            width: 100%;
+        .delay-1s {
+            animation-delay: 1s;
         }
-    }
-
-    .animate-typing {
-        overflow: hidden;
-        white-space: nowrap;
-        border-right: 0.15em solid orange;
-        animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        .animate-typing {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid orange;
+            animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-montserrat">
@@ -84,8 +78,8 @@
         </div>
     </div>
 
-     <!-- Landing Section -->
-     <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative overflow-hidden pt-16 md:pt-20" style="background-image: url('static/images/programming-background-concept.jpg');">
+    <!-- Landing Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative overflow-hidden pt-16 md:pt-20" style="background-image: url('static/images/programming-background-concept.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center text-center md:text-left z-10">
             <div class="md:w-1/2">
@@ -95,14 +89,13 @@
                 <p class="mt-4 text-xl md:text-2xl animate-fade-in-up delay-1s">Web Developer | Designer | Innovator</p>
             </div>
             <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-                <model-viewer src="static/models/computer.glb" alt="3D Model" auto-rotate camera-controls style="width: 100%; height: 100%;"></model-viewer>
+                <model-viewer src="static/images/office_computer.glb" alt="3D Model" auto-rotate camera-controls style="width: 100%; height: 100%;"></model-viewer>
             </div>
         </div>
         <div class="absolute inset-0 z-0">
             <object type="image/svg+xml" data="motion-graphic.svg" class="w-full h-full"></object>
         </div>
     </section>
-
 
     <!-- About Section -->
     <section id="about" class="pt-16 pb-20">
@@ -301,36 +294,36 @@
         </div>
     </section>
 
-   <!-- Contact Start -->
-<section id="contact" class="bg-gray-100 py-16">
+  <!-- Contact Start -->
+<section id="contact" class="bg-gray-900 py-16 text-white">
     <div class="container mx-auto text-center">
         <div class="relative flex items-center justify-center mb-12">
-            <h1 class="text-6xl md:text-8xl font-bold text-white absolute" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-            <h1 class="text-3xl md:text-5xl font-bold text-primary relative">Contact Me</h1>
+            <h1 class="text-6xl md:text-8xl font-bold text-gray-800 absolute" style="-webkit-text-stroke: 1px #fff;">Contact</h1>
+            <h1 class="text-3xl md:text-5xl font-bold text-yellow-400 relative">Contact Me</h1>
         </div>
         <div class="flex justify-center">
-            <div class="w-full lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
+            <div class="w-full lg:w-2/3 bg-gray-800 p-8 rounded-lg shadow-lg">
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div class="form-group">
-                            <input type="text" id="name" class="form-control p-4 bg-gray-50 border border-gray-300 rounded-md" placeholder="Your Name" required>
+                            <input type="text" id="name" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Your Name" required>
                             <p class="help-block text-red-500 mt-1"></p>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" class="form-control p-4 bg-gray-50 border border-gray-300 rounded-md" placeholder="Your Email" required>
+                            <input type="email" id="email" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Your Email" required>
                             <p class="help-block text-red-500 mt-1"></p>
                         </div>
                     </div>
                     <div class="form-group mb-4">
-                        <input type="text" id="subject" class="form-control p-4 bg-gray-50 border border-gray-300 rounded-md" placeholder="Subject" required>
+                        <input type="text" id="subject" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Subject" required>
                         <p class="help-block text-red-500 mt-1"></p>
                     </div>
                     <div class="form-group mb-6">
-                        <textarea id="message" rows="5" class="form-control py-3 px-4 bg-gray-50 border border-gray-300 rounded-md" placeholder="Message" required></textarea>
+                        <textarea id="message" rows="5" class="form-control py-3 px-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Message" required></textarea>
                         <p class="help-block text-red-500 mt-1"></p>
                     </div>
                     <div>
-                        <button type="submit" class="btn bg-primary text-white px-8 py-3 rounded-md hover:bg-primary-dark">Send Message</button>
+                        <button type="submit" class="btn bg-yellow-400 text-gray-900 px-8 py-3 rounded-md hover:bg-yellow-500">Send Message</button>
                     </div>
                 </form>
             </div>
