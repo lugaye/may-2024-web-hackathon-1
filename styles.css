@@ -1,0 +1,199 @@
+/* General styling for the navbar */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #90EE90 !important;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-brand img.nav-logo-img {
+    width: 50px;
+    height: auto;
+}
+
+/* Custom styling for the home section */
+#home {
+    background: url('images/code1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.home-content {
+    width: 100%;
+}
+#about{
+    background-color: #90EE90;
+}
+/* Custom styling for the contact icons */
+.contact-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Project cards */
+
+/* Add this to your styles.css file */
+
+/* Project card styles */
+.card {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for project cards */
+.card:hover {
+    background-color: #006400; /* Dark green color */
+    transform: scale(1.05); /* Slightly increase the size of the card */
+}
+
+/* Ensure text remains visible against dark background */
+.card .card-title, .card .card-text {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title, .card:hover .card-text {
+    color: #fff; /* Change text color to white on hover */
+}
+
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+.project-card:hover {
+    background-color: #90EE90;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional general styling */
+/* Basic styling for the timeline section */
+#experience {
+    background-color: #90EE90 ; /* Dark green background */
+    color: #ffffff; /* White text color */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline-item {
+    padding: 20px 0;
+    position: relative;
+}
+.timeline-content:hover {
+    background-color: #004d00; /* Dark green */
+    transform: translateY(-5px);
+}
+.timeline-content {
+    position: relative;
+    background-color: #ffffff; /* White background for each timeline item */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: #0a0404; /* Dark green text color */
+}
+
+.timeline-content span {
+    display: block;
+    margin-bottom: 10px;
+    color: black; /* Darker text color */
+}
+
+.timeline-content p {
+    color: black; /* Light text color */
+    line-height: 1.6;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .timeline-content {
+        padding: 15px;
+    }
+}
+#faq .btn-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#faq .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#faq .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#faq .card {
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 0;
+}
+
+#faq .card-body {
+    padding: 1rem 1.25rem;
+}
+
+#faq .card-body ul.list-group {
+    padding-left: 0;
+}
+
+#faq .card-body ul.list-group .list-group-item {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+}
+
+#faq .accordion .card-header .btn {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#faq img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+body {
+    padding-top: 56px; /* Adjust to ensure the navbar doesn't overlap content */
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
