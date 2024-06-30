@@ -54,3 +54,8 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 })
+
+// AOS ANIMATIONS
+document.addEventListener('DOMContentLoaded',()=>{
+    AOS.init();
+});
