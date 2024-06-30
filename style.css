@@ -9,7 +9,9 @@
 
   
   body {
-    margin-top: 100px;
+      {
+    background: beige;
+      margin-top: 100px;
   }
   
   h1,
