@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-top: orange 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+header p {
+    text-align: center;
+    position: relative;
+    color: #333;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;  
+  }
+  
+  @keyframes example {
+    0%   {background-color:orange; left:0px; top:0px;}
+    25%  {background-color:orange; left:200px; top:0px;}
+    50%  {background-color:orange; left:200px; top:200px;}
+    75%  {background-color:orange; left:0px; top:200px;}
+    100% {background-color:orange; left:0px; top:0px;}
+  }
+
+
+header h1:hover{
+    transform: scale(1.2);
+    color: orange;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border: #ccc 1px solid;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
