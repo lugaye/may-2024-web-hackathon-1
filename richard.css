@@ -1,0 +1,153 @@
+/* Basic reset and font setup */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: green; /* Green background color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+header#hero {
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header#hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* General section styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Project section styling */
+#projects .project {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Skills section styling */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    margin: 10px 0;
+}
+
+/* Contact form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Social media icons styling */
+.social-media-icons {
+    margin-top: 10px;
+}
+
+.social-media-icons a {
+    font-size: 24px;
+    margin-right: 15px; /* Adjust spacing between icons */
+}
+
+/* LinkedIn icon color */
+.social-media-icons a[href*="linkedin.com"] i {
+    color: blue;
+}
+
+/* GitHub icon color */
+.social-media-icons a[href*="github.com"] i {
+    color: black;
+}
+
+.social-media-icons a:hover {
+    opacity: 0.7; /* Adjust opacity on hover if desired */
+}
+
+/* Link hover effect */
+a:hover {
+    text-decoration: underline;
+}
