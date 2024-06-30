@@ -101,7 +101,7 @@ ul{
 }
   
 .rounded-circle{
-    width: 60px;
-    height: 40px;
+    justify-content:center;
+   
 }
     
