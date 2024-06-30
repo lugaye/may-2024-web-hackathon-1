@@ -931,3 +931,48 @@ h1, h2, h3, h4, h5, h6{
         height: 300px;
     }
 }
+
+/* CONTACT SECTION */
+
+.contact{
+    margin-top: 70px;
+
+}
+marquee{
+    font-size: 50px;
+    font-weight: bold;
+    color: #F5F5DC;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+
+.contact-info{
+    background-color: #0C5450;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(7, 7, 7, 0.8);
+}
+.contact-detail{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-detail a{
+    font-weight: 100;
+    text-decoration: none;
+    color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition:  all 0.5s ease-in-out;
+}
+.contact-detail a:hover{
+    transform: scale(1.1);
+    font-weight: 300;
+}
