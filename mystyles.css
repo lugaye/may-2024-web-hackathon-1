@@ -1,0 +1,96 @@
+body.main {
+    background-image: url("https://assets.awwwards.com/awards/element/2023/10/651d50497972e515047836.jpg");
+}
+
+h1{
+    font-family: algerian;
+    color: white;
+    font-size: 30px;
+}
+
+div.about {
+    border:2px white;
+    border-radius:30px;
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left:40px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+}
+
+p.name {
+    font-family: algerian;
+    color:whitesmoke;
+    font-size:40px;
+}
+
+p.bio {
+    color:white;
+    font:italic;
+}
+
+div.portfolio {
+    background-color: orange;
+    width: auto;
+    height: auto;
+}
+
+tr.one {
+    background-color: rgb(17, 1, 17);
+    border:1px solid orange;
+    border-radius: 10px;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    color: white;
+    padding-left: 20px;
+}
+
+tr.two {
+    background-color: rgb(17, 1, 17);
+    border:1px solid orange;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+tr.three {
+    background-color: rgb(17, 1, 17);
+    border:1px solid orange;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+td.portfolio {
+    border: 1px;
+    border-radius:10px;
+}
+
+div.exp {
+    border:2px solid black;
+    border-radius: 30px;
+    background-color: black;
+    padding:5px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+td.exp {
+    border: 5px solid orange;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
