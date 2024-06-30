@@ -251,15 +251,15 @@ section {
 
 #skills .skills-list li {
     background: var(--primary-color);
-    color: var(--light-color);
+    color: var(--text-dark);
     padding: 10px 20px;
     border-radius: 5px;
     transition: background var(--transition-speed);
 }
 
-#skills .skills-list li:hover {
+/* #skills .skills-list li:hover {
     background: var(--secondary-color);
-}
+} */
 
 #testimonials .container {
     display: grid;
@@ -419,4 +419,45 @@ footer .social-links a:hover {
 
 #dark-mode-toggle:checked + .toggle-label::after {
     transform: translateX(25px);
+}
+
+/* Existing styles */
+
+.hamburger {
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--light-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary-color);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 8px 4px;
+        border-bottom: 1px solid var(--primary-color);
+        border-radius: 10%;
+    }
 }

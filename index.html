@@ -13,16 +13,11 @@
         <div class="container">
             <h1>Peter Mwiti Muchai</h1>
             <nav>
-                <ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <ul id="nav-links" class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <!-- <li class="dropdown">
-                        <a href="#projects" class="dropbtn">Projects</a>
-                        <div class="dropdown-content">
-                            <a href="#">Project 1</a>
-                            <a href="#">Project 2</a>
-                            <a href="#">Project 3</a>
-                        </div>
-                    </li> -->
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
@@ -46,8 +41,8 @@
 
     <section id="about">
         <div class="container">
+            <br></br> <br><br/>    
             <h2>About Me</h2>
-            <br>
             <p>Hi! I'm a BSc IT student at the University of Embu and learning software development at PLP Academy. I'm a certified web designer from freeCodeCamp and I love learning new things all the time!</p>
             <img src="img/IMG-20231211-WA0012.jpg" alt="My Photo" class="profile-pic">
         </div>
@@ -55,6 +50,7 @@
 
     <section id="projects">
         <div class="container">
+            <br></br> <br><br/> 
             <h2>Some of My Projects</h2>
             <br>
             <div class="projects-grid">
@@ -67,7 +63,7 @@
                 <div class="project-item">
                     <h3>CitySkyline</h3>
                     <img src="img/cityskyline.PNG" alt="cityskyline">
-                    <p>Dived deep into css while building this project form freeCodeCamp program.Fun fact the city changes to day when it passes its max width.</p>
+                    <p>Dived deep into css while building this project form freeCodeCamp program. Fun fact the city changes to day when it passes its max width.</p>
                     <a href="https://mwitipeter.github.io/CitySkyLine/" class="btn">View Project</a>
                 </div>
                 <div class="project-item">
@@ -83,14 +79,15 @@
 
     <section id="skills">
         <div class="container">
+            <br></br> <br><br/> 
             <h2>My Current Skills</h2>
             <br>
             <ul class="skills-list">
                 <li>HTML&CSS</li>
                 <li>JavaScript</li>
+                <li>Git&GitHub</li>
                 <li>Node.js</li>
                 <li>MongoDB</li>
-                <li>MySQL</li>
                 <li>Python</li>
                 <li>Django</li>
                 <!-- Add more skills as needed -->
@@ -100,8 +97,8 @@
 
     <section id="testimonials">
         <div class="container">
+            <br></br> <br><br/> 
             <h2>Testimonials</h2>
-            <br>
             <div class="testimonial-item">
                 <p>"Your work is outstanding. The projects you delivered were above and beyond our expectations."</p>
                 <h3>Liz Rose </h3>
@@ -118,8 +115,8 @@
 
     <section id="contact">
         <div class="container">
+            <br></br> <br><br/> 
             <h2>Let Us Connect</h2>
-            <br>
             <form action="https://formspree.io/f/mldreedo" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -132,7 +129,6 @@
         </div>
     </section>
     
-
     <footer>
         <div class="container">
             <p>&copy; 2024 Peter Mwiti. All rights reserved.</p>
@@ -168,7 +164,11 @@
                 body.classList.remove('dark-mode');
             }
         });
+
+        // Hamburger menu toggle functionality
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
     </script>
-    <a href="#" class="back-to-top">&#8679;</a>
 </body>
 </html>
