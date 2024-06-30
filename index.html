@@ -11,14 +11,15 @@
 
     <title>Portfolio Website</title>
   </head>
-  <body>
+  <body class="bg-biege">
     <!-- Header section starts -->
-    <header class="flex items-center justify-between p-6 bg-gray-100">
-      <div>
+    <header class="flex top-0 z-10 sticky items-center justify-between p-6 bg-gray-100">
+      <div class="">
         <img src="./images/header.png" alt="header img" class="h-12 w-12" />
+        
       </div>
 
-      <nav class="flex flex-1 justify-end space-x-8">
+      <nav class="flex flex-1 justify-center space-x-8">
         <a href="/" class="text-gray-800 hover:text-blue-500">Home</a>
         <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
         <a href="#portfolio" class="text-gray-800 hover:text-blue-500"
@@ -34,18 +35,22 @@
     <main>
       <!-- Introduction Section for the home page -->
       <section>
-        <div>
-          <img src="./images/me.jpg" alt="profile photo" class="w-64 h-72" />
-        </div>
-        <div>
-          <span>Hello</span>
-          <span>I'm<span> Ann </span><br />Web Developer </span>
-          <p>
+        <div class="flex justify-center items-center p-14 space-x-4 ">
+        
+        <div class="">
+          <span class="block font-bold  text-4xl">Hello</span>
+          <span class="block text-xl">I'm<span class="text-green"> Ann </span><br />Web Developer </span>
+          <p class="mt-4 text-lg">
             I am a skilled and passionate web developer with <br />extensive
             expertice in crafting dynamic and adaptive<br />
             websites that priorize user experience and visual appeal
           </p>
         </div>
+        <div>
+          <img src="./images/me.jpeg" alt="profile photo" class="object-cover w-80 h-72" />
+        </div>
+        </div>
+        
       </section>
       <!-- Introduction Section ends-->
 
@@ -109,7 +114,7 @@
             <img
               src="./images/portfolio1.png"
               alt="expense-manager project"
-              class=""
+              class="w-64 h-72"
             />
           </div>
           <!-- Second project -->
@@ -123,7 +128,7 @@
             <img
               src="./images/portfolio2.png"
               alt="survey-form project"
-              class=""
+              class="w-64 h-72"
             />
           </div>
         </div>
