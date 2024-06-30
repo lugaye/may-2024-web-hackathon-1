@@ -932,6 +932,8 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+
+
 /* CONTACT SECTION */
 
 .contact{
@@ -975,4 +977,35 @@ marquee{
 .contact-detail a:hover{
     transform: scale(1.1);
     font-weight: 300;
+}
+
+@media (max-width:480px){
+    marquee{
+        font-size: 40px;
+    }
+    .contact-info{
+        width: 300px ;
+    }
+    .contact-detail a{
+        font-size: 15px;
+    }
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+@media (max-width:480px) {
+    .footer p{
+        font-size:12px;
+    }
+    
 }
