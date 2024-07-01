@@ -203,6 +203,56 @@ h1,h2,h3,h4,h5,h6 {
   visibility: visible;
 }
 
+.ri-file-cloud-line{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-mail-send-fill{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-arrow-left-fill{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-linkedin-box-fill{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-whatsapp-line{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-mail-line{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-instagram-line{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-facebook-box-fill{
+  color:blue;
+  visibility: visible;
+}
+
+.ri-github-fill{
+  color: blue;
+  visibility: visible;
+}
+
+.ri-send-plane-fill{
+  color: blue;
+  visibility: visible;
+}
+
 @media only screen and (min-width: 601px) {
   .container {
     width: 100%;
