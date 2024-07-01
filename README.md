@@ -37,5 +37,9 @@ Code Quality: Cleanliness, organization, and use of best practices.
 
 Happy hacking and we look forward to seeing your amazing portfolio websites!
 
+##  Entity Relation Diagram (ERD)
+This is a simple ERD that portrays one table without any relations to other tables.
+<img width="328" alt="portfolioViewers" src="https://github.com/Kyal0/test/assets/112541562/2d927cb6-57db-4910-a8cf-900d8a74eb54">
+
 
 
