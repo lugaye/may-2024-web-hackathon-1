@@ -67,7 +67,7 @@ const Qualifications: React.FC = () => {
       <section id="qualifications" className="bg-primary py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-lg font-light mb-8">
-            Here's My <br /><span className="text-heading text-3xl font-bold">Qualifications</span>
+            Here&apos;s My <br /><span className="text-heading text-3xl font-bold">Qualifications</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {qualifications.map((qualification) => (

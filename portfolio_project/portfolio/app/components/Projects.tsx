@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-8 px-8 sm:py-14 xl:px-8 bg-primary">
       <div className="flex flex-col items-center">
         <h2 className="text-center text-lg font-light mb-8">
-          What I've built <br />
+          What I&apos;ve built <br />
           <span className="text-heading text-3xl font-bold">My Projects</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

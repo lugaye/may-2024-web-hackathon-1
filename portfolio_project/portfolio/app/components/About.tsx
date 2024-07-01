@@ -17,14 +17,14 @@ const About = () => {
 
           <p className="mt-4 text-gray-700">
             With a certification from the ALX iSWE program, I have honed my
-            skills and gained valuable experience in software development. I'm a
+            skills and gained valuable experience in software development. I&apos;m a
             firm believer in continuous learning, so I actively participate in
             bootcamps and work on personal projects to stay sharp and
             innovative.
           </p>
 
           <p className="mt-4 text-gray-700">
-            When I'm not coding, you'll likely find me with a good book in hand
+            When I&apos;m not coding, you&apos;ll likely find me with a good book in hand
             or attending tech meetups to connect with the developer community
             and stay inspired. This keeps me engaged and fosters a well-rounded
             perspective within the tech industry.

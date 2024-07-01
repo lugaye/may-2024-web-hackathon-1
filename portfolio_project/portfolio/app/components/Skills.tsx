@@ -61,8 +61,8 @@ const Skills: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Skillset</h3>
             <p className="mb-8">
-              Over the past 3 years, I've honed my skills in various areas and
-              I'm constantly striving to learn and grow.
+              Over the past 3 years, I&apos;ve honed my skills in various areas and
+              I&apos;m constantly striving to learn and grow.
             </p>
             <h3 className="text-xl font-semibold mb-4">Technologies</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
