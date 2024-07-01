@@ -1,41 +1,31 @@
-# WEB HACKATHON - 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+##Personal Website
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+This is my personal website project, the website is built using HTML, CSS, and JavaScript for the front-end and Node.js with Express for the back-end.
 
-## Project Requirements
-### Personal Information: 
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+##Getting Started
 
-### Portfolio: 
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+#Prerequisites
 
-### Skills: 
-List your technical and non-technical skills.
+Node.js installed on your machine
+#Installation
 
-### Experience: 
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+Clone the repository:
 
-### Education: 
-Include your educational background.
+git clone https://github.com/Iamouma/personal-website.git cd personal-website
 
-## Submission Guidelines
-Repository Setup: Fork this repository and create a new branch for your project.
-Commit Messages: Use clear and descriptive commit messages to document your progress.
-Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes.
-Deadline: All submissions must be made by monday 1st July 12pm EAT
+Install the dependencies:
 
-## Judging Criteria
-Submissions will be judged based on the following criteria:
+npm install
 
-Design: Visual appeal, creativity, and user interface design.
-Functionality: Responsiveness, performance, and interactivity.
-Content: Clarity, completeness, and presentation of information.
-Originality: Unique features, innovative approaches, and personal touches.
-Code Quality: Cleanliness, organization, and use of best practices.
+#Running the Project Locally
 
-Happy hacking and we look forward to seeing your amazing portfolio websites!
+Start the server:
 
+node index.js
 
+Open your browser and navigate to http://localhost:3001.
+
+##Live site
+
+https://steph-ouma.vercel.app/
 
