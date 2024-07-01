@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    text-align: center;
+    padding: 100px 0;
+    background: url('hero-bg.jpg') no-repeat center center/cover; /* Adjusted background property */
+    height: 100vh; /* Set height to viewport height */
+    color: #fff
+    
+}
+
+#about h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#about .social-links {
+    margin-top: 20px;
+}
+
+#about .social-links a {
+    color: #fff;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+#about .social-links a:hover {
+    color: #3b82f6; /* Change color on hover */
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+.resume-date {
+    min-width: 100px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.resume-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.resume-info h4 {
+    margin-bottom: 5px;
+}
+
+.resume-info p {
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.skill h4 {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 50px; /* Adjust height for progress bar */
+}
+
+.progress-bar {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: width 0.3s;
+    height: 100%; /* Ensure progress bar fills container */
+    display: flex;
+    text-align: center;
+}
+.section-divider {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #3b82f6;
+}
+
+.vertical-line {
+    border-left: 2px solid #ccc; /* Adjust color and thickness as needed */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 1px); /* Adjust position of the vertical line */
+}
+
+.education-content {
+    flex: 1; /* Take remaining space */
+    padding-left: 20px; /* Adjust padding for content spacing */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    clear: both; /* Clear any floats */
+    position: relative; /* Ensure footer doesn't overlap content */
+    margin-top: 20px; /* Add margin to separate from resume section */
+}
