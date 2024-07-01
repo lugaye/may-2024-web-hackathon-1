@@ -1,0 +1,122 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+}
+
+header {
+    background: #444;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px ;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    background: #444;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 3rem;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1.5px solid #f0f0f0;
+    border-radius: 50%;
+    padding: 4px;
+    margin-bottom: 1rem;
+}
+
+.intro, .skills, .contact-info, .projects {
+    margin: 2rem;
+    padding: 2rem;
+    background: #444;
+    border-radius: 10px;
+}
+
+.intro, .skills p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.skills li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; 
+    line-height: 1.5;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info span {
+    margin: 0 1rem; 
+}
+
+.contact-info a {
+    text-decoration: none; 
+    color: #fff; 
+    transition: color 0.3s ease; 
+}
+
+.contact-info a:hover {
+    color:  #1e90ff; 
+}
+
+.contact-info img {
+    width: 30px; 
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+footer {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .intro, .skills, .contact-info {
+        width: 90%; 
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro, .skills, .contact-info {
+        width: 95%; 
+    }
+}
