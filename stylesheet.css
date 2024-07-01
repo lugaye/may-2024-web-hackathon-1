@@ -364,6 +364,16 @@ display: block; /* Ensure the entire image is clickable */
         font-size: medium;
     }
 
+    .experience p {
+        text-align: inherit;
+        font-size: medium;
+    }
+
+    .education p {
+        text-align: inherit;
+        font-size: medium;
+    }
+
     .portfolio {
         margin-top: 30px;
         margin-bottom: 100px;
