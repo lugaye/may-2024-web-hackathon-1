@@ -1,0 +1,177 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Basic styling for the layout */
+body {
+  background: linear-gradient(
+    113.5deg,
+    rgb(234, 234, 234) 22.3%,
+    rgb(201, 234, 211) 56.6%,
+    rgb(255, 180, 189) 90.9%
+  );
+  font-family: "Segoe UI", "San Francisco", Roboto, "Ubuntu", "Noto", sans-serif;
+  line-height: 2.5;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px 0;
+  margin: 50px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.left {
+  border-right: 1px solid #ccc;
+  padding-left: 50px;
+}
+
+/* Styling for intro section */
+.intro {
+  margin-bottom: 20px;
+}
+
+/* Styling for image */
+.content img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+/* Styling for personal info section */
+.personal-info {
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+/* Styling for skills section */
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+.skills h3 {
+  margin-top: 20px;
+}
+
+/* Styling for experience section */
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience .date {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience li {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.experience h3 {
+  margin-top: 10px;
+}
+
+/* Styling for education section */
+.education {
+  margin-bottom: 30px;
+}
+
+.education p {
+  margin-bottom: 5px;
+}
+
+.education h3 {
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    border: none;
+    padding: 20px 0;
+  }
+
+  .right {
+    border-top: 1px solid #ccc;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
