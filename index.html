@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Andanje Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/icon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .navbar-height {
+            height: 64px; /* Adjust this value to match the actual height of your navbar */
+        }
+        .hover\:bg-primary-dark:hover {
+            background-color: #0056b3; /* Adjust this color as needed */
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .delay-1s {
+            animation-delay: 1s;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        .animate-typing {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid orange;
+            animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-montserrat">
+
+    <!-- Navbar -->
+    <header class="fixed w-full bg-gray-800 shadow-lg z-50 navbar-height">
+        <nav class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Lewis Andanje</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+            <div class="md:hidden cursor-pointer" id="burger-menu">
+                <div class="w-6 h-1 bg-white mb-1"></div>
+                <div class="w-6 h-1 bg-white mb-1"></div>
+                <div class="w-6 h-1 bg-white"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-90 z-40" id="mobile-menu">
+        <div class="flex flex-col items-center justify-center h-full space-y-6">
+            <a href="#about" class="text-2xl hover:text-yellow-400" onclick="toggleMenu()">About</a>
+            <a href="#skills" class="text-2xl hover:text-yellow-400" onclick="toggleMenu()">Skills</a>
+            <a href="#projects" class="text-2xl hover:text-yellow-400" onclick="toggleMenu()">Projects</a>
+            <a href="#contact" class="text-2xl hover:text-yellow-400" onclick="toggleMenu()">Contact</a>
+        </div>
+    </div>
+
+    <!-- Landing Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative overflow-hidden pt-16 md:pt-20" style="background-image: url('static/images/programming-background-concept.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center text-center md:text-left z-10">
+            <div class="md:w-full">
+                <h1 class="text-5xl md:text-7xl font-bold overflow-hidden">
+                    <span class="inline-block animate-typing animation-delay">Welcome to My Portfolio</span>
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl animate-fade-in-up delay-1s">Web Developer | Designer | Innovator</p>
+            </div>
+        </div>
+        <div class="absolute inset-0 z-0">
+            <object type="image/svg+xml" data="motion-graphic.svg" class="w-full h-full"></object>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-16 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full lg:w-10/12">
+                    <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                        <div class="flex flex-wrap">
+                            <!-- Image and Info -->
+                            <div class="w-full md:w-1/2 p-4">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full md:w-5/12">
+                                        <div class="mb-4">
+                                            <img src="static/images/lewip.jpg" class="rounded shadow-lg" alt="Lewis Andanje">
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-7/12">
+                                        <div class="p-4">
+                                            <p class="mb-2"><span class="font-semibold">Name:</span> <span>Lewis Andanje</span></p>
+                                            <p class="mb-2"><span class="font-semibold">Profile:</span> <span>Cyber Security Expert</span></p>
+                                            <p class="mb-2"><span class="font-semibold">Email:</span> <span>lewisandanje3@gmail.com</span></p>
+                                            <p class="mb-2"><span class="font-semibold">Phone:</span> <span>+254740024089</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Skills -->
+                                <div class="p-4">
+                                    <h3 class="text-lg font-semibold mb-4">Skills</h3>
+                                    <div>
+                                        <p class="mb-1">HTML <span class="float-right">85%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%;"></div>
+                                        </div>
+                                        <p class="mb-1">CSS <span class="float-right">70%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%;"></div>
+                                        </div>
+                                        <p class="mb-1">Python Flask <span class="float-right">70%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%;"></div>
+                                        </div>
+                                        <p class="mb-1">JavaScript <span class="float-right">90%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%;"></div>
+                                        </div>
+                                        <p class="mb-1">Java <span class="float-right">40%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 40%;"></div>
+                                        </div>
+                                        <p class="mb-1">Adobe Photoshop <span class="float-right">80%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%;"></div>
+                                        </div>
+                                        <p class="mb-1">Django <span class="float-right">30%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 30%;"></div>
+                                        </div>
+                                        <p class="mb-1">SQL <span class="float-right">50%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 50%;"></div>
+                                        </div>
+                                        <p class="mb-1">Bash Scripting <span class="float-right">40%</span></p>
+                                        <div class="w-full bg-gray-300 rounded-full h-2 mb-2">
+                                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 40%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- About Me -->
+                            <div class="w-full md:w-1/2 p-4">
+                                <div class="md:pt-4">
+                                    <h3 class="text-lg font-semibold mb-4">About Me</h3>
+                                    <p class="leading-relaxed mb-4">
+                                        Hello, I'm Lewis Andanje, a computer science student who is deeply passionate about coding and embraces creative thinking. I find joy in navigating the complexities of computer systems and thrive on challenges. Working independently comes naturally to me, and I'm self-motivated, always seeking opportunities to expand my knowledge.
+                                    </p>
+                                    <p class="leading-relaxed mb-4">
+                                        My enthusiasm is particularly drawn to the dynamic realm of cybersecurity. I love delving into this field, continuously learning and exploring to stay ahead of technological advancements. I see cybersecurity not just as a passion but as a responsibility to contribute to the secure digital landscape.
+                                    </p>
+                                    <p class="leading-relaxed mb-4">
+                                        As a student, I leverage my time to delve into various aspects of programming, software development, and cybersecurity. I find fulfillment in tackling projects autonomously, bringing a disciplined and focused approach to my work.
+                                    </p>
+                                    <p class="leading-relaxed mb-4">
+                                        In a world driven by technology, I see endless possibilities to innovate and make a meaningful impact. I'm excited about the journey ahead and the opportunities to leave my mark in the world of computer science.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-700">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Skills</h2>
+            <div class="flex flex-wrap justify-center space-x-4">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Django</div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Services Section -->
+     <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-semibold mb-2">Services</h3>
+                <p class="text-gray-400">"Empowering Innovation Through Tech Solutions."</p>
+                <div class="h-1 mx-auto bg-gray-800 w-24 mt-3 rounded"></div>
+            </div>
+            <div class="flex flex-wrap justify-center -mx-4">
+                <!-- Service Item 1 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion ion-md-monitor text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Web Design</h2>
+                        <p class="text-sm text-gray-400">Designing, coding, and optimizing websites for seamless user experiences and functionality.</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion-code-working text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Web Development</h2>
+                        <p class="text-sm text-gray-400">With the knowledge of front-end development, I am able to create interactive webpages according to client specifications.</p>
+                    </div>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion-camera text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Photography</h2>
+                        <p class="text-sm text-gray-400">For any outdoor events and weekends, I delve into photography, dynamically manipulating tools to produce high-quality photos.</p>
+                    </div>
+                </div>
+                <!-- Service Item 4 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion-android-phone-portrait text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Responsive Design</h2>
+                        <p class="text-sm text-gray-400">Crafting web layouts that adapt beautifully to diverse devices and screen sizes.</p>
+                    </div>
+                </div>
+                <!-- Service Item 5 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion-paintbrush text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Graphic Design</h2>
+                        <p class="text-sm text-gray-400">Passionate about innovation and art, I create high-end graphical images based on client preferences.</p>
+                    </div>
+                </div>
+                <!-- Service Item 6 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                        <span class="inline-block p-3 bg-gray-700 rounded-full mb-4">
+                            <i class="ion ion-md-stats-bars text-2xl text-gray-400"></i>
+                        </span>
+                        <h2 class="text-xl font-semibold mb-2">Marketing/Accounting Services</h2>
+                        <p class="text-sm text-gray-400">Utilizing business knowledge to manipulate data and manage accounting books efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Portfolio Section -->
+<div id="portfolio" class="vg-page page-portfolio py-16 bg-gray-900 text-white">
+    <div class="container mx-auto">
+        <div class="text-center">
+            <div class="badge-subhead bg-yellow-500 text-white px-4 py-2 inline-block rounded-full mb-4">Portfolio</div>
+        </div>
+        <h1 class="text-center text-4xl font-light mb-8">See my work</h1>
+        <div class="filterable-button flex justify-center gap-4 mb-12">
+            <button class="btn-theme-outline selected" data-filter="*">All</button>
+            <button class="btn-theme-outline" data-filter=".apps">Apps</button>
+            <button class="btn-theme-outline" data-filter=".template">Template</button>
+            <button class="btn-theme-outline" data-filter=".ios">IOS</button>
+            <button class="btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+            <button class="btn-theme-outline" data-filter=".graphic">Graphic</button>
+            <button class="btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+        </div>
+
+        <div class="gridder grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid-item apps transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/lewis-andy/Online-Grocery-Store-master" target="_blank">
+                    <img src="static/images/flat-lay-bunch-fresh-provisions-donation.jpg" alt="Mobile Travel App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Grocery Store Master</h5>
+                        <p class="text-white">Organic Products, Discovery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item template wireframes transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/Levi-LMN/SwiftPass" target="_blank">
+                    <img src="static/images/DJV JUL 2353-08.jpg" alt="Music App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Swiftpass</h5>
+                        <p class="text-white">Public transport systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item apps ios transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://taskyy.pythonanywhere.com/" target="_blank">
+                    <img src="static/images/Sandy_Tech-22_Single-09.jpg" alt="Gaming Dashboard" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Tasky Dashboard</h5>
+                        <p class="text-white">Task management, Tracking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item graphic ui-ux transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://lewisandanje.pythonanywhere.com/" target="_blank">
+                    <img src="static/images/v226-ning-03-religion-a-job101.jpg" alt="Drugs Delivery App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Church Application</h5>
+                        <p class="text-white">Extensive fellowship</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item apps ios transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/lewis-andy/SimbaStay" target="_blank">
+                    <img src="static/images/home-icon-sign-right-side-white-background.jpg" alt="Musics Discover" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Simba Stay</h5>
+                        <p class="text-white">Air BNB, Dashboard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item graphic ui-ux wireframes transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://loanapi.kedevs.com" target="_blank">
+                    <img src="static/images/6146.jpg" alt="Game Streaming" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Loan Application</h5>
+                        <p class="text-white">Finance, Banking</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End gridder -->
+        <div class="text-center mt-12">
+            <a href="javascript:void(0)" class="btn-theme bg-yellow-500 text-white px-8 py-3 rounded-full transition duration-500 transform hover:scale-105">Load More</a>
+        </div>
+    </div>
+</div> <!-- End Portfolio page -->
+
+
+  <!-- Contact Start -->
+<section id="contact" class="bg-gray-900 py-16 text-white">
+    <div class="container mx-auto text-center">
+        <div class="relative flex items-center justify-center mb-12">
+            <h1 class="text-6xl md:text-8xl font-bold text-gray-800 absolute" style="-webkit-text-stroke: 1px #fff;">Contact</h1>
+            <h1 class="text-3xl md:text-5xl font-bold text-yellow-400 relative">Contact Me</h1>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-full lg:w-2/3 bg-gray-800 p-8 rounded-lg shadow-lg">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Your Name" required>
+                            <p class="help-block text-red-500 mt-1"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Your Email" required>
+                            <p class="help-block text-red-500 mt-1"></p>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" id="subject" class="form-control p-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Subject" required>
+                        <p class="help-block text-red-500 mt-1"></p>
+                    </div>
+                    <div class="form-group mb-6">
+                        <textarea id="message" rows="5" class="form-control py-3 px-4 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400" placeholder="Message" required></textarea>
+                        <p class="help-block text-red-500 mt-1"></p>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn bg-yellow-400 text-gray-900 px-8 py-3 rounded-md hover:bg-yellow-500">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact End -->
+
+
+    <!-- Footer Start -->
+<footer class="bg-primary text-white py-10">
+    <div class="container mx-auto text-center">
+        <div class="flex justify-center mb-4 space-x-2">
+            <a class="btn bg-white text-primary rounded-full p-2 hover:bg-gray-200" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn bg-white text-primary rounded-full p-2 hover:bg-gray-200" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn bg-white text-primary rounded-full p-2 hover:bg-gray-200" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn bg-white text-primary rounded-full p-2 hover:bg-gray-200" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="flex justify-center mb-3 space-x-4">
+            <a class="text-white hover:underline" href="#">Privacy</a>
+            <span>|</span>
+            <a class="text-white hover:underline" href="#">Terms</a>
+            <span>|</span>
+            <a class="text-white hover:underline" href="#">FAQs</a>
+            <span>|</span>
+            <a class="text-white hover:underline" href="#">Help</a>
+        </div>
+        <p class="m-0">&copy; <a class="text-white font-bold" href="#">Lewis.com</a>. All Rights Reserved. Designed by <a class="text-white font-bold" href="">Lewis Andanje Anyanje</a></p>
+    </div>
+</footer>
+<!-- Footer End -->
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
