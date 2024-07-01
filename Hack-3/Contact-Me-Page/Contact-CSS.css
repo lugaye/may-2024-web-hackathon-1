@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    background-color:  #F5F5DC;;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left, .right {
+    width: 48%;
+}
+
+.left {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+}
+
+.profile {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer .links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+footer .links a:hover {
+    transform: translateY(-5px);
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+
+footer .social-media a:hover {
+    color: #F5F5DC;
+    transform: translateY(5px);
+}
