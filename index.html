@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Phillip Lengwe: Welcome to my Portfolio">
+    <meta name="keywords" content="portfolio, web developer, projects, skills">
+    <title>My Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Phillip Lengwe - Portfolio</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center">About Me</h2>
+                <p class="text-center">Aspiring Software Developer | Manual and Accessibility QA | Monitoring and Evaluation Assistant</p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Projects</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mb-4" data-toggle="modal" data-target="#projectModal1">
+                            <div class="card-body">
+                                <h5 class="card-title">Showmax 2.0 Africa Project</h5>
+                                <p class="card-text">I have been testing the Showmax android, WebOS and Vidaa versions before they're released on App Stores</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mb-4" data-toggle="modal" data-target="#projectModal2">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Chatbot </h5>
+                                <p class="card-text">Developed a GUI AI Chatbot using the Tk GUI toolkit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card mb-4" data-toggle="modal" data-target="#projectModal3">
+                            <div class="card-body">
+                                <h5 class="card-title">NCD data collector</h5>
+                                <p class="card-text">Developed a Non-communicable diseases data collector using the Tk GUI toolkit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel1">Showmax Africa Project</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>I am part of the ongoing bi-weekly or quarterly testing for the Showmax Africa streaming application that is similar to Netflix. 
+                            i test the functionalities, accessibility, UI and payments for all the new releases </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel2">Windows GUI AI Chatbot</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Built an AI chatbot and it quickly helps a user conduct their prompts with ease away from using web browsers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel3">NCD data collector</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Developed a Non-communicable diseases data collector using the Tk GUI toolkit. This was designed to help and ease with reporting,
+                             it enabled the user to quickly filter out data once exported to excel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Skills</h2>
+                <p class="text-center">Cybersecurity, Manual Web and Native App Tester, FortGate 7.4 Operator, 
+                    Full Stack Web Programming (Django), System Administration, Strong troubleshooting, 
+                    Knowledge of Operating Systems, Knowledge of Infrastructure Service, Knowledge of Networking Services, 
+                    IT Security Knowledge, Google Sheets, Microsoft Excel, Word Processing Software, Data Entry, Health Information 
+                    Systems trainer, Software & UX Tester.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Professional Experience</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">M & E Assistant</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Ministry of Health | 2020 - TODATE</h6>
+                                <p class="card-text">Duties and Responsibilities
+                                    <ul>
+                                        <li>Maintaining and troubleshooting the facility health system and network</li>
+                                        <li>Conducting monthly and quarterly data quality analysis (DQA)</li>
+                                        <li>Data entry for both MoH and MORE-ZM DHIS2 systems</li>
+                                        <li>Technical support and assistance to the clinical team and other partners.</li>
+                                        <li>Collection, verification and aggregation of PEPFAR data </li>
+                                        <li>Support in the review and checking of data generated being in line with the M&E reporting requirements.</li>
+                                        <li>Active participation in aggregation and reporting of PEPFAR/MER indicators</li>
+                                        <li>Conducting data quality checks and audits in ensuring reliable data and reports</li>
+                                        <li>Routine analysis of site data and provide feedback to site staff.</li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Associate</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">CIDRZ | 2019 </h6>
+                                <p class="card-text"> Duties and Responsibilities
+                                    <ul>
+                                        <li>Entered all patient interaction data into the patient tracking system (SmartCare) and the DHIS.</li>
+                                        <li>Supervised a team of Data Associates to enter data and complete the set daily targets</li>
+                                        <li>Assisted facility staff with reports and ad hoc data requests</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Educational Background</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">BSc ICT</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">RockView University | 2021 - 2025</h6>
+                                <p class="card-text">In my final year for a Degree in ICT, this program has a number of courses ranging from Software engineering to Web Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Diploma in Computer Studies</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Evelyn Hone College | 2013 - 2016</h6>
+                                <p class="card-text">Covered a number of courses such as Entrepreneurship, Communication Skills, Computer Architecture and Programming, Systems Analysis and Design
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Professional Certificates</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Google IT Support</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Coursera | 2024</h6>
+                                <p class="card-text"> Courses Covered
+
+                                    <ul>
+                                        <li>The Bits and Bytes of Computer Networking</li>
+                                        <li>IT Security: Defense against the digital dark arts</li>
+                                        <li>Technical Support Fundamentals</li>
+                                        <li>Operating Systems and You: Becoming a Power User</li>
+                                        <li>System Administration and IT Infrastructure Services</li>
+                                    </ul>                            
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Fortinet Certified Associate Cybersecurity</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Fortinet | 2024</h6>
+                                <p class="card-text"> Courses Covered
+
+                                    <ul>
+                                        <li>Introduction to Cybersecurity</li>
+                                        <li>The Threat Landscape</li>
+                                        <li>Social Engineering</li>
+                                        <li>Malware</li>
+                                    </ul>                            
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <p class="text-center">You can reach me at: <strong>inyemu@gmail.com</strong></p>
+                        <div class="text-center">
+                            <a href="https://www.linkedin.com/in/zm-85368b263/" target="_blank" class="btn btn-primary mx-1">LinkedIn</a>
+                            <a href="https://github.com/lipco4e" target="_blank" class="btn btn-dark mx-1">GitHub</a>
+                            <a href="https://www.credly.com/users/phillip-lengwe/badges" target="_blank" class="btn btn-primary mx-1">Credly</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 John the Repo</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
