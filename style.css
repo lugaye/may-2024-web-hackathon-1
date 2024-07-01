@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: montserrat;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 20px;
+    background: #f4f5f7;
+}
+/*nav bar start*/
+.container{
+    width: 100%;
+    /*CSS of smooth scroll*/
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: #192631;
+    height: 70px;
+    width: 100%;
+}  
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 70px;
+    padding-left: 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 3px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul img{
+    height: 50px;
+    display: none;
+}
+a{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #74baf0;
+    transition: .5s;
+}
+a:hover,a.active{
+        background: none;
+        color: #94cbf5;
+    }
+.checkbtn{
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+@media (max-width:675px){
+    .logo{
+        font-size: 22px;
+        padding-left: 25px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 580px){
+    .logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6884a0;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul img{
+        display: block;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #94cbf5;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/*nav bar end*/
+/* section start */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+@media (max-width: 800px){
+    section{
+        height: 140vh;
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    section{
+        height: 170vh;
+        display: block;
+    }
+}
+section h1{
+    font-size: 1.5rem;
+}
+section h2{
+    margin-top: 15%;
+}
+section p{
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+/* home section start */
+section#home{
+    background: url(Nadia.JPG) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+section#home .overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+    color: #d6d7d8;
+    padding: 3%;
+}
+section#home h1{
+    font-weight: bold;
+    font-size: 100px
+}
+/* about section start */
+section#about{
+    background: #f4f5f7;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+section#about{
+    background: #f4f5f7;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+section#about h1{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+@media (max-width: 800px){
+    section#about{
+        height: 140vh;
+    }
+}
+@media (max-width: 680px){
+    section#about{
+        height: 150vh;
+        overflow-y: scroll;
+    }
+}
+@media (max-width: 580px){
+    section#about{
+        height: 170vh;
+    }
+}
+
+@media (max-width: 745px){
+    #about #divisions{
+        
+        overflow-x:scroll;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+/* contact section start */
+section#skills{
+    background: white;
+    
+}
+
+
+section#skills .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#skills .skills-list li {
+    background: rgb(146, 146, 237);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background var(--transition-speed);
+}
+
+#skills .skills-list li:hover {
+    background: beige;
+}
+section#contact input{
+    height: 30px;
+    border-radius: 5px;
+}
+section#contact h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+section#contact h3{
+    text-align: left;
+}
+section#contact p{
+    /* margin-top: 10px; */
+}
+section#contact #input-box {
+    width: 100%;
+}
+section#contact #input-box label {
+    color: #000;
+}
+section#contact :where(#input-box input) {
+    height: 60px;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+section#contact :where(#message input) {
+    height: 90px;
+    width: 100%;
+}
+section#contact button{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+section#contact button:hover{
+    background-color: #94cbf5;
+    cursor: pointer;
+}
+/* contact section end */
+/* partners section start */
+section#partners{
+    background: #f4f5f7;
+}
+.cards{
+    display: flex;
+    text-align: center;
+} 
+.cards p{
+    font-size: 1rem;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.header{
+    transform: translate(0,-3cm);
+    padding: 30px;
+}
+
+.cards button{
+    padding: 10px;
+}
+.card1{
+    border: 1px solid grey;
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px;
+    transition: transform .5s;
+}
+
+.card1:hover{
+    transform: scale(1.3);
+}
+
+.card2:hover{
+    transform: scale(1.3);
+}
+
+.card3:hover{
+    transform: scale(1.3);
+}
+
+.card2{
+    border: 1px solid grey;
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px;
+    transition: transform .5s;
+}
+
+.card3{
+    border: 1px solid grey;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px;
+    transition: transform .5s;
+}
+
+.card3 button{
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgb(146, 146, 237);
+}
+
+.card3 button:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.card2 button:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.card1 button:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.card2 button{
+    border-radius: 15px;
+    background-color: rgb(146, 146, 237);
+}
+
+.card1 button{
+    border-radius: 15px;
+    background-color: rgb(146, 146, 237);
+}
+
+.img2{
+    height: 150px;
+    width: 180px;
+    
+}
+
+.img{
+height: 150px;
+}
+/* footer style */
+footer{
+  margin-top: 70px;
+   margin-bottom: 30px;
+   padding: auto;
+   background: aliceblue;
+   opacity: 50%;
+}
+footer .social{
+   padding-bottom: 25px;
+}
+footer ul{
+   margin-top: 2px;
+   padding: 0;
+   list-style: none;
+   font-size: 18px;
+   line-height: 1.6;
+   text-align: center;
+}
+footer ul a{
+   color: inherit;
+   text-decoration: none;
+}
+footer ul li{
+   display: inline-block;
+   padding: 0 15px;
+}
+footer ul li a:hover{
+   opacity: 70%;
+}
