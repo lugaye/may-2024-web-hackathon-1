@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(WhatsApp\ Image\ 2024-07-01\ at\ 03.47.26.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#items {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.164);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    width: calc(33% - 2rem);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 1rem 0;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.project a:hover {
+    background: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #b3b2b2;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.job, .education-item {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact {
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+
+#name {
+    display: inline-block;
+    animation: fadeSlide 5s ease-out forwards;
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        color: darkolivegreen;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color:darkgreen;
+        font-size: larger;
+        font-weight: bold;
+    }
+}
+
+/* Fade-in animation for sections */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hey {
+    font-size: 25px;
+}
+
+ /* Media Queries for Responsive Design */
+ @media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .project {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+/* Animation for name */
+/* 
+.name-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name-part {
+    display: inline-block;
+    animation: slide 3s ease-out forwards;
+    position: relative;
+}
+
+.name-left {
+    animation-delay: 0s;
+}
+
+.name-middle {
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.name-right {
+    animation-delay: 2s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    33% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    66% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0%, 33% {
+        opacity: 0;
+    }
+    34%, 100% {
+        opacity: 1;
+    }
+}
+
+.name-middle {
+    animation: appear 10s ease-out forwards;
+} */
