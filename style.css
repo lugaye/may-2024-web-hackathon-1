@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --main--backG-color: #191919;
+    --sec--backG-color: #101010;
+    --main-color: #9B6616;
+    --text-color: #fff;
+    --second-color: #e4e4e4;
+    --other-color: #c6c9d8bf;
+
+    --h1-font: 7rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+
+}
+
+body {
+    background-color: var(--main--backG-color);
+    color: var(--text-color);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 28px 11%;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.navlist{
+    display: flex;
+    gap: 40px;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all ease .4s;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+main{
+    padding: 120px 10% 100px;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url(./images/home-image.png);
+    background-size: cover;
+    background-position: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-text h3{
+    color: var(--second-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+.main-text h1{
+    font-family: "Dosis", sans-serif;
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.main-text h4{
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600; 
+    margin-bottom: 3rem;
+}
+.btn{
+    display: inline-block;
+    padding: 16px 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease .5s;
+}
+
+.btn:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
