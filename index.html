@@ -20,7 +20,7 @@
   <body>
     <!-- The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients. -->
     <header id="main-header">
-      <a id="dev-title"><span><</span>software developer<span>/></span></a>
+      <a href="#" id="dev-title"><span><</span>software developer<span>/></span></a>
       <nav>
         <ul>
           <li><a href="#portfolio">portfolio</a></li>
@@ -75,8 +75,8 @@
             <p>
               Greetings! I am a dedicated and results-driven software engineer
               with a passion for crafting efficient, user-friendly solutions to
-              complex problems.I specialize in Full-Stack Web
-              Development,Graphic Designing and Cloud Computing , and I am
+              complex problems.I specialize in <span class="speciality">Full-Stack Web Development</span>
+              ,<span class="speciality">Graphic Designing</span> and <span class="speciality">Cloud Computing</span> , and I am
               committed to continuous learning and innovation. My work centers
               around creating software that not only meets technical standards
               but also enhances the overall user experience.
@@ -117,7 +117,7 @@
                 <li>
                   <p>
                     The county government ICT department's website will serve as
-                    a comprehensive platform for the public, attachees,
+                    a comprehensive platform for the public, attachees, county
                     government employees, and ICT staff.
                   </p>
                 </li>
@@ -249,8 +249,8 @@
               <li class="roles">
                 <ul>
                   <li><h4>roles:</h4></li>
-                  <li><p>Managed Media platforms.</p></li>
-                  <li><p>Built a website for the association.</p></li>
+                  <li><p>Manage Media platforms.</p></li>
+                  <li><p>Build a website for the association.</p></li>
                 </ul>
               </li>
             </ul>
@@ -264,7 +264,7 @@
                   <li class="roles">
                     <ul>
                       <li><h4>roles:</h4></li>
-                      <li><p>To provide user support.</p></li>
+                      <li><p>Provide user support.</p></li>
                       <li>
                         <p>
                           Improve interactions and to promote efficient and
@@ -307,22 +307,18 @@
           <form id="form" action="" method="post">
             <div id="form-details">
               <label for="first-name">enter your first name</label>
-              <input type="text" id="first-name" name="first-name" />
+              <input type="text" id="first-name" name="first-name" required maxlength="100"/>
 
               <label for="second-name">enter your second name</label>
-              <input type="text" id="second-name" name="second-name" />
+              <input type="text" id="second-name" name="second-name" required maxlength="100"/>
 
               <label for="email">enter your email</label>
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" required maxlength="100"/>
 
               <label for="message">enter your message</label>
-              <textarea name="message" id="message"></textarea>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea required>
             </div>
-
-            <div id="form-buttons">
-              <button type="button" class="form-button-element">cancel</button>
-              <button type="submit" class="form-button-element">submit</button>
-            </div>
+            <button type="submit" class="form-button-element">submit</button>
           </form>
         </li>
 

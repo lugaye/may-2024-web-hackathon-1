@@ -14,6 +14,10 @@ body {
   text-transform: uppercase;
   padding: 0 5%;
   margin: 0;
+  position: fixed;
+  width: 95%;
+  top: 0;
+  left: 0;
 }
 
 #dev-title {
@@ -26,6 +30,7 @@ body {
   margin: 1.25rem 1.25rem;
   color: rgb(205, 226, 15);
   cursor: pointer;
+  text-decoration: none;
 }
 
 #main-header ul {
@@ -73,7 +78,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 4rem;
-  padding: 0 5%;
+  padding: 0 1%;
 }
 
 #side-drawer ul {
@@ -113,8 +118,8 @@ body {
 
 #home {
   background-color: rgb(242, 245, 245);
-  margin: 0 0 1.25rem 0;
-  padding: 1.25rem 0;
+  margin: 2.25rem 0;
+  padding: 3.25rem 0;
 }
 
 h2 {
@@ -126,6 +131,12 @@ h2 {
   margin: 0 0 1.25rem 0;
 }
 
+h3 {
+  font-size: 1.2rem;
+  font-family: serif;
+  font-weight: 600;
+}
+
 #dev {
   display: flex;
   justify-content: center;
@@ -135,7 +146,7 @@ h2 {
   width: 25rem;
   height: 25rem;
   border: 2px solid rgb(240, 235, 240);
-  padding: 20px 20px;
+  padding: 1.25rem 1.25rem;
 }
 
 #dev-details {
@@ -144,9 +155,8 @@ h2 {
   width: 41rem;
 }
 
-#dev-details h3 {
-  /* text-transform: capitalize; */
-  font-family: serif;
+.speciality {
+  border-bottom: 2px solid  rgb(24, 49, 194);
 }
 
 #social-media {
@@ -296,8 +306,6 @@ h2 {
   margin: auto;
 }
 
-/* #experience ul li {} */
-
 .experience-details {
   margin: 0 0 1.25rem 0;
 }
@@ -308,7 +316,6 @@ h2 {
 .experience-details ul li h3 {
   text-transform: capitalize;
   margin: 0 auto;
-  /* align-items: center; */
 }
 
 .experience-details ul li p {
@@ -321,7 +328,7 @@ h2 {
 
 .roles ul li h4 {
   text-transform: capitalize;
-  margin: 0.75rem 0 0.75rem 0;
+  margin: 0;
 }
 
 #education {
@@ -339,8 +346,6 @@ h2 {
   padding: 0;
   margin: 0 auto;
 }
-
-/* #education ol li {} */
 
 .duration {
   font-weight: 700;
@@ -383,12 +388,18 @@ footer ul li {
 
 #form-details input {
   width: 18.75rem;
+  height: 1.5rem;
   margin: 0 0 1.25rem 0;
+  background-color: rgb(242, 245, 245);
+  border: none;
+  border-radius: 4px;
 }
 
-#form-buttons {
-  margin: 10px auto 0 auto;
-  width: 15.75rem;
+#form-details textarea {
+  background-color: rgb(242, 245, 245);
+  border: none;
+  border-radius: 4px;
+  resize: none;
 }
 
 .form-button-element {
@@ -428,12 +439,17 @@ footer ul li p {
 }
 
 @media (max-width: 48rem) {
+  #main-header {
+    padding: 0 3%;
+  }
+
   #main-header nav {
     display: none;
   }
 
   #dev-title {
     font-size: 1rem;
+    margin: 0;
   }
 
   .menu-btn {
@@ -441,6 +457,11 @@ footer ul li p {
   }
 
   h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+  }
+
+  h3 {
     font-size: 1rem;
   }
 
@@ -471,18 +492,58 @@ footer ul li p {
     margin: 20px 0;
   }
 
-  
+  .portfolio-details ul li img {
+    width: 10rem;
+    height: 10rem;
+  }
+
   .roles ul {
-      margin: 0;
-      width: 25rem;
-    }
-  
+    margin: 0;
+    width: 25rem;
+  }
 
   .roles ul li {
     padding: 10px 0;
     margin: 0 20px;
-    width: 80%;
   }
 }
 @media (max-width: 30rem) {
+  #main-header {
+    padding: 0 2%;
+    width: 96%;
+  }
+
+  .menu-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #dev img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  #experience ul {
+    width: 18rem;
+  }
+
+  .roles ul {
+    width: 16rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .roles ul li {
+    width: 15rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .roles ul li p{
+    margin: 5px 0 10px 0;
+  }
+
+  #education ol {
+    width: 18rem;
+  }
 }
