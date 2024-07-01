@@ -1,0 +1,96 @@
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+    list-style: none;
+color: black;
+background-color: rgb(241, 226, 2);
+}
+
+
+img{
+    border-radius: 150px;
+    align-items: center;
+    float: right;
+    
+    
+}
+body{
+    background-color: rgb(7, 6, 7);
+}
+inline{
+    display: inline}
+button{
+    border: 10px;
+    border-radius: 10px;
+    
+}
+.card{
+
+    background-color:none;
+    max-width: 30%;
+    color: white;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f1da06;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 50%;
+    max-width: 60%;
+}
+.container{
+position: relative;
+width: 150px;
+height: 150px;
+}
+.circular-progress{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: conic-gradient(#140f13 0deg 252deg, /*change this value (252deg) to control the progress*/
+#cadcff 252deg 360deg /*change this value (252deg) to control the progress */
+);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+section .circular-progress{
+    
+}
+H2{
+    color: white;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
+.footer {
+    bac
+}
+  
