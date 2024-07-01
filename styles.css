@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background: rgba(0, 0, 0, 0.8); */
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+section#home {
+    position: relative;
+    height: 90vh;
+    background-image: url('images/PropIc.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.text-container {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+section#about, section#projects, section#contact, section#skills {
+    /* background: #6c757d; */
+    text-align: center;
+}
+
+section#about h2, section#projects h2, section#contact h2, section#skills h2 {
+    margin-bottom: 20px;
+}
+
+.project, .skill {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.project img, .skill img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skill h3 {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background: #4c74af;
+    height: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .text-container {
+        padding: 20px;
+    }
+    section {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        padding: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .text-container {
+        padding: 10px;
+    }
+    section {
+        padding: 60px 20px;
+    }
+}
