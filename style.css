@@ -1,0 +1,140 @@
+/* General styles */
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+/* Header styles */
+header {
+  background-color: #2c3e50; 
+  color: #ecf0f1; 
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #ecf0f1; 
+  margin-bottom: 10px;
+}
+
+header h2 {
+  color: #3498db; 
+}
+.about {
+  margin-bottom: 2rem; /* Space between this and the next section */
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-image {
+  width: 200px;
+  margin-right: 1rem;
+}
+
+.about-text {
+  flex: 1; /* Takes up remaining space */
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+h2 {
+  color: #3498db;
+}
+
+/* Main content styles */
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* List styles */
+ul,
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+/* Footer styles */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.icon {
+  font-family: "FontAwesome";
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-brands-400.woff2")
+    format("woff2");
+}
+
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  color: #ecf0f1;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a .fas {
+  font-size: 24px; /* or whatever size your other icons are */
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 0;
+}
+/* Responsive design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 15px;
+  }
+}
