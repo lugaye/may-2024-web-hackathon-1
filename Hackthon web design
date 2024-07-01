@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maureen Syombua | Portfolio</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin: 1em 0;
+            color: #007bff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #f1f1f1;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        /* Section styles */
+        section {
+            padding: 2em 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project {
+            margin: 1em 0;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .job {
+            margin-bottom: 2em;
+        }
+
+        .job h3 {
+            margin-bottom: 0.5em;
+            color: #007bff;
+        }
+
+        .job ul {
+            list-style-type: disc;
+            margin-left: 2em;
+        }
+
+        .education-item {
+            margin-bottom: 1.5em;
+        }
+
+        /* Contact styles */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #contact li {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maureen Syombua</h1>
+        <h2>Web Developer & Designer</h2>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an accountant with a passion for learning coding and exploring new technologies. Currently diving into web development to broaden my skills and contribute to innovative projects.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <img src="Project 1.PNG" alt="Project 1 Screenshot">
+            <p>Description of Project 1. This is a brief overview of the project's functionalities and what it does.</p>
+            <a href="https://github.com/Powerlearnproject/week-1-html-setup-Maureeen11.git">View Code</a>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Databases: SQL (MySQL, PostgreSQL), NoSQL (MongoDB)</li>
+            <li>Back-End Development: Python</li>
+            <li>Front-End Development: HTML, CSS</li>
+        </ul>
+        <h3>Non-Technical Skills</h3>
+        <ul>
+            <li>Attention to Detail</li>
+            <li>Good Communication</li>
+            <li>Creativity</li>
+            <li>Hardworking</li>
+            <li>Honesty</li>
+            <li>Teamwork</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Project Manager</h3>
+            <p><strong>Laser Cutting Hut, Nairobi County, Kenya</strong></p>
+            <p><em>Oct 2023 - Present</em></p>
+            <ul>
+                <li>Ensured seamless project execution and client satisfaction as the Project Manager in our PMO.</li>
+                <li>Managed client billing using Odoo, ensuring accuracy in collaboration with finance.</li>
+                <li>Mastered project management, handling multiple projects with strict adherence to timelines, milestones, and quality standards.</li>
+                <li>Administered worker payments accurately and promptly, collaborating closely with HR and payroll teams.</li>
+                <li>Streamlined processes as an Odoo Systems master, leveraging updates for optimal project management.</li>
+                <li>Fostered transparent communication through prompt email responses, enhancing collaboration with cross-functional teams, clients, and stakeholders.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Internship Trainee</h3>
+            <p><strong>Savannah Laser Cutting Hut, Nairobi County, Kenya</strong></p>
+            <p><em>May 2023 - Dec 2023</em></p>
+            <ul>
+                <li>Gained hands-on experience in financial accounting, presentations, business budgeting, financial reporting, and Adobe Photoshop.</li>
+                <li>Developed skills in business analysis, data analysis, negotiation, customer service, and performance reviews.</li>
+                <li>Assisted in managerial finance tasks, including financial planning, attention to detail, analytical skills, management, web design, advertising, financial analysis, and confidentiality.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor in Cooperative Business Accounting</h3>
+            <p><strong>The Cooperative University of Kenya, Main Campus, Karen, Nairobi</strong></p>
+            <p>Graduated with Second Class Upper Division</p>
+        </div>
+        <div class="education-item">
+            <h3>High School</h3>
+            <p><strong>Our Lady of Assumption Tawa Girls, Makueni</strong></p>
+        </div>
+        <div class="education-item">
+            <h3>Primary School</h3>
+            <p><strong>St. Michael's Primary School, Kitui</strong></p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:maureenclaire2@gmail.com">maureenclaire2@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/maureen-syombua-b17994220">Maureen Syombua</a></li>
+        </ul>
+    </section>
+</body>
+</html>
