@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7d2f7; /* Soft purple background */
+    background-image: linear-gradient(to bottom, #f7d2f7, #c9e4ce); /* Gradient effect */
+    border: solid 1px #4682b4; /* Add a bluish border to the body */
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, auto));
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border: solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .project-card img {
+    width: 100%;
+  }
+  
+  .project-card h3 {
+    font-weight: bold;
+  }
+  
+  .project-card p {
+    font-size: .8rem;
+  }
