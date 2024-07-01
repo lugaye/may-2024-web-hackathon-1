@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background: yellowgreen;
+    background: transparent;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -85,7 +85,7 @@ section {
 .home .home-content {
     max-width: 44rem;
 }
-.home-contenth3 {
+.home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
@@ -98,7 +98,7 @@ section {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .home-content .social-media a {
@@ -128,6 +128,8 @@ section {
     background: var(--main-color);
     border-radius: .6rem;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
     letter-spacing: .1rem;
     font-weight: 600;
     border: .2rem solid transparent;
@@ -137,5 +139,65 @@ section {
 .btn:hover {
     background: transparent;
     color: var(--main-color);
-    border-radius: ;
+    border-color: var(--main-color);
+}
+
+.home .profession-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 768px;
+    height: 768px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.home .profession-container .profession-box {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 768px;
+    height: 768px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .profession-box .profession {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    transform: rotate(calc(360deg/4*var(--i)));
+    transform-origin: 384px;
+    background: var(--bg-color);
+    padding: 13px 0;
+}
+
+.home .profession-box .profession:nth-child(1) i {
+    margin-right: 15px;
+}
+
+.home .profession-box .profession:nth-child(2), .home .profession-box .profession:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+.home .profession i {
+    font-size: 3.8rem;
+}
+
+.home .profession h3 {
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.home .profession-box .circle {
+    width: 560px;
+    height: 560px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
 }
