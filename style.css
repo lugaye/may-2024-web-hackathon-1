@@ -73,6 +73,19 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 30px;
 }
+.header-txt p{
+    font-size: 50px;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 
 .header-txt h1{
     font-size: 60px;
@@ -100,7 +113,7 @@ nav ul li a:hover::after{
 }
 
 .first-col img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
 }
 
@@ -108,13 +121,17 @@ nav ul li a:hover::after{
 .second-col{
     flex-basis: 60%;
 }
+.second-col p{
+    font-size: 20px;
+}
 
 .subtitle{
     font-size: 50px;
     font-weight: 600;
-    color: white;
+    color: #ff004f;
     text-decoration: none;
 }
+
 
 .skills{
     display: flex;
@@ -122,15 +139,15 @@ nav ul li a:hover::after{
 }
 .tab{
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     position: relative;
 
 }
 
 .tab::after{
     content: '';
-    width: 0;
+    width: 50%;
     height: 4px;
     background: orange;
     position: absolute;
@@ -140,9 +157,11 @@ nav ul li a:hover::after{
 
 }
 
-.tab.active-link::after{
-    width: 70%;
+.tab.active-link:hover::after{
+    width: 100%;
 }
+
+
 
 .tab-content ul li{
     list-style: none;
@@ -152,4 +171,55 @@ nav ul li a:hover::after{
 .tab-content ul li span{
     color: orange;
     font-size: 25px;
+}
+
+/*----------------------------Projects----------------*/
+
+#projects{
+    padding: 30px 0;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)) ;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div i{
+    font-size: 50px;
+    margin-top: 20px;
+    
+}
+
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+}
+
+.projects-list div p{
+    font-size: 20px;
+}
+.projects-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
 }
