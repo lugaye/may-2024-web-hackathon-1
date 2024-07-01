@@ -1,41 +1,81 @@
-# WEB HACKATHON - 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>A brief bio about yourself.</p>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your projects here -->
+    </section>
 
-## Project Requirements
-### Personal Information: 
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Technical Skill 1</li>
+            <li>Technical Skill 2</li>
+            <li>Non-Technical Skill 1</li>
+            <li>Non-Technical Skill 2</li>
+        </ul>
+    </section>
 
-### Portfolio: 
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>First National Bank</h3>
+            <p>Position: External Sales and Service Advisor</p>
+            <p>Duration: April 2015 - Current (permanent), December 2013 – 31 March 2015 (contract)</p>
+        </div>
+        <div class="job">
+            <h3>Metropolitan Life</h3>
+            <p>Position: Financial Advisor</p>
+            <p>Duration: June 2012 - June 2013</p>
+        </div>
+        <div class="job">
+            <h3>Hollard Insurance</h3>
+            <p>Position: Senior Sales Consultant</p>
+            <p>Duration: June 2011 – June 2012</p>
+        </div>
+    </section>
 
-### Skills: 
-List your technical and non-technical skills.
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Diploma in Accounting Sciences (in progress)</li>
+            <li>Agile Scrum Foundation Certificate 2022</li>
+            <li>National Banking Certificate 2018</li>
+            <li>Regulatory Examination Certificate 2014</li>
+            <li>N4 – N6 Human Resources Certificate 2009</li>
+        </ul>
+    </section>
 
-### Experience: 
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/yourprofile">yourprofile</a></p>
+    </section>
 
-### Education: 
-Include your educational background.
-
-## Submission Guidelines
-Repository Setup: Fork this repository and create a new branch for your project.
-Commit Messages: Use clear and descriptive commit messages to document your progress.
-Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes.
-Deadline: All submissions must be made by monday 1st July 12pm EAT
-
-## Judging Criteria
-Submissions will be judged based on the following criteria:
-
-Design: Visual appeal, creativity, and user interface design.
-Functionality: Responsiveness, performance, and interactivity.
-Content: Clarity, completeness, and presentation of information.
-Originality: Unique features, innovative approaches, and personal touches.
-Code Quality: Cleanliness, organization, and use of best practices.
-
-Happy hacking and we look forward to seeing your amazing portfolio websites!
-
-
-
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
