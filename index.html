@@ -3,82 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terrence Mbelengfa - Portfolio</title>
+    <title>Terrence Mbelenga - My Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Terrence Mbelengfa</h1>
-        <p>Proficient in C, Python, JavaScript, HTML, CSS, DevOps, Dart</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Backend Developer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn contact-btn">Contact Me</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Terrence Mbelengfa, a software developer with a passion for creating innovative solutions. I specialize in various programming languages and technologies, including C, Python, JavaScript, HTML, CSS, DevOps, and Dart.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="Book Hub">
-            <h3>Project 1</h3>
-            <p>Here i created an app where users are able to review, rate and recommend books to users.</p>
-            <a href="#">Live Demo</a> | <a href="#">https://github.com/Mbelenga/Book-Hub</a>
-        </div>
-        <div class="Airbnb clone">
-            <h3>Project 2</h3>
-            <p>Here i created a clone for the website AirBnB clone to test myself.</p>
-            <a href="#">Live Demo</a> | <a href="#">https://github.com/Mbelenga/AirBnB_clone</a>
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hi, There!</h2>
+                <h1>I'm <span>Terrence Mbelenga</span></h1>
+                <p>A backend developer passionate about the evolving world of Tech.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Hire me</a>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>C</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>DevOps</li>
-            <li>Dart</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Concern Worldwide</h3>
-            <p>Worked as an enumerator collecting data from different households.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Terrence Mbelenga, a software developer with a passion for creating innovative solutions.<br>I specialize in various programming languages and technologies, <br> They include C, Python, JavaScript, HTML, CSS, DevOps, and Dart.</p>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="school">
-            <h3>Certificate at School</h3>
-            <p>KCA UNIVERSITY - ICDL.</p>
+    <section id="portfolio" class="section bg-dark">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Book Hub</h3>
+                <p>Here I created an app where users are able to review, rate, and recommend books to users.</p>
+                <a href="https://mbelengaterrence.pythonanywhere.com/"></a> | <a href="https://mbelengaterrence.pythonanywhere.com/">Live Demo</a> | <a href="https://github.com/Mbelenga/AirBnB_clone">Repository</a>
+            </div>
+            <div class="project">
+                <h3>Airbnb Clone</h3>
+                <p>Here I created a clone for the website AirBnB to test myself.</p>
+                <a href="#">Live Demo</a> | <a href="https://github.com/Mbelenga/AirBnB_clone">Repository</a>
+
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mbelengaterence@gmail.com">Email</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/terrencembelenga/">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/Mbelenga">GitHub Profile</a></p>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>C</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>DevOps</li>
+                <li>Dart</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-dark">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Concern Worldwide</h3>
+                <p>Worked as an enumerator collecting data from different households.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="school">
+                <h3>Certificate at KCA University</h3>
+                <p>ICDL Certification.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:mbelengaterence@gmail.com">mbelengaterence@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/terrencembelenga/">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/Mbelenga">GitHub Profile</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Terrence Mbelengfa. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Terrence Mbelengfa. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
