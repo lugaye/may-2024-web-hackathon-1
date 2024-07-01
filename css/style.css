@@ -1,0 +1,555 @@
+/* -----------------------------About section------------------------------------------ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #1c1c1c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: #ff4081;
+    margin-left: 70px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+/* Modified Sidebar Navigation for Smooth Scrolling */
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Smooth Scroll Behavior for HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li.active a {
+    color: #ff4081;
+}
+
+/* Update Main Content to Ensure Proper Spacing */
+.main-content {
+    margin-left: 20%;
+    padding: 60px;
+    scroll-margin-top: 60px;
+    /* Adjust this value based on the height of your fixed header or sidebar */
+}
+
+section {
+    margin-bottom: 5rem;
+    height: auto;
+}
+
+#about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff3a3a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* Add margin to separate buttons */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Change color as needed */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about-section .profile-img-container {
+    flex: 0 0 300px;
+    height: 300px;
+    position: relative;
+}
+
+#about-section .profile-img-container .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ff3a3a;
+    border-radius: 50%;
+}
+
+#about-section .profile-img-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    /* Adjust this value to control darkness */
+    pointer-events: none;
+}
+
+/* Animation Colors */
+.color1 {
+    color: #ff3a3a;
+    /* Red */
+}
+
+.color2 {
+    color: #007bff;
+    /* Blue */
+}
+
+.color3 {
+    color: #32CD32;
+    /* Green */
+}
+
+.color4 {
+    color: #FF1493;
+    /* Pink */
+}
+
+.color5 {
+    color: #FF8C00;
+    /* Orange */
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 20px;
+    background-color: #ffffff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    /* Blinking starts from 0% to 15%, 20% to 35%, 40% to 55%, and 60% to 100% */
+    0%,
+    15% {
+        opacity: 1;
+    }
+
+    20%,
+    35% {
+        opacity: 0;
+    }
+
+    40%,
+    55% {
+        opacity: 1;
+    }
+
+    60%,
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ========================================================section2 */
+#education-section {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.education,
+.experience {
+    width: 45%;
+}
+
+#education-section h2 {
+    text-align: center;
+    color: #f5a623;
+}
+
+#education-section .card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+#education-section .card h3 {
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+#education-section .card p {
+    color: #f5a623;
+    margin: 5px 0;
+}
+
+/* -----------------------------Skills section------------------------------------------ */
+/* Ensure the entire skills section is centered */
+#skills-section {
+    text-align: center;
+}
+
+/* Style for the skills container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns layout */
+    gap: 5rem;
+    /* Gap between skills */
+}
+
+/* Common styles for all skills */
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.skill i {
+    font-size: 25px;
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Style for circular progress bars */
+.circle-progress {
+    width: 50px;
+    /* Diameter of the circle */
+    height: 50px;
+    /* Diameter of the circle */
+    border-radius: 50%;
+    /* Make it circular */
+    background: conic-gradient(#2C3E50 var(--progress), #e0e0e0 0);
+    /* Adjust colors */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: auto;
+    /* Push the circle-progress to the right */
+}
+
+/* Additional styles for non-technical skills */
+.non-technical-skills .circle-progress {
+    background: conic-gradient(#4caf50 var(--progress), #e0e0e0 0);
+    /* Adjust colors */
+}
+
+/* -------------------------------------------------------portfolio------------------------------------ */
+.portifolio {
+    display: flex;
+    width: 100%;
+}
+
+.portifolio-content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.portifolio-content h1 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+.github-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #24292e;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #444d56;
+}
+
+.github-btn i {
+    margin-right: 8px;
+}
+
+/* --------------------------------- folow me---------------------------------- */
+#follow-me {
+    background-color: #2b2d42;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+}
+
+.follow-me-left h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.follow-me-left p {
+    font-size: 1em;
+    color: #8d99ae;
+    margin-bottom: 20px;
+}
+
+.follow-me-right {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-detail {
+    cursor: pointer;
+    background-color: #1d1e2c;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-detail:hover {
+    box-shadow: 4px 4px 1px rgba(0, 100, 0, 0.1);
+}
+
+.contact-detail i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* -----------------------------------------------contact---------------------------------*/
+#contact-section {
+    background-color: white;
+    color: #1d1e2c;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    gap: 20px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form p {
+    margin-top: 10px;
+    font-size: 0.75em;
+    color: #666;
+}
+
+/* --------------------------------------------------------------------------footer ---------------------*/
+#footer {
+    background-color: #1e1d23;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-left {
+    text-align: left;
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-right {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 5px;
+    font-size: 0.75em;
+    position: relative;
+    /* Ensure the pseudo-element is positioned correctly */
+    text-align: center;
+    /* Center the text within the footer-bottom */
+}
+
+.footer-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* Adjust this value to position the line as needed */
+    left: 50%;
+    /* Start from the middle */
+    transform: translateX(-50%);
+    /* Center the line */
+    width: 50%;
+    /* Line should span half the width */
+    height: 2px;
+    /* Adjust the thickness of the line */
+    background-color: #fff;
+    /* Line color */
+}
