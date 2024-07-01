@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*:root{
+    box-sizing: border-box;
+    margin: auto;
+    color: rgb(255, 77, 92);
+    color: rgb(82, 173, 128);
+}
+body{
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+a{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 77, 92);
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 80px;
+    padding: 80px;
+}
+#hero{
+    background-image: url("Assets/pexels-magda-ehlers-pexels-1345624.jpg");
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+#hero h1{
+    font-weight: 500;
+}
+.overlay{
+    position: relative;
+    z-index: 2;
+}
+.overlay::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(red, rgb(45, 0, 128), blue, alpha);
+    z-index: -1;
+}
+.btn{
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+}
+.btn.primary{
+    background-color: rgb(82, 173, 128);
+    border-color: rgb(82, 173, 128);
+}
+.btn.primary:hover{
+    background-color: transparent;
+    border-color: rgb(82, 173, 128);
+    color: rgb(82, 173, 128);
+}
+.navbar{
+    transition: all 0.4s ease;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: rgb(255, 77, 92);
+}
+.intro{
+    margin-bottom: 50px;
+}
+.intro .divider{
+    background-color: rgb(255, 77, 92);
+    height: 2px;
+    width: 120px;
+    margin: 18px auto;
+}
+.icon-class{
+    height: 80px;
+    width: 80px;
+    background-color:rgb(255, 77, 92) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0 auto 24px auto;
+    color: #fff;
+    flex: none;
+}
+.icon-class i{
+    font-size: 34px;
+}
+#Milestone{
+    background-image: url("Assets/pexels-magda-ehlers-pexels-1345624.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.counter{
+    line-height: 1;
+}
+.counter .divider{
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    margin: 18px auto;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+}
+.project-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100;
+    width: 100;
+    background-color: rgb(255, 77, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transform:scale(0);
+    transition: all 0.4s ease;
+}
+.project:hover .project-info{
+    opacity: 1;
+    transform: scale(1); 
+}
+.service-box{
+    display: flex;
+}
+#Reviews{
+ background-image: url("Assets/pexels-magda-ehlers-pexels-1345624.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.reviews{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+.reviews .quote{
+    font-size: 55px;
+    color: black;
+}
+.reviews small{
+    color: rgb(82, 173, 128);
+    font-size: 16px;
+}
+.owl-dot .active span{
+    color: rgb(82, 173, 128);
+}
+.pricing-table{
+    background-color: #fff;
+}
+.pricing-table ul{
+    list-style: none;
+    padding: 0%;
+}
+.pricing-table ul li{
+    margin-top: 15px;
+}
+.pricing-table.primary{
+    background-color: rgb(255, 77, 92);
+}
+#Contact{
+    background-color: rgb(255, 77, 92);
+}
+footer a{
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
