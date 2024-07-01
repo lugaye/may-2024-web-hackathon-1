@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Periwinkle */
+            color: #4b0082; /* Indigo for text */
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #e6e6fa; /* Lavender */
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #4b0082; /* Indigo */
+        }
+
+        header nav a {
+            margin: 0 10px;
+            color: #4b0082; /* Indigo */
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4b0082; /* Indigo */
+            padding-bottom: 10px;
+        }
+
+        .personal-info {
+            display: flex;
+            align-items: center;
+            background-color: #e6e6fa; /* Lavender */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .personal-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .personal-info div {
+            max-width: 600px;
+        }
+
+        .personal-info h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #4b0082; /* Indigo */
+        }
+
+        .personal-info p {
+            margin: 10px 0;
+            color: #4b0082; /* Indigo */
+        }
+
+        .personal-info .contact-info {
+            margin: 20px 0;
+        }
+
+        .personal-info .contact-info a {
+            margin-right: 10px;
+            color: #4b0082; /* Indigo */
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .personal-info .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #e6e6fa; /* Lavender */
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(50% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-top: 15px;
+            color: #4b0082; /* Indigo */
+        }
+
+        .project p {
+            color: #4b0082; /* Indigo */
+        }
+
+        .project a {
+            color: #4b0082; /* Indigo */
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .skills ul,
+        .experience ul,
+        .education ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li,
+        .experience li,
+        .education li {
+            background-color: #e6e6fa; /* Lavender */
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills li span,
+        .experience li span,
+        .education li span {
+            font-weight: bold;
+            color: #4b0082; /* Indigo */
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #4b0082; /* Indigo */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e6e6fa; /* Lavender */
+            color: #4b0082; /* Indigo */
+        }
+
+        @media (max-width: 768px) {
+            .personal-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .personal-info img {
+                margin: 0 0 20px 0;
+            }
+
+            .portfolio .project {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .portfolio .project {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="personal-info">
+            <img src="IMG-20231222-WA0054.jpg" alt="Anne Apiyo">
+            <div>
+                <h2>Anne Apiyo</h2>
+                <p>I’m Anne Apiyo, a dedicated Telecommunications and Computer Networks student at the Technical University of Kenya, currently in my third year. Alongside my studies, I’m a Software Developer Trainee at PLP and have earned certifications from Huawei, Cisco, and Oracle. I'm also pursuing web development training with SheCodes Foundation. As the founder of LEA Foundation, I’m passionate about empowering children through technology and coding education. Welcome to my portfolio, where you can explore my projects, skills, and professional journey!</p>
+                <div class="contact-info">
+                    <a href="mailto:anneapiyo0@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/anne-apiyo-85424a225/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/1287Apiyo" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>I have worked on a number of projects and am excited to showcase some of my best work!</p>
+        <div class="portfolio">
+            <div class="project">
+                <img src="Online-Shopping-System-project.jpg" alt="Online Shopping System">
+                <h3>Online Shopping System</h3>
+                <p>The system allows users to browse, select, and purchase items from various categories. To make a purchase, a user needs to register/login for identification purposes. Additionally, the system should support different types of users such as regular customers, premium customers, and administrators.</p>
+                <a href="https://github.com/1287Apiyo/Online-Shopping-System.git" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project">
+                <img src="tictac.jpeg" alt="Tic-Tac-Toe">
+                <h3>Tic-Tac-Toe</h3>
+                <p>Built a functional Tic-Tac-Toe game from scratch!</p>
+                <a href="https://github.com/1287Apiyo/Tic-Tac-Toe-Game.git" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project">
+                <img src="images.png" alt="CRUD App">
+                <h3>CRUD App</h3>
+                <p>This consists of a mini CRUD application using REST API and SpringBoot.</p>
+                <a href="https://github.com/1287Apiyo/CRUD-app.git" target="_blank">GitHub Repository</a>
+            </div>
+            <div class="project">
+                <img src="register.jpeg" alt="L-REGISTER">
+                <h3>L-REGISTER</h3>
+                <p>A graphical user interface that accepts user input during registration and logging in. #Beginner Project</p>
+                <a href="https://github.com/1287Apiyo/L-Register.git" target="_blank">https://github.com/1287Apiyo/L-Register.git</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li><span>Technical:</span> HTML, CSS, JavaScript, Java, Cloud Computing</li>
+            <li><span>Non-Technical:</span> Communication, Teamwork, Problem Solving, Time Management, NetworkinG CyberSecurity</li>
+            <li><span>Certifications:</span>HCIA Datacom, Oracle Cloud Infrastructure 2023 Certified Foundations Associate, OCI Golden Gate,CCNA1,CCNA2, Junior Cybersecurity Analyst</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul class="experience">
+            <li>
+                <span>Software Developer Trainee</span> at PLP
+                <p>Working on various development projects and gaining hands-on experience in coding and project management.</p>
+            </li>
+            <li>
+                <span>Web Developer Intern</span> at She Codes Foundation
+                <p>Developed and maintained multiple websites, ensuring optimal performance and user experience.</p>
+            </li>
+            <li>
+                <span>Chairperson</span> at LEA Foundation
+                <p>Organise Coding Training sessions to kids </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education">
+            <li>
+                <span>High School Certificate </span>at Starehe Girls Centre
+            </li>
+            <li>
+                <span>Bachelor of Science in Telecommunications and Computer Networks</span>, Technical University of Kenya
+                <p>Currently pursuing a degree with a focus on advanced networking and computing technologies.</p>
+            </li>
+            <li>
+                <span>PLP Certification</span> (in progress)
+                <p>Currently enhancing my skills and knowledge in advanced web development techniques.</p>
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:anneapiyo0@gmail.com">anneapiyo0@gmail.com</a></p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/anneapiyo" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/1287Apiyo" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anne Apiyo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
