@@ -1,0 +1,68 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #da3f8f;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #007bff 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header p {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: #b6b1b4;
+    margin: 10px 0;
+    padding: 10px;
+    border: #ccc 1px solid;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #79b8e1;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
