@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ec9f4935af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="images/deno final.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Junior Full stack Developer</p>
+                <h1>Hi, I'm <span>Dennis</span><br> Muuo From Kenya</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section -->
+    <div id="about">
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Denno2.jpg" alt="Description" class="resized-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Dennis Muuo, a Computer Science student at Kirinyaga University. Alongside my degree, I'm also pursuing a Software Development certification at PLP. I'm passionate about technology and eager to apply my skills in real-world projects.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphics design</span><br>Designing posters, fliers, logos</li>
+                            <li><span>Videography</span><br>Video editing</li>
+                            <li><span>Web development</span><br>Skilled in both front-end and back-end</li>
+                            <li><span>Database</span><br>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently</span><br>Web development training at PLP</li>
+                            <li><span>2022-2023</span><br>Team lead in video editing</li>
+                            <li><span>2023</span><br>Attachment at MCRH</li>
+                            <li><span>2024</span><br>Internship at KU</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently</span><br>Certificate in software development at PLP</li>
+                            <li><span>Currently</span><br>Degree in Computer science at Kirinyaga University</li>
+                            <li><span>2023</span><br>Graphics design</li>
+                            <li><span>2021</span><br>KCSE at Kasikeu Boys</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My services section -->
+    <div id="Services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am a junior full-stack developer proficient in HTML, CSS, JavaScript, PHP, MySQL, Python, and Django. I can create dynamic and responsive websites, ensuring a seamless user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                    <p>I am knowledgeable in JavaScript development, creating interactive and dynamic web applications. With a strong understanding of JavaScript frameworks and libraries, I can build efficient and scalable solutions tailored to your needs</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Am proficient in MySQL and other database technologies. I can design, implement, and maintain databases to ensure data integrity, security, and efficient performance for your applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my recent projects -->
+    <div id="portfolio">
+        <div id="container">
+            <h1 class="sub-title">My Recent Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/digitalclock 2.PNG" alt="Digital Clock">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>This is a digital clock made using JS, HTML, and CSS.</p>
+                        <a href="https://denis642.github.io/DIGITAL-CLOCK-2/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live Demo
+                        </a>
+                        <a href="https://github.com/denis642/DIGITAL-CLOCK-2" target="_blank">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my contacts -->
+    <div id="contacts">
+        <div id="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>dennismuuo044@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0701526064</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/dennis.muuo.790"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/dennis-muuo-120885238/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/denis642"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Dennis .personal portfolio</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
