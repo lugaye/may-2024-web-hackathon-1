@@ -42,6 +42,17 @@ header nav ul li a {
     font-weight: bold;
 }
 
+#items {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.164);
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -98,6 +109,7 @@ section h2 {
     text-decoration: none;
     border-radius: 5px;
 }
+
 
 .project a:hover {
     background: #555;
