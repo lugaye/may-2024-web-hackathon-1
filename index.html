@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhekifa Mokwena Portfolio</title>
+    <link rel="icon" href="letter_P_red-1024.webp" type="webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <span class="name-wrapper">
+                    <span class="name-part name-left">M_</span>
+                    <span class="name-part name-middle">Bhekifa</span>
+                    <span class="name-part name-right">_M</span>
+                </span>    
+            </h1>
+            <p>
+                <span id="hey">Hey there</span>, my name is <span id="name">Micheal Bhekifa Mokwena</span>. Welcome to my portfolio, feel free to look around and find interesting things about me, my skills, 
+                my experiences, level of education and contact details if you want to get hold of me for a working or business opportunity.
+            </p>
+            <nav>
+                <ul>
+                    <li id="items"><a href="#portfolio" >Portfolio</a></li>
+                    <li id="items"><a href="#skills" >Skills</a></li>
+                    <li id="items"><a href="#experience" >Experience</a></li>
+                    <li id="items"><a href="#education" >Education</a></li>
+                    <li id="items"><a href="#contact" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="portfolio" class="container animate">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="Screenshot 2024-06-28 131421.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Expense Tracker Website</p>
+                <a href="https://github.com/Powerlearnproject/intro-to-html-and-css-Bhekifatech.git" target="_blank">View Repository</a>
+                <a href="https://live-demo.com/project1" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container animate">
+        <h2>Skills</h2>
+        <ul>
+            <li>Computer Literacy</li>
+            <li>Technical Support</li>
+            <li>MS tools (word, excel, powerpoint, etc)</li>
+            <li>Google workspace (spreadsheet)</li>
+            <li>Data Analysis (Big data query, SQL Databases)</li><br>
+            <li>Critical Analysis</li>
+            <li>Problem Solving</li>
+            <li>Empathetic</li>
+            <li>Sense of urgency</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="container animate">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Director/ Youth Mentor and Tutoring</h3>
+            <h4>Keep Going Community Dev Program</h4>
+            <p>
+                From 2015-2019, i was part of the directory that started the initiative to help young people who are 
+                still in highschool to Keep Going with their studies and have hope of persuing education into the Higher institutions.
+                We also provided Mentorships by doing quarterly Youth Seminars to revives learners by inviting different speakers From
+                fields of profession. We also gave the learners practical study tips and hosted Mathematics and Physical Science Tutoring
+                sessions.
+            </p>
+        </div>
+        <div class="job">
+            <h3>Tutoring and Computer Facilitator</h3>
+            <h4>Ezweni Youth Centre</h4>
+            <p>
+                From 2017-2019, I volunteered into this Youth Centre in my Community by offering my Computer Literacy skills. We were teaching 
+                the youth and elderely people basic IT skills and Microsoft skills. We i also help into fascillitating soft skills workshops such
+                as entreprenuership, marketing, communication etc. My passion for the youth has been ignited alot working in this youth Centre 
+                because i got to work with young driven individual who were willing to bring change into the community not only for the youth but 
+                for everyone else. I will continue volunteering my time and energy every chance i get. 
+            </p>
+        </div>
+        <div class="job">
+            <h3>Grade 12 Mathematics & P.Science Tutor</h3>
+            <h4> L&T Edu-Solution Ltd Pty</h4>
+            <p>
+                From 2020 up to present, i am working part-time for this amazing company. I work as a Tutor for Grade 12 Mathematics and Physical Science.
+                The company works with local schools as their service providers and the program is backed up by local Mining companies to help the grade 12 
+                learners who are doing Mathematics and Physical Science be able to pass the subjects and also qualify to higher institutions so the local 
+                Mining companies will be able to sponsor these learners so they can come back and contribute positively into the community. I am passionate in
+                doing work that has a positive impact in society.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="container animate">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Matric</h3>
+            <h4>Ilanga Secondary School</h4>
+            <p>
+                siZulu HL, English FAL, Mathematics, Life Sciences,
+                Physical Sciences, Economics
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="container animate">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:michealbhekifa2@gmail.com">michealbhekifa2@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Bhekifatech" target="_blank">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Int_Bhekifa Technology. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate');
+
+            const animateOnScroll = () => {
+                animateElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight * 0.8) {
+                        el.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check on page load
+        });
+    </script>
+</body>
+</html>
