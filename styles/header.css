@@ -1,0 +1,11 @@
+.intro-point {
+	font-size: 30px;
+	font-family: sans-serif, Arial;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: #333;
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 5px;
+}

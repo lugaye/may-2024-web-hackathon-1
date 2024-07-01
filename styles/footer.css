@@ -1,0 +1,29 @@
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: maroon;
+	width: 100%;
+	padding: 20px;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+footer.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+}
+
+footer.x {
+	width: 30%;
+	border-right: 1px solid #ccc;
+}
+footer.l {
+	width: 30%;
+	border-right: 1px solid #ccc;
+	margin-left: auto;
+	margin-right: 0;
+	display: block;
+}

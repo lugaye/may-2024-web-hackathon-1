@@ -1,0 +1,15 @@
+.pre-loader {
+	width: 100%;
+	height: auto;
+	color: tomato;
+	background-color: mintcream;
+}
+
+.personal {
+	background-image: url("../images/coding.jpg");
+	height: 300px;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
