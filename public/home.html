@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="./styles/general.css">
+</head>
+<body>
+    <div class="sidebar">
+        
+        <ul>
+            <li onclick="hideSidebar()"><a href="#"><img src="./images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="skill.html">SKILLS</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="experience.html">EDUCATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <img src="images/logo.png" class="logo">
+
+        <ul>
+            <li class="hideOnMobile"><a href="home.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="hideOnMobile"><a href="skill.html">SKILLS</a></li>
+            <li class="hideOnMobile"><a href="experience.html">EXPERIENCE</a></li>
+            <li class="hideOnMobile"><a href="experience.html">EDUCATION</a></li>
+            <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+            <li onclick="showSidebar()" class="menu-btn"><a href="#"><img src="./images/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="info" id="home">
+        <h2>He<span>llo</span>, I'm <span class="name">Ochieng</span>.</h2>
+        <h1><span>W</span>EB <span>DES</span>IGNER AND LAND<span>SCAPE </span> <br> ARCH<span>ITECT</span>!</h1>
+        <p>With expertise in landscaping and web design, <br>I specialize in creating stunning, <br> sustainable outdoor spaces that harmonize with nature, <br> as well as developing interactive and captivating websites using: <br> HTML, CSS, and JavaScript</p>
+            <a href="contact.html">Hire Me</a>
+    </div>
+
+    <div class="image">
+        <img src="images/me.png" class="me">
+    </div>
+
+    <div class="icons">
+        <a href="https://github.com/Ochieng-Onyango" target=”_blank”><img src="./images/github.png" alt="githubicon"></a>
+        <a href="https://web.facebook.com/ochieng.arnold.3/" target=”_blank”><img src="./images/facebook.png" alt="facebook"></a>
+        <a href="https://x.com/Land_designs1" target=”_blank”><img src="./images/twitter.png" alt="twitter"></a>
+        <a href="https://www.linkedin.com/in/ochieng-onyango-3a1220179" target=”_blank”><img src="./images/linkedin.png" alt="linkedin"></a>
+        <a href="https://wa.me/254705854066" target=”_blank”><img src="./images/whatsapp.png" alt="whatsapp"></a>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

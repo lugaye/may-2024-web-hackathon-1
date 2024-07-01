@@ -1,0 +1,333 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: aliceblue;
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(rgba(0,0,0, 0.7), #3551b2), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul{
+    margin-top: 10px;
+
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: -3%;
+    transition: .4s ease;
+
+
+}
+
+ul li a:hover{
+    color: yellow;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 170px;
+    height: 100vh;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.info {
+    margin-left: 50px;
+    margin-top: 45px;
+}
+
+.info h1 {
+    font-size: 38px;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+.info h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.info h2 .name {
+    text-decoration:underline;
+}
+
+.info p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.info span{
+    color: yellow;
+}
+
+.info a{
+    text-decoration:  none;
+    color: aliceblue;
+    background: #333;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease-in-out;
+}
+
+.info a:hover{
+    background: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 0;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 3s ease;
+}
+
+.image:hover .me{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.icons img{
+    width: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: -60px;
+    transition: .4s ease;
+    
+}
+
+.icons img:hover{
+    background-color: blue;
+    color: rgb(59,174,209);
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    padding-bottom: 0.5rem;
+}
+
+.project, .job, .education {
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 800px){
+    .main {
+        font-size: 18px;
+        height: 100vh;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .image:hover .me{
+        left: 100%;
+    }
+
+    
+    .info p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+    
+    
+}
+
+.skill h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  
+  .skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  
+  .skill {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .skill-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background: red;
+    height: 18px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+  }
+  
+  .skill-fill {
+    background: green;
+    height: 18px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+  }
+  
+  .skill-percent {
+    font-size: 15px;
+  }
+  
+  .html {
+    animation: html 2s;
+    width: 80%;
+  }
+  
+  .css {
+    animation: css 2s;
+    width: 60%;
+  }
+  
+  .js {
+    animation: js 2s;
+    width: 50%;
+  }
+  
+  @keyframes html {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes css {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes js {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+  }
