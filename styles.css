@@ -37,6 +37,7 @@ nav ul li a {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 3px;
+  background-color: #333; 
   transition: background 0.3s;
 }
 
@@ -55,7 +56,7 @@ section {
 
 h2 {
   color: #333;
-  text-align: center; /* Centering the section headers */
+  text-align: center; 
 }
 
 h3 {
@@ -127,4 +128,19 @@ footer .social-media a {
 
 footer .social-media a:hover {
   color: #aaa;
+}
+
+.download-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.download-resume:hover {
+  background-color: #555;
 }
