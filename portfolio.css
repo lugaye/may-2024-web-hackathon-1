@@ -1,0 +1,185 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #475569; /* Updated background color */
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #94a3b8;
+}
+
+/* Navigation styling */
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em; /* Adjust padding for better button size */
+    background: #64748b;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #475569;
+}
+
+/* Main content styling */
+main {
+    padding: 1.5em;
+}
+
+section {
+    padding: 1.5em;
+    margin: 0.75em 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 75%; /* Default width for most sections */
+    margin: auto; /* Center the section horizontally */
+    color: black; /* Set text color to black */
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+/* Home section styling */
+#home {
+    background: #f87171;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%; /* Reduce home section width by 20% */
+    margin: auto; /* Center the section horizontally */
+}
+
+/* Flexbox layout for home section */
+.home-flex {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap if space is limited */
+    width: 70%; /* Reduce the width of the flex container by 10% */
+    margin: auto; /* Center the flex container horizontally */
+}
+
+.home-image {
+    width: 45%; /* Set width for each image to occupy nearly half of the section */
+    margin: 0.5%; /* Add a small margin between images */
+    max-height: 90vh; /* Limit image section height to 90% of viewport height */
+    overflow: hidden; /* Hide overflow to prevent content spill */
+}
+
+.home-image img {
+    width: 100%; /* Ensure image takes full width of its container */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Scale image to cover container */
+}
+
+/* Add styles for the second image */
+.home-image .second-image {
+    width: 45%; /* Set width for each image to occupy nearly half of the section */
+    margin: 0.5%; /* Add a small margin between images */
+    max-height: 90vh; /* Limit image section height to 90% of viewport height */
+    overflow: hidden; /* Hide overflow to prevent content spill */
+}
+
+.home-image .second-image img {
+    width: 100%; /* Ensure image takes full width of its container */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Scale image to cover container */
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 0.2em 0; /* Adjusted padding top and bottom */
+    font-size: 0.8em; /* Adjusted font size */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Visibility classes */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Adjusted styling for flex-container sections */
+.flex-container {
+    width: 70%; /* Default width for most sections */
+    margin: auto; /* Center the section horizontally */
+    text-align: center; /* Center text content */
+}
+
+.flex-item {
+    margin-bottom: 1em; /* Add margin bottom for spacing */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Adjust section width for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin: 0.5em 0; /* Add vertical margin between links */
+    }
+
+    nav ul li a {
+        padding: 0.5em; /* Adjust padding for smaller touch targets */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 95%; /* Further adjust section width for very small screens */
+    }
+}
