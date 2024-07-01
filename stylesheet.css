@@ -153,6 +153,13 @@ h4 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.education img {
+    width: 150px;
+    height: auto;
+    margin: 10px; 
+}
+
+
 .portfolio {
     padding: 0px;
     font-size: 22px;
