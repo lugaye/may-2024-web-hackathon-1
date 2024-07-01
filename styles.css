@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #423e3e;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -39,7 +39,7 @@ nav ul li a {
 section {
     padding: 2em 1em;
     margin: 1em 0;
-    background: white;
+    background: rgb(138, 123, 112);
 }
 
 section h2 {
@@ -56,3 +56,4 @@ footer {
     background: #333;
     color: white;
 }
+
