@@ -279,16 +279,16 @@ span {
     margin: 2rem 3rem;
 }
 
-.services {
+.service {
     min-height: auto;
     padding-bottom: 7rem;
 }
 
-.services h2 {
+.service h2 {
     margin-bottom: 5rem;
 }
 
-.services .services-container {
+.service .services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +357,13 @@ span {
 
 .portfolio-box img {
     width: 100%;
+    transition: .5s ease;
 }
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -372,6 +378,12 @@ span {
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
 }
 
 .portfolio-layer h4{
@@ -382,3 +394,91 @@ span {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #333;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+.testimonial-container .testimonial-wrapper {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    padding: 5rem;
+}
+
+.testimonial-wrapper .testimonial-box {
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.testimonial-content .testimonial-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    padding: 3rem 5rem;
+    border-top: .8rem solid var(--main-color);
+    border-bottom: .8rem solid var(--main-color);
+}
+
+.testimonial-slide img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--bg-color)
+    outline: .5rem solid var(var(--main-color));
+}
+
+.testimonial-slide h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.testimonial-slide p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.testimonial-box .swiper-button-next, .testimonial-box .swiper-button-prev {
+    color: var(--main-color);
+}
+
+.testimonial-box .swiper-button-next {
+    right: 0;
+}
+
+.testimonial-box .swiper-button-prev{
+    left: 0;
+}
+
+.testimonial-box .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, .8);
+}
+
+.testimonial-box .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
