@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+h3{
+    text-decoration: underline 4px solid rgba(0,148,133,255);
+}
+
+header{
+    background-color: hsl(0, 100%, 0%);
+    padding-top: 1px ;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header >h1{
+    width: 50%;
+    display: inline-block;
+}
+
+nav{
+    position: fixed;
+    top: 30px;
+    right: 24px;
+    width: 50%;
+}
+
+nav a:link{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 40px;
+    background-color: rgba(0,148,133,255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav a:visited{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 40px;
+    background-color: rgba(0,148,133,255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: rgba(0,148,133,255);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+nav a:active{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 40px;
+    background-color: rgba(0,148,133,255);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+main{
+    width: 100%;
+}
+
+#home{
+    position: relative;
+    background: url(bg14d.jpeg);
+    background-size: cover;
+    height: 543px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#home img{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 400px;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+#bio{
+    background-color:white;
+    color: black;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);  
+    text-align: center;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    margin-bottom: 130px;
+}
+
+#bio >h2{
+    background-color: rgba(0,148,133,255);
+    padding: 5px;
+    color: black;
+}
+
+.social_icon{
+    margin: 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social_icon:hover{
+    opacity: 0.5;
+    width: 37px;
+    height: 37px;
+}
+
+#projects{
+    background-color:white;
+    color: black;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);  
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    margin-bottom: 130px;
+}
+
+#projects >h2{
+    background-color: rgba(0,148,133,255);
+    padding: 5px;
+    color: black;
+}
+
+#projects >a{
+    color: blue;
+    font-weight: bold;
+}
+
+
+#skills{
+    background-color:white;
+    color: black;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19),0 -6px 20px 0 rgba(0, 0, 0, 0.19);  
+    text-align: center;
+    margin: 100px;
+    padding: 20px;
+    margin-bottom: 130px;
+    
+}
+
+#skills >h2{
+    background-color: rgba(0,148,133,255);
+    padding: 5px;
+    color: black;
+}
+
+.technical{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technical >h3 {
+    text-align: center;
+    flex: 100%;
+    font-weight: bold;
+}
+
+.technical >p{
+    flex: 100%;
+    font-weight: bold;
+}
+.technical >picture{
+    flex: 25%;
+    /* height: 200px; */
+}
+#css{
+    margin-top: 15px;
+}
+#js{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.soft{
+    text-align: left;
+    position: relative;
+    bottom: 0%;
+    left: 40%;
+    width: 40%;
+}
+/* #experience{
+    background-color:white;
+    color: black;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);  
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#experience >h2{
+    background-color: rgba(0,148,133,255);
+    padding: 5px;
+    color: black;
+    flex: 100%;
+}
+
+.exp{
+    flex: 20%;
+    text-align: right;
+    padding-right: 50px;
+    border-right: 1px solid black;
+}
+
+.list{
+    flex: 80%;
+    margin-left: 20px;
+    margin-right: 30px;
+    text-align: left;
+} */
+
+#education{
+    background-color:white;
+    color: black;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);  
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+#education >h2{
+    /* position: relative; */
+    background-color: rgba(0,148,133,255);
+    padding: 5px;
+    color: black;
+    
+}
+
+#tab{
+    position: relative;
+    /* width: 70%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:30px;
+}
+
+#tab th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(0,148,133,255);
+    color: white;
+}
+
+#tab td{
+    text-align: left;
+    padding: 9px;
+}
+
+#tab tr:nth-child(even){
+    background-color: hsl(0, 0%, 90%);
+}
+
+
+#tab tr:hover{
+    background-color: hsl(0, 0%, 60%);
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+@media screen and (max-width:700px) {
+    header{
+        height: 110px;
+    }
+    header> h1{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        top: 10%;
+        padding-left: 30px;
+    }
+    #home>img{
+        width: 60%;
+        height: 300px;
+        left: 60%;
+    }
+    #education{
+        margin-left: 0;
+        margin-right: 0;
+        top: 70%;
+    }
+    #tab{
+        margin-top: 70px;
+    }
+}
