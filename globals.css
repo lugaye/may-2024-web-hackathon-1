@@ -1,0 +1,64 @@
+:root {
+     --background-color: #f0f0f0;
+     --text-color: #333;
+     --primary-color: #337ab7;
+     --accent-color: #008000;
+     --secondary-color: #00698f;
+}
+
+/* Reset */
+* {
+     box-sizing: border-box;
+     margin: 0;
+}
+
+/* Basic styles */
+body {
+     font-size: 16px;
+     line-height: 1.6;
+     background-color: var(--background-color);
+     color: var(--text-color);
+     font-family: 'Arial', sans-serif;
+}
+
+.header {
+     display: grid;
+     grid-template-columns: auto auto;
+     column-gap: 10%;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+     background-color: var(--primary-color);
+     color: #FFFFFF;
+     width: 100%;
+}
+
+.brand-name a {
+     text-decoration: none;
+     color: black;
+     font-size: 1.5rem;
+     font-weight: bolder;
+}
+
+.brand-name span {
+     color: goldenrod;
+}
+
+.nav-links {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     column-gap: 5%;
+     width: 100%;
+     justify-content: space-around;
+}
+
+.nav-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+     margin: 0 10px;
+}
+
+a:hover {
+     color: var(--secondary-color);
+}
