@@ -1,0 +1,97 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ccc;
+  background-color: #000;
+}
+header {
+  background-color: #111;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-decoration: underline;
+  color: #800080;
+}
+header p {
+  margin: 10px 0;
+}
+header img {
+  border-radius: 50%;
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+}
+.contact-info,
+.social-links {
+  margin: 10px 0;
+}
+
+.contact-info p,
+.social-links a {
+  color: #800080;
+  text-decoration: underline;
+}
+section {
+  padding: 20px;
+  background-color: #222;
+  margin: 20px;
+  border-radius: 8px;
+}
+section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-decoration: underline;
+}
+.project {
+  margin: 20px 0;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin: 10px 0;
+}
+.project a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #800080;
+  text-decoration: underline;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  background: #333;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ccc;
+}
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
