@@ -1,24 +1,15 @@
-/* Import Playfair Display font */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-/* Apply Playfair Display font to all elements */
 * {
     font-family: 'Playfair Display', serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #0caedb;
-    /* background-image: url('../assets/images/code.jpg'); */
-    background-size: auto;
-    background-position: left;
-    background-repeat: no-repeat;
 }
 
-/* Header styles */
 header {
-    /* background-color: black; */
     color: whitesmoke;
     padding: 5px;
     text-align: center;
@@ -28,7 +19,6 @@ header {
     align-items: center;
 }
 
-/* Home section styles */
 .home {
     height: 100vh;
     display: flex;
@@ -37,7 +27,6 @@ header {
     padding: 0 10%;
 }
 
-/* Home image styles */
 .home-image {
     width: 500px;
     height: 500px;
@@ -171,6 +160,30 @@ h4 {
     margin-top: 60px;
 }
 
+.portfolio h4 {
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; 
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px; 
+}
+
+.portfolio-image {
+    max-width: 200px; 
+    height: auto;
+}
+
+
 #locked-image img {
     opacity: 0.5;
 }
@@ -185,6 +198,11 @@ h4 {
     text-align: center;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.contacts h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .home-stack {
@@ -254,7 +272,7 @@ border-radius: 5px;
 }
 
 .portfolio a {
-display: block; /* Ensure the entire image is clickable */
+display: block;
 }
 
 
@@ -311,7 +329,7 @@ display: block; /* Ensure the entire image is clickable */
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 0px;
     }
 
     .home-image {
@@ -332,7 +350,6 @@ display: block; /* Ensure the entire image is clickable */
     
     .home-image code {
         position: relative;
-        bottom: 22px;
         max-width: 380px;
     }
 
@@ -376,14 +393,14 @@ display: block; /* Ensure the entire image is clickable */
 
     .portfolio {
         margin-top: 30px;
-        margin-bottom: 100px;
         padding: 15px;
+        font-size: medium;
     }
 
     .contacts {
         margin-top: 30px;
         padding: 15px;
-        margin-bottom: 10 0px;
+        margin-bottom: 100px;
     }
 
     .home-content p,
