@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind css links -->
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- javascript links -->
+    <script src="./main.js" defer></script>
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header class="flex top-0 z-10 sticky items-center justify-between p-6 bg-gray-100">
+      <div>
+        <h1 class="text-xl font-bold"><span class="text-5xl text-brown">A</span>NN</h1>       
+      </div>
+      <nav class="flex flex-1 justify-center space-x-8 text-lg font-semibold">
+        <a href="/" class="text-gray-700 border-b-2 border-brown ">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-black hover:border-b-2 hover:border-brown">About</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-black hover:border-b-2 hover:border-brown">Portfolio</a>
+        <a href="#skills" class="text-gray-700 hover:text-black hover:border-b-2 hover:border-brown">Skills</a>
+        <a href="#contact" class="text-gray-700 hover:text-black hover:border-b-2 hover:border-brown">Contact</a>
+      </nav>
+    </header>
+    <!-- Header Section ends-->
+
+    <!-- Main section starts-->
+    <main>
+      <!-- Introduction Section for the home page -->
+      <section class="bg-biege">
+        <div class="flex justify-center items-center p-14 space-x-4 border-b-2">
+        
+        <div class="">
+          <span class="block font-medium  text-4xl ">Hello,</span>
+          <span class="block font-semibold text-5xl my-1 ">I'm<span class="text-brown"> Ann </span><br />Web Developer </span>
+          <p class="mt-4 text-lg">
+            I am a skilled and passionate web developer with <br />extensive
+            expertice in crafting dynamic and adaptive<br />
+            websites that priorize user experience and visual appeal
+          </p>
+        </div>
+        <div>
+          <img src="./images/me.jpeg" alt="profile photo" class="object-cover w-80 h-72" />
+        </div>
+        </div>
+        
+      </section>
+      <!-- Introduction Section ends-->
+
+      <!-- About me Section starts -->
+      <section>
+        <div class="flex justify-center items-center p-14 space-x-4">
+            <!--About me image-->
+        <div>
+          <img
+            src="./images/about.png"
+            alt="About me image"
+            class="w-80 h-72 object-cover"
+          />
+        </div>
+
+        <!-- About me text-->
+        <div>
+          <h2 class="text-5xl font-bold">About Me</h2><br>
+          <p class="text-lg block">
+            Hello! I'm a passionate front-end developer with a diverse<br />
+            skill set that includes proficiency in JavaScript, HTML, CSS,<br />
+            React.js, and TypeScript. My journey in web development<br />
+            began with a fascination for creating dynamic and interactive
+            user<br />interfaces, and since then, I've dedicated myself to
+            mastering the tools<br />
+            and technologies that empower me to bring digital experiences to
+            life.
+          </p>
+          <!-- About me links  -->
+        <div class="flex justify-start space-x-6 mt-1">
+          <a href="https://www.linkedin.com/in/kairuthiann/" target="_blank"
+            ><img
+              src="./images/linkedin.png"
+              alt="Linkedin Icon"
+              class="w-8 h-8"
+          /></a>
+          <a href="https://github.com/kairuthiann2" target="_blank"
+            ><img src="./images/github.png" alt="GitHub Icon" class="w-8 h-8"
+          /></a>
+          <a href="mailto:kairuthiann2@gmail.com" target="_blank"
+            ><img src="./images/email.png" alt="Gmail icon" class="w-8 h-8"
+          /></a>
+        </div>
+        </div>
+        </div>
+         
+        
+      </section>
+      <!-- About Section ends -->
+
+      <!-- Portofolio Section Starts-->
+      <section class="bg-biege">
+        <h2 class="text-5xl font-bold text-center pt-4">My Portfolio</h2><br>
+        <div class="flex justify-center space-x-4">
+        
+
+          <!-- First project-->
+          <div class="bg-white border border-transparent shadow-md hover:border-brown hover:bg-biege transition-all duration-300">
+            <p class="text-lg p-4 text-gray-800">
+              I take pride in paying attention to smallest<br> details and making
+              sure that my work is <br>pixel perfect.I am exited to bring my skills<br>
+              and experience to help businesses achieve<br> their goals and create a
+              strong online<br> presence.
+            </p>
+            <img
+              src="./images/portfolio1.png"
+              alt="expense-manager project"
+              class="w-80 h-72 object-cover mx-auto p-4"
+            />
+          </div>
+          <!-- Second project -->
+          <div class="bg-white border border-transparent shadow-md hover:border-brown hover:bg-biege transition-all duration-300">
+            <p class="text-lg p-4 text-gray-800">
+              I take pride in paying attention to smallest<br> details and making
+              sure that my work is <br>pixel perfect.I am exited to bring my skills<br>
+              and experience to help businesses achieve<br> their goals and create a
+              strong online <br>presence.
+            </p>
+            <img
+              src="./images/portfolio2.png"
+              alt="survey-form project"
+              class="w-80 h-72 object-cover mx-auto p-4"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section ends -->
+
+      <!-- Skills section Starts-->
+      <section>
+        <h2 class="text-5xl font-bold text-center pt-4">My Skills</h2>
+        <div class="flex justify-center space-x-4">
+          
+            <!--HTML-->
+            <div class="">
+              <img src="./images/skills.png" alt="HTML" class="w-10 h-10" />
+              <h2>HTML</h2>
+            </div>
+            <!--CSS-->
+            <div>
+              <img src="./images/skills.png" alt="CSS" class="w-10 h-10" />
+              <h2>CSS</h2>
+            </div>
+            <!--JS-->
+            <div>
+              <img
+                src="./images/skills.png"
+                alt="JavaScript"
+                class="w-10 h-10"
+              />
+              <h2>JS</h2>
+            </div>
+            <!--REACT-->
+            <div>
+              <img src="./images/skills.png" alt="React.js" class="w-10 h-10" />
+              <h2>REACT</h2>
+            </div>
+            <!--TAILWIND-->
+            <div>
+              <img
+                src="./images/skills.png"
+                alt="Tailwind css"
+                class="w-10 h-10"
+              />
+              <h2>TAILWIND</h2>
+            </div>
+            <!--TYPESCRIPT-->
+            <div>
+              <img
+                src="./images/skills.png"
+                alt="TypeScript"
+                class="w-10 h-10"
+              />
+              <h2>TYPESCRIPT</h2>
+            </div>
+            <!--NODE JS-->
+            <div>
+              <img src="./images/skills.png" alt="Node.js" class="w-10 h-10" />
+              <h2>NODE JS</h2>
+            </div>
+            <!--MySQL-->
+            <div>
+              <img src="./images/skills.png" alt="MySql" class="w-10 h-10" />
+              <h2>MySQL</h2>
+            </div>
+          
+        </div>
+      </section>
+      <!-- Skills section ENDS-->
+
+      <!-- Contact Section STARTS-->
+      <section>
+        <h2 class="text-5xl font-bold text-center pt-4 mb-8">Contact</h2>
+  <div class="max-w-3xl mx-auto bg-brown p-8 shadow-lg rounded-lg">
+    <p class="text-lg mb-6 text-white text-center">Send me a message</p>
+    <form class="space-y-6">
+      <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Name" />
+      <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Email" />
+      <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Subject" />
+      <textarea name="message" rows="6" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Message"></textarea>
+      <button type="submit" class=" bg-white-500 text-white p-3 rounded-lg hover:bg-green-600">Send Message</button>
+      <div class="flex justify-center space-x-4 mt-6">
+        <a href="https://www.linkedin.com/in/kairuthiann/" target="_blank">
+          <img src="./images/linkedin.png" alt="LinkedIn Icon" class="w-8 h-8" />
+        </a>
+        <a href="https://x.com/khanita_inoti" target="_blank">
+          <img src="images/X.png" alt="X Icon" class="w-8 h-8" />
+        </a>
+        <a href="https://www.linkedin.com/in/kairuthiann/" target="_blank">
+          <img src="images/Watsapp.png" alt="WhatsApp Icon" class="w-8 h-8" />
+        </a>
+      </div>
+    </form>
+  </div>
+      </section>
+      <!-- Contact Section ENDS-->
+    </main>
+
+    <!-- Main Section Ends -->
+
+    <!-- footer Section STARTS -->
+    <footer>
+        <div class="flex top-0 z-10 sticky justify-center p-4 bg-gray-200">
+            <div>
+             <nav class="flex flex-1  space-x-8">
+                 <a href="/" class="text-gray-800 hover:text-blue-500">Home</a>
+                 <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
+                <a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a>
+             </nav>
+             <div>
+                <p>&copy; 2024 Ann Kairuthi. All rights reserved.</p>
+            </div>
+            </div>
+            
+        </footer>
+     <!--footer Section STARTS -->
+  </body>
+</html>
