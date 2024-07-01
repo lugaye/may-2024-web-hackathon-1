@@ -24,6 +24,7 @@ header {
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 1em;
 }
 
 .avatar {
@@ -35,7 +36,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .avatar h1 {
@@ -48,6 +48,7 @@ header {
     flex: 1;
     padding-left: 2em;
 }
+
 .name {
     text-align: center;
 }
@@ -180,3 +181,20 @@ footer {
 footer p {
     font-size: 1.2em;
 }
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 1em; 
+    }
+
+    .header-details {
+        padding-left: 0; /* Remove left padding on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
