@@ -1,3 +1,29 @@
+# My Portfolio
+
+Welcome to my portfolio hosted at [nathey.vercel.app](https://nathey.vercel.app). 
+This website showcases my projects, skills, and experience in web development.
+
+## Features and Highlights
+- Responsive design for all devices: mobile phones, tablets, and laptops.
+- Interactive project showcases with detailed descriptions.
+- Smooth animations and intuitive navigation.
+
+## Technologies Used
+- HTML, CSS, JavaScript
+- React.js
+- Vercel for deployment
+
+## Installation
+No installation required. Simply visit [nathey.vercel.app](https://nathey.vercel.app) in your web browser.
+
+## Usage
+Explore my portfolio to see my latest projects and skills. Navigate through different sections to learn more about my work.
+
+## Screenshots
+Below is a preview of how it looks
+![Homepage screenshot](/screenshots/homepage.png)
+
+
 # WEB HACKATHON - 1
 Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
 
