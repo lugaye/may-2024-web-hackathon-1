@@ -1,0 +1,423 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-size:100%;
+    
+ }
+ body{
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+ }
+ nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    li{
+        display: inline-block;
+        list-style: none;
+        margin: 5px 5px;
+    }
+    li,a {
+        text-decoration: none;
+        color: darkgoldenrod;
+        font-weight: bold;
+    }
+    }
+    nav ul li a:hover{
+        color: whitesmoke;
+        transition: .4s;
+    }
+
+ button{
+    background-color: goldenrod;
+    padding: 10px 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 30px 0;
+    transition: transform .4s, background-color .4s;
+ }
+ button:hover{
+    transform: scale(1.2);
+    background-color: white;
+    color: rgb(7, 7, 46);
+}
+ .cta-buttons{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+ }
+ .content{
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: black;
+ }
+ 
+
+/* Header Styles */
+header {
+    background-color:rgb(7, 7, 46);
+    color: goldenrod;
+    padding: 1rem;
+    text-align: center;
+}
+/* Hero Section Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero {
+    animation: fadeIn 2s ease-in;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(my\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+   
+}
+
+.hero .my-image {
+    margin-right: 2rem;
+}
+
+.hero .my-image img {
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+}
+
+.hero .content h2 {
+    color: rgb(7, 7, 46);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.cta-buttons {
+    margin-top: 1rem;
+}
+
+.cta-buttons button {
+    background-color: goldenrod;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-buttons button a {
+    color: rgb(7, 7, 46);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-buttons button:hover {
+    background-color: rgb(7, 7, 46);
+}
+
+.cta-buttons button:hover a {
+    color: white;
+}
+
+/* Section Styles */
+h2 {
+    color: navy;
+}
+span{
+    color: goldenrod;
+}
+
+h3 {
+    color: #4b4b87;
+}
+
+p {
+    color: #333;
+}
+
+/* About Me Section */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.About-Me {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+.About-Me {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.About-Me h2 {
+    color: navy;
+}
+
+.About-Me p {
+    margin: 1rem 0;
+}
+
+.About-Me a {
+    color: navy;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.About-Me a img:hover {
+    color: goldenrod;
+    transform: scale(1.2);
+}
+
+/* Skills Section */
+.Skills {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Skills h2 {
+    color: navy;
+}
+
+.Skills label {
+    display: block;
+    margin: 0.5rem 0;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--percentage);
+    }
+}
+
+.Progress-Bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+.Progress-Bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: goldenrod;
+    animation: fillBar 2s forwards;
+    width: 0;
+}
+
+.Progress-Bar[data-percentage="75%"]::before {
+    --percentage: 75%;
+}
+
+.Progress-Bar[data-percentage="70%"]::before {
+    --percentage: 70%;
+}
+
+.Progress-Bar[data-percentage="50%"]::before {
+    --percentage: 50%;
+}
+
+
+/* Projects Section */
+.Projects {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Projects h2 {
+    color: navy;
+}
+
+.Projects h3 {
+    color:navy;
+}
+
+.Projects nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Projects nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.Projects nav ul li a {
+    color: rgb(7, 7, 46);
+    text-decoration: none;
+}
+
+.Projects nav ul li a:hover {
+    color:goldenrod;
+}
+main{
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+.Experience {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Experience h2 {
+    color: navy;
+}
+
+.Experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Experience ul li {
+    margin: 1rem 0;
+}
+
+.Experience ul li h3 {
+    color: rgb(7, 7, 46);
+}
+
+.Experience ul li p {
+    margin: 0.5rem 0;
+}
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+}
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
+}
+.timeline-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 2px;
+    background-color: goldenrod;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(7, 7, 46);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer ul li a {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer ul li a:hover{
+    color: white;
+}
+
+footer ul li a img:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
