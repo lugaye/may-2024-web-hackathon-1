@@ -1,0 +1,131 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#first_container img {
+    width:70px;
+    margin:20px;
+    border-radius:50%;
+   
+}
+#first_container {
+    width: 85%;
+    display: flex;
+    align-items:center;
+    background-color:rgba(199, 194, 194,0.177);
+    margin:auto;
+}
+#first_container h1 {
+   color:grey;
+   margin-right:100px;
+}
+#nav_bar ul {
+    display:flex;
+    justify-items: flex-end;
+    margin-right:10px
+}
+li {
+    list-style:none;
+}
+#nav_bar a {
+    text-decoration:none;
+    color:grey;
+    margin-left:70px;
+    border: 1px solid grey;
+    border-radius:3px;
+    padding:10px;
+}
+#nav_bar a:hover {
+    cursor: pointer;
+    color:rgb(81, 125, 146);
+}
+#second_container{
+    width:85%;
+    margin:auto;
+    color:grey;
+}
+#second_container h2 {
+    margin:50px auto;
+    font-size:30px;
+    color:rgb(81, 125, 146)
+}
+#second_container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#second_container p {
+    margin:50px auto;
+    font-size:20px;
+    text-align: justify;
+}
+#second_container p::first-letter {
+    font-size:30px;
+}
+#second_container img {
+    width:60%;
+    margin: 50px 70px;
+}
+#footer {
+    width:100%;
+    background:rgb(136, 132, 132);
+} 
+#footer div {
+    width:60%;
+    margin:auto
+}
+#footer div img {
+    width:50px;
+    margin:20px 100px;
+} 
+
+#clock {
+    width:10%;
+    height:30px;
+    margin:10px 100px;
+    display:flex;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content:flex-end;
+    color:rgb(73, 65, 65);
+    font-style: italic;
+}
+#clock div {
+    margin:0;
+    width:28px;
+    height:25px;
+    font-size:20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    align-items: baseline;
+}
+#clock span {
+    font-size: 20px;
+    margin:0 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+#clock #ampm {
+    font-size: small;
+    margin: 0 10px; 
+}
+
+#date {
+    display:flex;
+    margin:5px 90px;
+    font-family: sans-serif;
+    font-style: italic;
+    color:rgb(173, 170, 170);
+}
+#date div {
+    margin:0 7px;
+}
+#author {
+    margin:5px 110px;
+    color:rgb(173, 170, 170);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style:oblique;
+}
