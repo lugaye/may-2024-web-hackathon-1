@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal portfolio website.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!---header section-->
     <header>
         <div>
             <nav>
-                <h1>My Portfolio</h1>
-                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo image" width="100" height="100">
+                </div>
                 <ul>
                     <li><a href="#HOME">HOME</a></li>
                     <li><a href="#ABOUT">ABOUT</a></li>
@@ -19,22 +21,28 @@
                     <li><a href="#PROJECTS">PROJECTS</a></li>
                     <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
                     <li><a href="#CONTACT">CONTACT</a></li>
-                </ul>
-                <li><img src="logo.png" alt="Logo image"></li>
-                
-            </nav>
+                </ul>      
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            </nav> 
         </div>
     </header>
     <!--hero section-->
     <div class="hero">
-        <h2>Hey, I'm Marion Korgoren, a <br>Web Developer</h2>
-        <!--upload a photo-->
-        <div class="cta-buttons">
-            <a href="resume.pdf" class="cta-buttons" download="">Download Resume</a>
+        <div class="my-image">
+        </div>
+        <div class="content">
+            <p>
+                <h3>Hello, my name is</h3>
+                <h2>Marion <span>Korgoren</span></h2>
+                <h3>A Web Developer</h3>
+            </p>
+            <div class="cta-buttons"> 
+                <button> <a href="resume.pdf" class="cta-buttons" download="">Download CV</a></button>
+            </div> 
         </div>
     </div>
     <!--About Section-->
-    <div class="About Me">
+    <div class="About-Me">
         <h2>About Me</h2>
         <p>
             Hi, I'm Marion Korgoren, a passionate Web Developer based in Nairobi. <br> 
@@ -44,30 +52,32 @@
             I am driven by a love for continuous learning, problem-solving, and making a positive impact through technology. <br>
             When I'm not coding, I enjoy exploring new tech trends and improving my design skills.
         </p>
-        <div class="CONTACT INFO">
-            <a href="https://www.linkedin.com/in/marion-korgoren-a3b3432a3?trk=contact-info">linkedin</a>
-            <a href="https://github.com/Korgorenn/Korgorenn.git">Github</a>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/marion-korgoren-a3b3432a3?trk=contact-info"><img src="linkedin.jpg" alt="linkedin" width="40" height="40"></a>
+            <a href="https://github.com/Korgorenn/Korgorenn.git"><img src="github.png" alt="Github" width="40" height="40"></a>
         </div>
     </div>
     <!--Skills section-->
     <div class="Skills">
         <h2>Skills</h2> 
-        <div>
+        <div class="skill">
             <label for="HTML">HTML</label>
+            <div class="Progress-Bar" data-percentage="75%">
+                <span class="percentage">75%</span>
+            </div>
         </div>
-        <div class="Progress-Bar" data-percentage="75"></div>
-        <div>
+        <div class="skill">
             <label for="CSS">CSS</label>
+            <div class="Progress-Bar" data-percentage="70%">
+                <span class="percentage">70%</span>
+            </div>
         </div>
-        <div class="Progress-Bar" data-percentage="70"></div>
-        <div>
+        <div class="skill">
             <label for="PHYSIOTHERAPY">PHYSIOTHERAPY</label>
+            <div class="Progress-Bar" data-percentage="50%">
+                <span class="percentage">50%</span>
+            </div>
         </div>
-        <div class="Progress-Bar" data-percentage="50"></div>
-        <div>
-            <label for="JAVASCRIPT">JAVASCRIPT</label>
-        </div>
-        <div class="Progress-Bar" data-percentage="5"></div>
     </div>
     <!--Projects Section-->
     <div class="Projects">
@@ -76,55 +86,56 @@
         <nav>
             <ul>
                 <li><a href="#Overview">Overview</a></li>
-                <li><a href="#Live Demo">Live Demo</a></li>
+                <li><a href="#Live-Demo">Live Demo</a></li>
             </ul>
         </nav>
     </div>
     <main>
         <section id="Overview">
-                <h3>Project Overview</h3>
-                <p>My project is about an expense tracker.An expense tracker is a tool, often digital, that helps individuals or businesses record, categorize, and analyze their expenses. <br>
-                For this project I incorporated my foundational knowledge in HTML and CSS styles to build it. The project is not fully functonal yet I'm still working on it.</p>
-        </section>
-        <section id="Live Demo">
+            <h3>Project Overview</h3>
+            <p>My project is about an expense tracker. An expense tracker is a tool, often digital, that helps individuals or businesses record, categorize, and analyze their expenses. <br>
+            For this project, I incorporated my foundational knowledge in HTML and CSS styles to build it. The project is not fully functional yet; I'm still working on it.</p>
+        </section><br>
+        <section id="Live-Demo">
             <div class="demo-expense">
-                <a href="https://github.com/Powerlearnproject/week-1-html-setup-Korgorenn.git">demo-expense</a>
+             <button class="demo"> <a href="https://github.com/Powerlearnproject/week-1-html-setup-Korgorenn.git">demo-expense</a></button> 
             </div>
         </section>
     </main>
     <!--Experience Section-->
-    <div class="EXPERIENCE">
+    <div class="Experience">
         <h2>Education</h2>
-        <div class="timeline"></div>
-        <div class="timeline-item"></div>
-        <div class="timeline-content"></div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                <h3>Bsc.Physiotherapy</h3>
+                <p>JKUAT</p>
+                <p>2022-2026</p>
+                </div>
+            </div>
+            <div class="timeline"></div>
+            <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">    
+                <h3>Software Development</h3>
+                <p>PLP Academy</p>
+                <p>May 2024-September 2024</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div>
             <ul>
-                <li>
-                    <h3> Bsc.Physiotherapy</h3>
-                    <p>JKUAT</p>
-                    <p>2022-2026</p>
-                </li>
-                <li>
-                    <h3>Software Development</h3>
-                    <p>PLP Academy</p>
-                    <p>May 2024-September 2024</p>
-                </li>
+                <li><a href="youtube.com"> <img src="youtube.jpg" alt="youtube" width="40" height="40"></a></li>
+                <li><a href="Instagram.com"><img src="instagram.jpg" alt="Instagram" width="40" height="40"></a></li>
+                <li><a href="Tiktok.com"><img src="tiktok.png" alt="Tiktok" width="40" height="40"></a></li>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
             </ul>
         </div>
-
-    </div>
+        <p>&copy; 2024 Marion Korgoren. All rights reserved.</p>
+    </footer>
 </body>
-<footer>
-    <div>
-       <ul>
-        <li><a href="youtube.com">Youtube</a></li>
-        <li><a href="Instagram.com">Instagram</a></li>
-        <li><a href="Tiktok.com">Tiktok</a></li>
-        <li><a href="#privacy-policy">Privacy Policy</a></li>
-        <li><a href="#terms-of-service">Terms of Service</a></li>
-       </ul>
-    </div>
-    <p>&copy; 2024 Marion Korgoren. All rights reserved.</p>
-</footer>
 </html>
