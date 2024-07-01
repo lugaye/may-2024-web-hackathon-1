@@ -293,7 +293,21 @@ main{
     color: white;
     font-weight: bold;
 }
-
+.back{
+    text-align: center;
+}
+.back>a{
+    text-decoration: underline 3px  rgba(0,148,133,255);
+    font-weight: 900;
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.back >a:hover{
+    background-color: blue;
+    color: white;
+}
 footer{
     background-color: black;
     color: white;
