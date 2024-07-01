@@ -16,26 +16,26 @@ const skills: Skill[] = [
     id: 1,
     category: "Frontend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I possess strong expertise in frontend technologies, enabling me to craft responsive and user-friendly web applications. I believe in a design-first approach, crafting user interfaces before diving into development.",
   },
   {
     id: 2,
     category: "Database Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I have a solid understanding of database concepts gained through working with SQL. I'm actively expanding my knowledge in database design to explore more advanced techniques and tools.",
   },
   {
     id: 3,
     category: "Content Writing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I leverage LinkedIn as a platform to share my tech journey, explain tech concepts, and offer insights on personal development in the tech industry.",
   },
   {
     id: 4,
     category: "Soft Skills",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
- },
+      "I bring a collaborative spirit, effective communication skills, and a problem-solving mindset to the table. My creativity allows me to approach challenges with innovative solutions.",
+  },
 ];
 
 const technologies: Technology[] = [
@@ -44,22 +44,25 @@ const technologies: Technology[] = [
   { id: 3, name: "JavaScript" },
   { id: 4, name: "NextJS" },
   { id: 5, name: "SQL" },
+  { id: 6, name: "Python" },
+  { id: 7, name: "Git" },
+  { id: 8, name: "Figma" },
 ];
 
 const Skills: React.FC = () => {
   return (
-    <section className="bg-white py-12">
+    <section id="skills" className="bg-white py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-2xl font-bold mb-8">
+        <h2 className="text-center text-lg font-light mb-8">
           What I Know <br />
-          <span className="text-blue-500">My Skills</span>
+          <span className="text-heading text-3xl font-bold">My Skills</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">Skillset</h3>
             <p className="mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
- 
+              Over the past 3 years, I've honed my skills in various areas and
+              I'm constantly striving to learn and grow.
             </p>
             <h3 className="text-xl font-semibold mb-4">Technologies</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

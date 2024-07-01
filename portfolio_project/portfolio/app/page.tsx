@@ -3,6 +3,10 @@ import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Qualifications from "./components/Qualifications";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import EventGallery from "./components/EventGallery";
+import Contact from "./components/Contact";
+
 
 
 export default function Home() {
@@ -17,6 +21,9 @@ export default function Home() {
         <About/>
         <Qualifications/>
         <Skills/>
+        <Projects/>
+        <EventGallery/>
+        <Contact/>
       </main>
     );
   }

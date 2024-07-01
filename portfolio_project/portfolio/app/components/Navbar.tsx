@@ -12,7 +12,7 @@ const Navbar = () => {
   
     return (
       <nav className="  bg-primary bg-opacity-100">
-        <div className="flex flex-wrap items-center justify-between mx-auto p-8 ">
+        <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
           <Link href="/" className="text-xl text-black font-semibold">
             Gwendolyn
           </Link>
@@ -36,6 +36,11 @@ const Navbar = () => {
               <Link href={"#projects"}>
                 <li className="ml-10 uppercase text-base text-black hover:text-secondary">
                   Projects
+                </li>
+              </Link>
+              <Link href={"#contact"}>
+                <li className="ml-10 uppercase text-base text-secondary hover:text-heading">
+                  Contact Me
                 </li>
               </Link>
             </ul>
@@ -68,7 +73,7 @@ const Navbar = () => {
               <Link href="#home">
                 <li
                   onClick={() => setNavbarOpen(false)}
-                  className="pb-2 text-[#ADB7BE] hover:text-black"
+                  className="pb-2 text-[#ADB7BE] hover:text-secondary"
                 >
                   Home
                 </li>
@@ -76,7 +81,7 @@ const Navbar = () => {
               <Link href="#about">
                 <li
                   onClick={() => setNavbarOpen(false)}
-                  className="pb-2 text-[#ADB7BE] hover:text-black"
+                  className="pb-2 text-[#ADB7BE] hover:text-secondary"
                 >
                   About
                 </li>
@@ -84,7 +89,7 @@ const Navbar = () => {
               <Link href="#skills">
                 <li
                   onClick={() => setNavbarOpen(false)}
-                  className="pb-2 text-[#ADB7BE] hover:text-black"
+                  className="pb-2 text-[#ADB7BE] hover:text-secondary"
                 >
                   Skills
                 </li>
@@ -92,7 +97,7 @@ const Navbar = () => {
               <Link href="#projects">
                 <li
                   onClick={() => setNavbarOpen(false)}
-                  className="pb-2 text-[#ADB7BE] hover:text-black"
+                  className="pb-2 text-[#ADB7BE] hover:text-secondary"
                 >
                   Projects
                 </li>

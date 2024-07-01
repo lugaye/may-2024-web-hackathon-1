@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
@@ -15,14 +16,22 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <div className="text-center pb-14">
-            <h1 className="text-black mb-4  font-extrabold ">
+          <div className="text-center pb-14 mt-6">
+            <h1 className="text-black mb-4  font-bold ">
               <span className=" text-3xl sm:text-2xl lg:text-5xl">Hi, I&apos;m Gwendolyn Amanda.</span>
             </h1>
             <p className='text-black text-2xl lg:text-4xl font-medium'>Web Developer</p>
             <p className="text-[#ADB7BE] mb-6 text-base  sm:text-lg lg:text-lg">
-            I bring creative ideas and technical expertise to life.
+            I bring creative ideas and technical expertise to life. I am dedicated to delivering exceptional results through strategic thinking and meticulous attention to detail.
             </p>
+            <div className="flex space-x-4 mt-2 justify-center">
+            <Link href="https://github.com/ama-lyn" target="_blank" aria-label="GitHub">
+              <FaGithub className="text-4xl hover:text-secondary text-gray-500 transition duration-300" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/gwendolynamanda/" target="_blank" aria-label="LinkedIn">
+              <FaLinkedin className="text-4xl hover:text-secondary text-blue-500 transition duration-300" />
+            </Link>
+          </div>
           </div>
         </section>
     );
