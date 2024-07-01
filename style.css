@@ -1,0 +1,452 @@
+/* General reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Defines the scrolloing behaviour for the html file */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+  background: #080808;
+  color: #fff;
+}
+
+/* Image styling with hover effect */
+.image1 {
+  width: 35px;
+  border-radius: 1.5px;
+  transition: transform 0.5s;
+}
+
+.image1:hover {
+  width: 42px;
+  transform: translateY(-1.5px);
+}
+
+/* Header styling */
+#header {
+  width: 100%;
+  height: 95vh;
+  background: linear-gradient(rgba(123, 123, 123, 0.85), #080808);
+  background-size: contain;
+  background-position: right;
+}
+
+/* Styles the container that holds the header by defining a padding 
+of 10px top and bottom and 10% left and right */
+.contaniner {
+  padding: 10px 10%;
+}
+
+/* Defiens the style for the nav bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Defiens the style for the custom logo without hovering*/
+.logo {
+  width: 140px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 25px;
+  transition: 0.5s;
+}
+
+/* Defiens the style for the custom logo after hovering*/
+.logo:hover {
+  width: 150px;
+  background: #5a9fe3;
+}
+
+/* Defiens the style for the navbar unordered list*/
+nav ul li {
+  padding-right: 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* Defiens the style for the navbar a tag without hovering.*/
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.5;
+}
+
+/* Defiens the style for the navbar a tag after hovering.*/
+nav ul li a:hover{
+  font-weight: 700;
+  color: #080808;
+}
+
+/* Defiens the style for the custom navbar after.*/
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #3998f8;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+/* Defiens the style for the custom navbar after hovering*/
+nav ul li a:hover::after {
+  width: 100%;
+  font-size: 20px;
+  color: #080808;
+}
+
+/* Defiens the style for the header text.*/
+.header-txt {
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Defiens the style for the header text h1 tag.*/
+.header-txt h1 {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+/* Defiens the style for the header text h1 tag wrapped with a span.*/
+.header-txt h1 span {
+  color: #3998f8;
+}
+
+/* -------------about------- */
+#about {
+  padding: 50px;
+  color: #ababab;
+}
+
+/* Defiens the style for the row that holds the about section*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col1 {
+  flex-basis: 35%;
+  padding-top: 18px;
+}
+
+.about-col1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col2 {
+  flex-basis: 60%;
+  margin-bottom: 20px;
+}
+
+/* Defiens the style for the subtitle text which I commonly use in diff sections*/
+.sub-title {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Defiens the style for the tab titles.*/
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+/* Defiens the style for the tab Links before and after hovering.*/
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #3998f8;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+/* Defiens the style for the tab contents.*/
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #5a9fe3;
+  font-size: 16px;
+}
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* ----services------ */
+#services {
+  padding: 50px;
+}
+
+/* Defiens the style for the service list with a grid display before and after hovering.*/
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 15px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #52a4f7;
+  margin-bottom: 15px;
+}
+
+.services-list div a {
+  font-size: 12px;
+  margin-top: 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+
+.services-list div:hover {
+  background: #0a7dda;
+  transform: translateY(-10px);
+}
+
+/* ----portfolio---- */
+#portfolio {
+  padding: 100px;
+}
+
+/* Defiens the style for the work list which is also a grid both before and after hovering.*/
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+/* Defiens the style for the layer that pops up after hovering.*/
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(133, 133, 133, 0.85), #71b8ff);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: #180df6;
+  text-decoration: null;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+/* Defiens the style for the sevices button .*/
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #77767b;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #6db1e8;
+  font-size: 18px;
+  color: #080808;
+}
+
+/* ------Contact---------- */
+#contact {
+  padding: 30px;
+  background: #414040;
+  border-radius: 25px;
+  margin: 45px;
+}
+
+
+/* Defines the style for the columns in the contact section left and right*/
+.column-left {
+  flex-basis: 35%;
+}
+
+.column-right {
+  flex-basis: 60%;
+}
+
+.column-left p {
+  margin-top: 30px;
+}
+
+.column-left p i {
+  color: #6db1e8;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #77767b;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #6db1e8;
+  transform: translateY(-5px);
+}
+
+.column-right form {
+  width: 100%;
+}
+/* Defines the style for the form input fields and text area. */
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+}
+
+form btn {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #080808;
+}
+/* Defines the style for the second button before and after hovering */
+.btn2 {
+  background: #080808;
+  display: inline-block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #77767b;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 15px;
+}
+
+.btn2:hover {
+  background: #6db1e8;
+  font-size: 18px;
+  color: #080808;
+}
+
+/* This styles the final section copyright with a custom styling*/
+#copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  margin-top: 15px;
+  
+}
+
+/* This sets the copyright love icon to a light blue color */
+#copyright i {
+  color: #009cfd;
+}
