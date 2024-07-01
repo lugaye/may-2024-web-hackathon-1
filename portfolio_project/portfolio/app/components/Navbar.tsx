@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
       <nav className="  bg-primary bg-opacity-100">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4 ">
-          <Link href="/" className="text-xl text-black font-semibold">
+          <Link href="/" className="text-base text-heading  underline decoration-wavy underline-offset-8">
             Gwendolyn
           </Link>
           <div className="hidden md:flex">
