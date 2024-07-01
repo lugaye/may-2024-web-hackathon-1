@@ -4,66 +4,126 @@ body {
   padding: 0;
 }
 
-header {
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(116, 132, 228);
-  height: 64px;
+  height: 4rem;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 0 5%;
   margin: 0;
-}
-
-header ul {
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-}
-
-header li {
-  color: rgb(242, 235, 243);
-  text-shadow: rgb(79, 79, 79);
-  padding: 15px 10px;
-  font-family: serif;
-  font-size: 16px;
-  float: inline-end;
-  margin: auto;
-  cursor: pointer;
-}
-
-header li a {
-  color: rgb(242, 235, 243);
-  text-decoration: none;
-}
-
-header li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgb(205, 226, 15);
 }
 
 #dev-title {
   font-family: "Inria Serif", serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-shadow: rgb(79, 79, 79);
   font-weight: 600;
   font-style: italic;
   float: left;
-  margin: 20px 20px;
+  margin: 1.25rem 1.25rem;
   color: rgb(205, 226, 15);
   cursor: pointer;
 }
 
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  color: rgb(242, 235, 243);
+  text-shadow: rgb(79, 79, 79);
+  font-family: serif;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+#main-header nav a {
+  color: rgb(242, 235, 243);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#main-header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgb(205, 226, 15);
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(240, 240, 240);
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
 #home {
   background-color: rgb(242, 245, 245);
-  margin: 0 0 20px 0;
-  padding: 20px 0;
+  margin: 0 0 1.25rem 0;
+  padding: 1.25rem 0;
 }
 
 h2 {
   text-transform: uppercase;
   text-align: center;
   font-family: serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
 }
 
 #dev {
@@ -72,16 +132,16 @@ h2 {
 }
 
 #dev img {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   border: 2px solid rgb(240, 235, 240);
   padding: 20px 20px;
 }
 
 #dev-details {
   font-family: sans-serif;
-  padding: 20px 20px;
-  width: 600px;
+  padding: 1.25rem 1.25rem;
+  width: 41rem;
 }
 
 #dev-details h3 {
@@ -91,49 +151,48 @@ h2 {
 
 #social-media {
   margin: auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
 #social-media a {
-  padding: 10px;
+  padding: 0.75rem;
 }
 
 #portfolio {
   background-color: rgb(242, 245, 245);
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 1.25rem 0;
+  padding: 1.25rem 0;
 }
 
 #portfolio ul {
   display: flex;
   justify-content: space-around;
-  justify-content: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   list-style: none;
-  margin: 0 ;
+  margin: auto;
   padding: 0;
 }
 
 .portfolio-details {
-  margin: auto;
+  /* margin: auto; */
+  /* margin: 0; */
 }
 
 .portfolio-details ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   border: 2px solid rgb(240, 235, 240);
-  border-radius: 5px;
+  border-radius: 6px;
   font-family: sans-serif;
-  margin: 10px;
+  margin: 0;
   align-items: center;
-  width: 320px;
-  /* height: 520px; */
+  width: 20rem;
 }
 
 .portfolio-details ul li {
-  padding: 10px;
+  padding: 0.75rem;
 }
 
 .portfolio-details ul li h3 {
@@ -143,16 +202,16 @@ h2 {
 }
 
 .portfolio-details ul li img {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .portfolio-details button {
   background-color: rgb(116, 132, 228);
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 15px;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
   font-weight: bold;
   text-shadow: rgb(79, 79, 79);
   text-transform: capitalize;
@@ -170,11 +229,11 @@ h2 {
 }
 
 .view-details-buttons a {
- text-decoration: none;
- border: 2px solid rgb(240, 235, 240);
- padding: 5px;
- border-radius: 5px;
- color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  border: 2px solid rgb(240, 235, 240);
+  padding: 5px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .portfolio-details ul li p {
@@ -183,8 +242,8 @@ h2 {
 
 #skills {
   background-color: rgb(242, 245, 245);
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 1.25rem 0;
+  padding: 1.25rem 0;
 }
 
 #skills-details {
@@ -197,26 +256,22 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
-  /* justify-content: center;
-  margin: auto; */
 }
 
 #skills-h3 {
-display: flex;
+  display: flex;
 }
 
 #skills-details h3 {
   text-transform: capitalize;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   cursor: pointer;
 }
 
 #skills-lists {
   display: flex;
-  /* margin: auto; */
 }
-#skills-lists ul li{
+#skills-lists ul li {
   list-style: circle;
   padding: 10px 0;
 }
@@ -233,12 +288,12 @@ display: flex;
 
 #experience {
   background-color: rgb(242, 245, 245);
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 1.25rem 0;
+  padding: 1.25rem 0;
 }
 
 #experience ul {
-  width: 500px;
+  width: 31.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +304,7 @@ display: flex;
 /* #experience ul li {} */
 
 .experience-details {
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
 }
 .experience-details ul {
   list-style: none;
@@ -266,24 +321,23 @@ display: flex;
 }
 
 .roles ul li {
-  margin: 0 50px;
+  margin: 0 3.25rem;
 }
 
 .roles ul li h4 {
   text-transform: capitalize;
-  margin: 10px 0 10px 0;
-  /* text-align: center; */
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 #education {
   background-color: rgb(242, 245, 245);
-  margin: 20px 0;
-  padding: 20px 0;
+  margin: 1.25rem 0;
+  padding: 1.25rem 0;
   font-family: sans-serif;
 }
 
 #education ol {
-  width: 340px;
+  width: 21.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,8 +355,8 @@ display: flex;
 footer {
   background-color: rgb(116, 132, 228);
   font-family: sans-serif;
-  margin: 20px 0 0 0;
-  padding: 20px 0 0 0;
+  margin: 1.25rem 0 0 0;
+  padding: 1.25rem 0 0 0;
 }
 
 footer h2 {
@@ -333,37 +387,107 @@ footer ul li {
 }
 
 #form-details input {
-  width: 300px;
-  /* height: 50px; */
-  margin: 0 0 20px 0;
-}
-
-#media {
-  flex-direction: row;
-  padding: 10px;
+  width: 18.75rem;
+  margin: 0 0 1.25rem 0;
 }
 
 #form-buttons {
   margin: 10px auto 0 auto;
-  /* padding: 20px; */
-  width: 250px;
+  width: 15.75rem;
 }
 
 .form-button-element {
   background-color: rgb(240, 240, 240);
   border: none;
-  padding: 10px;
-  margin: 15px;
-  border-radius: 5px;
+  padding: 0.75rem;
+  margin: 1rem;
+  border-radius: 6px;
   text-transform: capitalize;
   font-weight: 700;
   cursor: pointer;
 }
 
+#media {
+  flex-direction: row;
+  padding: 0.75rem;
+}
+
 #media a {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 footer ul li p {
   text-transform: capitalize;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 64rem) {
+  #dev-title {
+    font-size: 1rem;
+  }
+
+  #main-header nav a {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+
+  #dev-title {
+    font-size: 1rem;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #dev {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  #dev img {
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+  }
+
+  #dev-details {
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+  }
+
+  #portfolio ul {
+    flex-direction: column;
+  }
+
+  .portfolio-details {
+    margin: 20px 0;
+  }
+
+  
+  .roles ul {
+      margin: 0;
+      width: 25rem;
+    }
+  
+
+  .roles ul li {
+    padding: 10px 0;
+    margin: 0 20px;
+    width: 80%;
+  }
+}
+@media (max-width: 30rem) {
 }
