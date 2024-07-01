@@ -1,0 +1,190 @@
+:root {
+    --default-font-family: 'Poppins',
+            sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display',
+    serif;
+    background: linear-gradient(96.2deg,
+                rgb(255, 230, 112) 10.4%,
+                rgb(255, 100, 100) 43.8%,
+                rgb(0, 93, 219) 105.8%);
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        letter-spacing: 4px;
+        font-size: 96px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 0;
+}
+
+h1:hover {
+    background-size: 200%;
+    animation: ani 5s linear infinite;
+}
+
+h2 {
+    font-family: var(--default-font-family);
+    background: linear-gradient(90.2deg, rgb(89, 185, 88) 1.8%, rgb(242, 174, 67) 50.9%, rgb(219, 82, 76) 98.7%);
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    letter-spacing: 4px;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2:hover {
+    background-size: 200%;
+    animation: ani 5s linear infinite;
+}
+
+.hero {
+    padding: 250px 40px;
+    background-color: #F5F1FE;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+span.transition{
+    opacity: 1;
+}
+
+ 
+@keyframes ani {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    font-size: 16px;
+    font-family: var(--default-font-family);
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+    color: #88aceaff;
+    transition: all 100ms ease-in-out;
+}
+
+.logo {
+    width: 65px;
+}
+
+h2.sub-heading{
+    font-family: "Rubik Glitch Pop",
+        system-ui;
+        background: none;
+        font-size: 40px;
+}
+
+img.pic{
+    width: 200px;
+    margin: 40px 20px;
+    position: relative;
+    right: -300px;
+}
+
+div .project {
+    width: 600px;
+    position: relative;
+    right: -400px;
+}
+
+
+.details {
+    opacity: 70%;
+    padding: 40px 20px;
+}
+
+p {
+    font-family: var(--default-font-family);
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.list {
+    text-align: center;
+    list-style: none;
+    font-weight: normal;
+}
+
+section ul .list {
+    font-family: var(--default-font-family);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    transform: translateY(-50%, -50%);
+    filter: grayscale(100%);
+    transition: 5% ease-in-out;
+}
+
+.project:hover {
+    filter: grayscale(0%);
+}
+
+@media (max-width:900px) {
+
+    h1 {
+        font-size: 44px;
+        line-height: 56px;
+    }
+
+    .sub-heading {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .pic  {
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    nav a {
+        font-size: 12px;
+    }
+
+}
