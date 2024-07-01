@@ -1,0 +1,15 @@
+.name {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+.contact {
+	font-size: 20px;
+	border:1px solid #ccc;
+	width: 30%;
+	border-radius: 5px;
+	padding: 12px 10px;
+	background-color: blueviolet;
+}
+.contact-color {
+	color: whitesmoke;
+}
