@@ -1,0 +1,259 @@
+body {
+	    margin: 0;
+	        font-family: 'Arial', sans-serif;
+		    background-color: #1c1c1e;
+		        color: #fff;
+		}
+
+		header {
+			    background: #333;
+			        padding: 20px;
+				    text-align: center;
+			    }
+
+			    .hero-section {
+				        height: 100vh;
+					    display: flex;
+					        flex-direction: column;
+						    justify-content: center;
+						        align-items: center;
+							    background-image: url('your-image-path.jpg');
+							        background-size: cover;
+								    background-position: center;
+							    }
+
+							    .navbar {
+								        display: flex;
+									    justify-content: space-between;
+									        align-items: center;
+										    width: 80%;
+										        margin: 0 auto;
+										}
+
+										.navbar .logo {
+											    font-size: 24px;
+										    }
+
+										    .nav-links {
+											        list-style: none;
+												    display: flex;
+											    }
+
+											    .nav-links li {
+												        margin: 0 15px;
+												}
+
+												.nav-links a {
+													    text-decoration: none;
+													        color: #fff;
+														    font-size: 16px;
+													    }
+
+													    .hero-content {
+														        text-align: center;
+														}
+
+														.hero-content h2 {
+															    font-size: 48px;
+															        margin: 10px 0;
+															}
+
+															.hero-content p {
+																    font-size: 24px;
+																        margin: 10px 0;
+																}
+
+																.hero-content .btn {
+																	    padding: 10px 20px;
+																	        background-color: #f4b400;
+																		    color: #333;
+																		        text-decoration: none;
+																			    border-radius: 5px;
+																			        margin-top: 20px;
+																			}
+
+																			.skills-section, .projects-section, .articles-section, .contact-section {
+																				    padding: 50px 20px;
+																				        text-align: center;
+																				}
+
+																				.skills-section h2, .projects-section h2, .articles-section h2, .contact-section h2 {
+																					    margin-bottom: 20px;
+																				    }
+
+																				    .skills-grid, .projects-grid, .articles-grid {
+																					        display: flex;
+																						    flex-wrap: wrap;
+																						        justify-content: center;
+																						}
+
+																						.skill-item, .project-item, .article-item {
+																							    background-color: #444;
+																							        padding: 20px;
+																								    margin: 10px;
+																								        border-radius: 10px;
+																									    width: 200px;
+																								    }
+
+																								    form {
+																									        display: flex;
+																										    flex-direction: column;
+																										        align-items: center;
+																										}
+
+																										form input, form textarea {
+																											    padding: 10px;
+																											        margin: 10px 0;
+																												    width: 80%;
+																												        max-width: 500px;
+																													    border-radius: 5px;
+																													        border: none;
+																													}
+
+																													form button {
+																														    padding: 10px 20px;
+																														        background-color: #f4b400;
+																															    border: none;
+																															        border-radius: 5px;
+																																    cursor: pointer;
+																															    }
+
+																															    footer {
+																																        padding: 20px;
+																																	    text-align: center;
+																																	        background-color: #333;
+																																	}
+
+																																	footer p {
+																																		    margin: 0;
+																																	    }
+																																	    body {
+																																		        margin: 0;
+																																			    font-family: 'Arial', sans-serif;
+																																			        background-color: #1c1c1e;
+																																				    color: #fff;
+																																			    }
+
+																																			    header {
+																																				        background: #333;
+																																					    padding: 20px;
+																																					        text-align: center;
+																																					}
+
+																																					.hero-section {
+																																						    height: 100vh;
+																																						        display: flex;
+																																							    flex-direction: column;
+																																							        justify-content: center;
+																																								    align-items: center;
+																																								        background-image: url('your-image-path.jpg');
+																																									    background-size: cover;
+																																									        background-position: center;
+																																									}
+
+																																									.navbar {
+																																										    display: flex;
+																																										        justify-content: space-between;
+																																											    align-items: center;
+																																											        width: 80%;
+																																												    margin: 0 auto;
+																																											    }
+
+																																											    .navbar .logo {
+																																												        font-size: 24px;
+																																												}
+
+																																												.nav-links {
+																																													    list-style: none;
+																																													        display: flex;
+																																													}
+
+																																													.nav-links li {
+																																														    margin: 0 15px;
+																																													    }
+
+																																													    .nav-links a {
+																																														        text-decoration: none;
+																																															    color: #fff;
+																																															        font-size: 16px;
+																																															}
+
+																																															.hero-content {
+																																																    text-align: center;
+																																															    }
+
+																																															    .hero-content h2 {
+																																																        font-size: 48px;
+																																																	    margin: 10px 0;
+																																																    }
+
+																																																    .hero-content p {
+																																																	        font-size: 24px;
+																																																		    margin: 10px 0;
+																																																	    }
+
+																																																	    .hero-content .btn {
+																																																		        padding: 10px 20px;
+																																																			    background-color: #f4b400;
+																																																			        color: #333;
+																																																				    text-decoration: none;
+																																																				        border-radius: 5px;
+																																																					    margin-top: 20px;
+																																																				    }
+
+																																																				    .skills-section, .projects-section, .articles-section, .contact-section {
+																																																					        padding: 50px 20px;
+																																																						    text-align: center;
+																																																					    }
+
+																																																					    .skills-section h2, .projects-section h2, .articles-section h2, .contact-section h2 {
+																																																						        margin-bottom: 20px;
+																																																						}
+
+																																																						.skills-grid, .projects-grid, .articles-grid {
+																																																							    display: flex;
+																																																							        flex-wrap: wrap;
+																																																								    justify-content: center;
+																																																							    }
+
+																																																							    .skill-item, .project-item, .article-item {
+																																																								        background-color: #444;
+																																																									    padding: 20px;
+																																																									        margin: 10px;
+																																																										    border-radius: 10px;
+																																																										        width: 200px;
+																																																										}
+
+																																																										form {
+																																																											    display: flex;
+																																																											        flex-direction: column;
+																																																												    align-items: center;
+																																																											    }
+
+																																																											    form input, form textarea {
+																																																												        padding: 10px;
+																																																													    margin: 10px 0;
+																																																													        width: 80%;
+																																																														    max-width: 500px;
+																																																														        border-radius: 5px;
+																																																															    border: none;
+																																																														    }
+
+																																																														    form button {
+																																																															        padding: 10px 20px;
+																																																																    background-color: #f4b400;
+																																																																        border: none;
+																																																																	    border-radius: 5px;
+																																																																	        cursor: pointer;
+																																																																	}
+
+																																																																	footer {
+																																																																		    padding: 20px;
+																																																																		        text-align: center;
+																																																																			    background-color: #333;
+																																																																		    }
+
+																																																																		    footer p {
+																																																																			        margin: 0;
+																																																																			}
+
