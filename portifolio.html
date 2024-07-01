@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dennis Obare|Software Developer</title>
+        <style>
+            body {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            header {
+                background-color:brown;
+                color:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 24;
+            }
+            header nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+            header nav ul li {
+                margin: 0;
+            }
+            header nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                padding: 10px;
+                transition: color 0.3s, background-color 0.3s;
+            }
+            header nav ul li a:hover {
+                color: #333;
+                background-color: #fff;
+                border-radius: 5px;
+            }
+            /* Responsive design */
+            @media (max-width: 768px) {
+                header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                header nav ul {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                header nav ul li {
+                    width: 100%;
+                }
+
+                header nav ul li a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .card-list {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card-list li {
+                    width: 90%;
+                }
+
+                .section-main {
+                    padding: 15px;
+                    margin: 10px, 0;
+                }
+
+                .section-container {
+                    padding: 15px;
+                    margin: 10px, 0;
+                }
+
+                .section-container h2 {
+                    font-size: 22px;
+                }
+
+                .section-container p {
+                    font-size: 14px;
+                }
+
+                .footer-container {
+                    padding: 15px;
+                    text-align: center;
+                }
+
+                .footer-nav ul {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .footer-nav ul li {
+                    margin: 5px, 0;
+                }
+
+            }
+
+            .section-main {
+                padding: 20px;
+            }
+
+            .section-container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 5px;
+                border: 1px  #ccc;
+                border-radius: 8px;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .section-container h2 {
+                color: brown;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .section-container p {
+                font-size: 20px;
+                line-height: 1.6;
+                color: #666;
+            }
+
+            .section-container p a {
+                color: blue;
+                text-decoration: none;
+            }
+
+
+            .card-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .card-list li {
+                background-color: white;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;
+                width: 250px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card-list li:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .card-list li h4 {
+                font-size: 20px;
+                color: brown;
+                margin-bottom: 10px;
+            }
+
+            .card-list li p {
+                flex-grow: 1;
+                margin-bottom: 10px;
+            }
+
+            .card-list li p a {
+                margin-top: auto;
+                text-decoration: none;
+                color: blue;
+                transition: color 0.3s ease;
+            }
+
+            .card-list li p a:hover {
+                color: #0056b3
+            }
+
+            .footer-container {
+                background-color: brown;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footer-content {
+                max-width: 1200px;
+                margin: 0, auto;
+            }
+
+            .footer-nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 10px, 0;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .footer-nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease
+            }
+
+            .footer-nav ul li a:hover {
+                color: #f5a623;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <header>
+        <div class="header-left">
+            <h1>Dennis Obare|Software Developer</h1>
+        </div>
+        <div class="header-right">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+       </header>
+       <main>
+        <section class="section-main" id="about">
+            <div class="section-container">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>Hi there! I'm Dennis Obare, a passionate and driven full-stack developer with over five years of experience in building dynamic, user-friendly web applications. My journey in the world of coding started during my college years, and since then, I have honed my skills in both front-end and back-end development.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-main" id="skills">
+            <div class="section-container">
+                <h2>My Expertise</h2>
+                <ul class="card-list">
+                    <li>
+                        <h4>Frontend</h4>
+                        <p>HTML, CSS, JavaScript, React, Angular</p>
+                    </li>
+                    <li>
+                        <h4>Backend</h4>
+                        <p>Node.js, Express, Ruby on Rails</p>
+                    </li>
+                    <li>
+                        <h4>Databases</h4>
+                        <p>MongoDB, MySQL, PostgreSQL</p>
+                    </li>
+                    <li>
+                        <h4>DevOps</h4>
+                        <p>Docker, Kubernetes, AWS, CI/CD</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-main" id="projects">
+            <div class="section-container">
+                <h2>My Projects</h2>
+                <ul class="card-list">
+                    <li class="card">
+                        <h4>E-Commerce Platform</h4>
+                        <p>Developed a scalable e-commerce platform that supports thousands of concurrent users, featuring advanced search functionality, secure payment integration, and real-time order tracking.<br><a href="https://google.com">View Demo</a></p>
+                    </li>
+                    <li class="card">
+                        <h4>Instagram Clone</h4>
+                        <p>Built a social media application that allows users to create profiles, post updates, and interact with others in real time.<br><a href="https://google.com">View Demo</a></p>
+                    </li>
+                    <li class="card">
+                        <h4>Project Management Tool</h4>
+                        <p>Developed a comprehensive project management tool to help teams track progress, manage tasks, and collaborate efficiently.<br><a href="https://google.com">View Demo</a></p>
+                    </li>
+                    <li class="card">
+                        <h4>Personal Blog</h4>
+                        <p>Designed and developed a personal blog to share technical articles, tutorials, and project updates.<br><a href="https://google.com">View Demo</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-main">
+            <div class="section-container">
+                <h2>My Philosophy</h2>
+                <p>I believe in writing clean, well-documented code that not only works but is easy to understand and maintain. Continuous learning is at the core of my professional philosophy, and I am always eager to adopt new technologies and best practices. I am a firm advocate of open-source and actively contribute to several projects on GitHub.</p>
+            </div>
+        </section>
+        <section class="section-main" id="hobbies">
+            <div class="section-container">
+                <h2>Beyond Coding</h2>
+                <p>When I'm not coding, you can find me exploring the great outdoors, experimenting with new recipes in the kitchen, or attending tech meetups and conferences to stay connected with the developer community.</p>
+            </div>
+        </section>
+        <section class="section-main" id="connect">
+            <div class="section-container">
+                <h2>Let's Connect</h2>
+                <p>I am currently open to new opportunities and collaborations. If you have a project in mind or just want to chat about the latest in tech, feel free to reach out to me through <a href="https://google.com">LinkedIn</a>, <a href="https://google.com">Github</a> or <a href="https://google.com">Email</a>.</p>
+            </div>
+        </section>
+        </div>
+       </main>
+       <footer class="footer-container">
+        <div class="footer-content">
+            <p>&copy; 2024 Dennis Obare. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    </body>
+</html>
