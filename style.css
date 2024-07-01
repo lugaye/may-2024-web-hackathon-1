@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dde7f6; /* Light background color for the entire page */
+    color: #333;
+}
+
+header, section, footer {
+    padding: 20px;
+    margin: 20px;
+    background: #dde7f6; /* White background for content sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #654983, #679dfa); /* Gradient background for the header */
+    color: #dde7f6; /* White text color for contrast */
+    padding: 40px;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: dde7f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header img.profile-picture {
+    border-radius: 50%; /* Circular profile picture */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 4px solid #fff; /* White border around the profile picture */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    margin-bottom: 20px; /* Spacing below the profile picture */
+}
+
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+h2 {
+    color: #5d57ba; /* Match the gradient color for consistency */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Styles */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Styles */
+.skills-container {
+    margin-bottom: 20px;
+}
+
+.skills-container h3 {
+    margin-top: 0;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container ul li {
+    background: #52709d; /* Match the gradient color for consistency */
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Experience and Education Styles */
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+.job h3, .education-item h3 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #654983 /* Match the gradient color for consistency */
+    color: #fff;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
