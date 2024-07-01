@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #0ef;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.pexels.com/photos/5926397/pexels-photo-5926397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.styled-text {
+    font-size: 40px;
+    text-align: left;
+    text-decoration: lime;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+nav a:hover {
+    color: #0ef;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #0ef;
+    border-radius: 15px;
+    transform: scaleX(0);
+    transition: .5s;
+    transform-origin: center;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0ef;
+}
+
+.content {
+    display: none;
+    border: 1px solid #0ef;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content.show {
+    display: block;
+}
+
+.content-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: white;
+    z-index: 1000;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}

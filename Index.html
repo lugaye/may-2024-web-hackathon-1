@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <img src="/Images/photoooo.jfif" alt="Kiiru Laurent" class="profile-photo">
+    <p class="styled-text" id="text"></p>
+
+    <nav>
+        <a href="#home" id="home-link">Home <span></span></a>
+        <a href="#biography" id="biography-link">Bio <span></span></a>
+        <a href="#services" id="services-link">Services <span></span></a>
+        <a href="#project" id="projects-link">MyProjects <span></span></a>
+        <a href="#skills" id="skills-link">Skills <span></span></a>
+        <a href="#education" id="education-link">Education <span></span></a>
+        <a href="#contact" id="contact-link">Contact <span></span></a>
+    </nav>
+
+    <div id="biography-content" class="content-section" style="display:none;">
+        <h1>Biography</h1>
+        <p id="biography-description">About me...</p>
+        <br>
+        <h2 id="biography-text">
+            Laurent, from where i come from very few people go by the name Laurent, infact since i was born i've never met anyone who goes by my name, but ive come across the name in social media platforms. <br>
+            This is my story........<br>
+            My love for computers started when I was in primary school.
+            <br> Everything one did on a computer would fire me up.
+            <br> I was so intrigued and wanted to know how these machines work.
+            <br> I started taking computer classes in primary school, so by the time I was in high school, I had already gained minimal skills.
+            <br> The knowledge I had gained helped me outsmart other students, and I also took computer classes in high school.
+            <br> After high school, I decided to join college to expand my knowledge about computers.
+            <br> Here I am, a software developer and a cyber security enthusiast.
+        </h2>
+    </div>
+
+    <div id="services-content" class="content-section" style="display:none;">
+        <h1>My Services</h1>
+        <h2 id="services-text">Here's what I offer...</h2>
+        <ul>
+            <li>Building Applications using Python with Django and C#.</li>
+            <li>Building Websites using HTML, CSS, and JavaScript.</li>
+            <li>Education on how to stay safe while browsing the internet.</li>
+            <li>Identifying vulnerabilities in systems, networks, and applications.</li>
+        </ul>
+    </div>
+
+    <div id="project-content" class="content-section" style="display:none;">
+        <h1>MyProjects</h1>
+        <br>
+        <div class="project-item">
+            <h2>TalkSpace</h2>
+            <img src="/Images/TalkSpace.png" alt="TalkSpace">
+            <p>This project was developed using HTML, CSS, and JavaScript. It features responsive design and dynamic content loading.</p>
+            <a href="http://127.0.0.1:5501/index.html" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/01Laurent/TalkSpace.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+        </div>
+        <br>
+        <div class="project-item">
+            <h2>An Order App</h2>
+            <img src="/Images/an orderapp1.jpeg" alt="Project 1"> <br>
+            <img src="/Images/an orderapp2.jpeg" alt="An Order App"> <br>
+            <img src="/Images/an orderapp3.jpeg" alt="An Order App"> <br>
+            <img src="/Images/an orderapp4.jpeg" alt="An Order App"> <br>
+            <img src="/Images/an orderapp5.jpeg" alt="An Order App"> <br>
+            <p>This project focuses on back-end development using C# and ASP.NET Framework, It includes a RESTful API and a MYSqL database.</p>
+            <a href="https://live-demo2.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/01Laurent/AnOrderApp.git" target="_blank" rel="noopener noreferrer">Source Code</a>
+        </div>
+    </div>
+
+    <div id="skills-content" class="content-section" style="display:none;">
+        <h1>My Skills</h1>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>C#</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PhP</li>
+            <li>Cyber Security</li>
+        </ul>
+    </div>
+
+    <div id="education-content" class="content-section" style="display:none;">
+        <h1>My Education</h1>
+        <div class="education-item">
+            <h2 id="education-degree1">Bachelor of Science Information Technology</h2>
+            <p id="education-institution1">KCA University</p>
+        </div>
+        <br>
+        <div class="education-item">
+            <h2 id="education-degree2">High School Diploma</h2>
+            <p id="education-institution2">Kiaguthu Boys High School</p>
+        </div>
+        <br>
+        <div class="education-item">
+            <h2 id="education-degree3">CCNA I <br> CCNA II <br> CCNA III</h2>
+            <p id="education-institution3">Cisco Networking Academy</p>
+        </div>
+        <br>
+        <div class="education-item">
+            <h2 id="education-degree3">Software Development</h2>
+            <p id="education-institution3">Currently enrolled in PLP Academy</p>
+        </div>
+    </div>
+
+    <div id="contact-content" class="content-section" style="display:none;">
+        <h1>Contact Me</h1>
+        <div class="social-icons">
+            <a href="https://github.com/01Laurent" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/0796259327" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/_lauren_.t_" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Lau57078457" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p id="contact-description"><h2>Here's how you can reach me...</h2></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
