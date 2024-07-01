@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.intro-section {
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-toggle .open, .close{
+    display: none;
+}
+
+.nav-link {
+    margin-right: 20px; /* Adjust spacing between nav items */
+}
+
+nav img.logo {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.burger{
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    border: 2px solid #000; /* Black border */
+    padding: 20px;
+    margin: 20px;
+    position: relative; /* Ensure relative positioning for pseudo-elements */
+}
+
+.project-item {
+    display: flex;
+    justify-content: center; /* Center aligns items horizontally */
+    align-items: center; /* Center aligns items vertically */
+}
+
+.Login, .RPS {
+    width: 500px; /* Adjusted width for demonstration */
+    display: block; /* Change to block to stack with the Font Awesome icon */
+    margin: 0 auto; /* Center align the images */
+    position: relative;
+    overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+.Login img, .RPS img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Login::after, .RPS::after {
+    content: attr(data-title); /* Show custom title text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure overlay is above the image */
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.Login:hover::after, .RPS:hover::after {
+    opacity: 1;
+}
+
+.Login:hover img, .RPS:hover img {
+    filter: blur(5px); /* Blur image on hover */
+    transform: scale(1.1);
+}
+
+.divider {
+    width: 2px;
+    height: 100px; /* Adjust height of divider as needed */
+    background-color: #000; /* Color of vertical divider */
+    margin: 0 20px; /* Adjust spacing around the divider */
+}
+
+.Login-Form,
+.Janken {
+    text-align: center; /* Center align text (Font Awesome) underneath */
+    margin-top: 10px; /* Adjust spacing */
+}
+
+.Login-Form a,
+.Janken a {
+    display: block; /* Ensure Font Awesome icons stack vertically */
+    margin-top: 5px; /* Adjust spacing between image and icon */
+    font-size: 1.5em; /* Enlarge Font Awesome icon size */
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer .links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+footer .links a:hover {
+    transform: translateY(-5px);
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+
+footer .social-media a:hover {
+    color: #F5F5DC;
+    transform: translateY(5px);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust top position as needed */
+        left: 0;
+        background-color: #f8f9fa; /* Adjust background color */
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Add shadow */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .burger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .burger i {
+        font-size: 1.5rem; /* Adjust icon size */
+        color: #333; /* Adjust icon color */
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        cursor: pointer;
+    }
+    
+    .menu-toggle .open {
+        display: inline; /* Display the open icon */
+    }
+    
+    .menu-toggle .close {
+        display: none; /* Hide the close icon initially */
+    }
+    
+    .menu-toggle.active .open {
+        display: none; /* Hide open icon when menu is active */
+    }
+    
+    .menu-toggle.active .close {
+        display: inline; /* Display close icon when menu is active */
+    }
+}
+

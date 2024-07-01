@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.intro-section {
+    background: linear-gradient(to right, beige 70%, black 30%);
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav img.logo {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none; /* Hide the menu toggle div and its contents */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    flex: 1;
+    margin-right: 20px; /* Add margin to separate from image */
+    text-align: left;
+}
+
+.description h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.description p {
+    font-size: 1.2em;
+    color: black;
+}
+
+.image-container {
+    position: relative;
+    flex: 1; /* Take remaining space */
+    text-align: center; /* Center the image */
+}
+.image-container {
+    position: relative;
+    flex: 1; /* Take remaining space */
+    text-align: center; /* Center the image */
+    margin-top: -40px; /* Adjust this value to raise or lower the image */
+}
+
+.image-outline {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 450px;
+    height: 420px;
+    transform: translateY(-30%);
+    transform: translateX(20%);
+    border: 3px solid white;
+    opacity: 0.7;
+    z-index: 0;
+    transition: opacity 0.5s ease; 
+}
+.image-outline:hover {
+    opacity: 0; /* Example hover effect */
+    cursor: pointer;
+}
+
+.image-container img{
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.image-container:hover img {
+    transform: translateY(-10px); /* Example hover effect */
+}
+
+img{
+    width: 450px;
+    z-index: 1;
+    position: relative;
+}
+
+/* Description */
+
+.description-section {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.container-2 {
+    background-color: black;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping of text */
+    overflow: hidden;
+}
+
+.text-content {
+    flex: 1; /* Take remaining space */
+    margin-right: 20px; /* Space between text and image */
+    text-align: left; /* Align text to the left */
+}
+
+.design{
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 1.2em; /* Adjust text size */
+    margin-left: 30px;
+}
+
+.image-container-2 {
+    flex: 1; /* Take remaining space */
+    text-align: center; /* Align image to the center */
+}
+
+.image-container-2 img {
+    width: 100%; /* Make image responsive */
+    max-width: 450px; /* Limit max width of image */
+    display: block; /* Remove extra space below image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+    overflow: hidden; 
+    animation: riseUp 1s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Keyframes for image animation */
+@keyframes riseUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for text animation */
+@keyframes swayRight {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations and transitions */
+.image-container-2 img {
+    animation: riseUp 1s ease-out;
+    transition: opacity 0.5s ease-in; /* Smooth opacity transition */
+}
+
+.design {
+    animation: swayRight 1s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth opacity and transform transition */
+}
+
+/* Projects */
+.projects-section {
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container-3 {
+    margin-top: 20px;
+}
+
+.container-3 p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.button-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure pseudo-element does not overflow */
+    z-index: 1; /* Ensure content is above pseudo-element */
+}
+
+.button-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1; /* Place below content */
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.button-link:hover::before {
+    transform: scaleX(1);
+}
+
+.button-link:hover {
+    color: white; /* Change text color on hover */
+}
+
+/* Comment Section */
+.comment-section {
+    padding: 20px;
+    text-align: center;
+    color: black; /* Ensure section text is black */
+}
+
+.comment-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container-4 {
+    background-color: lightgray; /* Set background color to light gray */
+    color: black; /* Ensure text color is black */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.container-4 form {
+    margin-bottom: 20px;
+}
+
+.container-4 textarea.comment-box,
+.container-4 input[type="text"],
+.container-4 input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-sizing: border-box;
+}
+
+.container-4 button.comment-submit {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-4 button.comment-submit:hover {
+    background-color: white;
+    color: black;
+}
+
+.comment-section h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-list li {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+footer .links a:hover {
+    transform: translateY(-5px);
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer i{
+    font-size: 25px;
+}
+
+footer .social-media a:hover {
+    transform: translateY(-5px);
+}
+
+@media(max-width:900px) {
+    .intro-section {
+        background: linear-gradient(to right, beige 70%, black 30%);
+        padding: 20px;
+        color: white;
+        min-height: 100vh;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav img.logo {
+        width: 150px; /* Adjusted logo size for smaller screens */
+    }
+    
+    nav ul {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align items */
+        position: absolute;
+        top: 60px; /* Distance from the top */
+        left: 0;
+        background: white;
+        width: 100%; /* Full width */
+        z-index: 2;
+    }
+    
+    nav ul.active {
+        display: flex; /* Display the links when active */
+    }
+    
+    nav ul li {
+        margin: 20px 0; /* Adjusted spacing */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+    
+    .menu-toggle {
+        display: block; /* Display the menu toggle button */
+        cursor: pointer;
+    }
+    
+    .menu-toggle .open {
+        display: inline; /* Display the open icon */
+    }
+    
+    .menu-toggle .close {
+        display: none; /* Hide the close icon initially */
+    }
+    
+    .menu-toggle.active .open {
+        display: none; /* Hide open icon when menu is active */
+    }
+    
+    .menu-toggle.active .close {
+        display: inline; /* Display close icon when menu is active */
+    }
+    
+   
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .description h1 {
+        font-size: 1.8em; /* Adjusted font size for smaller screens */
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    .description p {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+        color: black;
+    }
+    
+    .image-container {
+        text-align: center;
+        position: relative;
+        margin-top: 20px; /* Added margin to separate from description */
+    }
+    
+    .image-container img {
+        width: 100%;
+        max-width: 100%; /* Ensure image does not exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Prevents extra space below image */
+        border: 3px solid white;
+        opacity: 0.7;
+        transition: opacity 0.5s ease;
+    }
+    
+    .image-outline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 3px solid white;
+        opacity: 0.7;
+        z-index: -1; /* Push behind image */
+        transition: opacity 0.5s ease;
+    }
+    
+    .image-container:hover .image-outline {
+        opacity: 0; /* Hide outline on hover */
+    }
+    
+    .image-container img:hover {
+        transform: translateY(-10px); /* Example hover effect */
+    }
+}
