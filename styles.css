@@ -1,0 +1,82 @@
+/* General Styles */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffebee;
+}
+/* Hero Section */
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h1{
+    font-size: 3em;
+    margin: 0;
+}
+.hero-text p {
+    margin: 10px 0;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+/* Content sections */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #50b3a2;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background-color: #ffebee;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 2em;
+}
+.contact p a {
+    color: #e8491d;
+    text-decoration: none;
+}
