@@ -1,0 +1,48 @@
+@import url(https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-fanily: 'Montserrat., sans-serif' ;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(./img/waterfalls.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#Herhero: ::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero h1 {
+    display:  block;
+    width:fit-content;
+    font-size: 4rem;
+   position: relative;
+   color:aliceblue;
+}
+/* End Hero Section ^/
