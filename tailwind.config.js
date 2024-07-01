@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         green: "#20bf55", // intro
         biege: "#FEFAE0",
+        brown: "#BC6C25",
       },
     },
   },
