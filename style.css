@@ -132,7 +132,7 @@ header.sticky{
     width: 100%;
     height: auto;
 }
-.about-text h2,.text-center h2,.right-contact h2{
+.about-text h2,.text-center h2,.right-contact h2,.portfolio h1{
     font-family: "Dosis", sans-serif;
     font-size: var(--h2-font);
     font-weight: 800;
@@ -212,8 +212,35 @@ span{
     transform: scale(1.1);
     background: transparent;
     border: 2px solid var(--main-color);
-
 }
+.portfolio{
+    background: var(--sec--backG-color);
+    padding: 15pc 20% 20pc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio h1{
+    animation: zoom-in-zoom-out 3s ease infinite;
+}
+@keyframes zoom-in-zoom-out{
+    0% {
+        font-size: 3.3rem;
+        color: var(--second-color)
+      }
+      
+      50% {
+        font-size: 3.6rem;
+        color: var(--main-color)
+      }
+      
+      100% {
+        font-size: 3.3rem;
+        color: var(--second-color)
+      }
+}
+
 .contact{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,auto));
@@ -273,7 +300,9 @@ span{
     font-size: var(--p-font);
     line-height: 30px;
 }
-.footer{
+.end-section{
+    padding: 30px 19% 30px;
+    background: var(--sec--backG-color);
     display: flex;
     justify-content: center;
     align-items: center;
