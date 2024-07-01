@@ -6,7 +6,10 @@ import { Linkedin } from "lucide-react";
 
 function Contact() {
   return (
-    <div className="flex justify-around p-6 bg-[#1a202c] text-white" id="contact">
+    <div
+      className="flex justify-around p-6 bg-[#1a202c] text-white"
+      id="contact"
+    >
       <div className="w-96">
         <h1 className="text-[#00df9a] font-semibold">About Me</h1>
         <p className="text-start">
@@ -24,12 +27,28 @@ function Contact() {
       <div>
         <h1 className="text-[#00df9a] font-semibold">Useful Links</h1>
         <ul className="font-semibold text-md">
-          <li>Home</li>
-          <li>About</li>
-          <li>Education</li>
-          <li>Skills</li>
-          <li>Experience</li>
-          <li>Contact</li>
+          <li>
+            <a href="#" className="hover:text-[#00df9a]">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-[#00df9a]">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#education" className="hover:text-[#00df9a]">
+              Education
+            </a>
+          </li>
+          {/* <li>Skills</li> */}
+          <li>
+            <a href="#experience" className="hover:text-[#00df9a]">
+              Experience
+            </a>
+          </li>
+          {/* <li>Contact</li> */}
         </ul>
       </div>
       <div>
