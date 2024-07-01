@@ -82,14 +82,11 @@
     <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative overflow-hidden pt-16 md:pt-20" style="background-image: url('static/images/programming-background-concept.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center text-center md:text-left z-10">
-            <div class="md:w-1/2">
+            <div class="md:w-full">
                 <h1 class="text-5xl md:text-7xl font-bold overflow-hidden">
                     <span class="inline-block animate-typing animation-delay">Welcome to My Portfolio</span>
                 </h1>
                 <p class="mt-4 text-xl md:text-2xl animate-fade-in-up delay-1s">Web Developer | Designer | Innovator</p>
-            </div>
-            <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-                <model-viewer src="static/images/office_computer.glb" alt="3D Model" auto-rotate camera-controls style="width: 100%; height: 100%;"></model-viewer>
             </div>
         </div>
         <div class="absolute inset-0 z-0">
@@ -277,22 +274,93 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">Projects</h2>
-            <div class="flex flex-wrap justify-center space-x-4">
-                <div class="project-card">
-                    <h3 class="text-2xl font-bold mb-2">Project 1</h3>
-                    <p>A web application built with Django.</p>
-                </div>
-                <div class="project-card">
-                    <h3 class="text-2xl font-bold mb-2">Project 2</h3>
-                    <p>A responsive website using HTML, CSS, and JavaScript.</p>
+
+
+<!-- Portfolio Section -->
+<div id="portfolio" class="vg-page page-portfolio py-16 bg-gray-900 text-white">
+    <div class="container mx-auto">
+        <div class="text-center">
+            <div class="badge-subhead bg-yellow-500 text-white px-4 py-2 inline-block rounded-full mb-4">Portfolio</div>
+        </div>
+        <h1 class="text-center text-4xl font-light mb-8">See my work</h1>
+        <div class="filterable-button flex justify-center gap-4 mb-12">
+            <button class="btn-theme-outline selected" data-filter="*">All</button>
+            <button class="btn-theme-outline" data-filter=".apps">Apps</button>
+            <button class="btn-theme-outline" data-filter=".template">Template</button>
+            <button class="btn-theme-outline" data-filter=".ios">IOS</button>
+            <button class="btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+            <button class="btn-theme-outline" data-filter=".graphic">Graphic</button>
+            <button class="btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+        </div>
+
+        <div class="gridder grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid-item apps transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/lewis-andy/Online-Grocery-Store-master" target="_blank">
+                    <img src="static/images/flat-lay-bunch-fresh-provisions-donation.jpg" alt="Mobile Travel App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Grocery Store Master</h5>
+                        <p class="text-white">Organic Products, Discovery</p>
+                    </div>
                 </div>
             </div>
+            <div class="grid-item template wireframes transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/Levi-LMN/SwiftPass" target="_blank">
+                    <img src="static/images/DJV JUL 2353-08.jpg" alt="Music App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Swiftpass</h5>
+                        <p class="text-white">Public transport systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item apps ios transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://taskyy.pythonanywhere.com/" target="_blank">
+                    <img src="static/images/Sandy_Tech-22_Single-09.jpg" alt="Gaming Dashboard" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Tasky Dashboard</h5>
+                        <p class="text-white">Task management, Tracking</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item graphic ui-ux transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://lewisandanje.pythonanywhere.com/" target="_blank">
+                    <img src="static/images/v226-ning-03-religion-a-job101.jpg" alt="Drugs Delivery App" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Church Application</h5>
+                        <p class="text-white">Extensive fellowship</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item apps ios transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://github.com/lewis-andy/SimbaStay" target="_blank">
+                    <img src="static/images/home-icon-sign-right-side-white-background.jpg" alt="Musics Discover" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Simba Stay</h5>
+                        <p class="text-white">Air BNB, Dashboard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item graphic ui-ux wireframes transform transition duration-500 hover:scale-105">
+                <div class="img-place relative">
+                    <a href="https://loanapi.kedevs.com" target="_blank">
+                    <img src="static/images/6146.jpg" alt="Game Streaming" class="w-full h-auto">
+                    <div class="img-caption absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-500">
+                        <h5 class="text-yellow-500 text-lg">Loan Application</h5>
+                        <p class="text-white">Finance, Banking</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End gridder -->
+        <div class="text-center mt-12">
+            <a href="javascript:void(0)" class="btn-theme bg-yellow-500 text-white px-8 py-3 rounded-full transition duration-500 transform hover:scale-105">Load More</a>
         </div>
-    </section>
+    </div>
+</div> <!-- End Portfolio page -->
+
 
   <!-- Contact Start -->
 <section id="contact" class="bg-gray-900 py-16 text-white">
