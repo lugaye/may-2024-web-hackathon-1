@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-AW8v0wo6OV9pGdZvfiL5R2mgFuI8SCbF9FNWkcIR4f4E/gwL1Gk3vZqQ+hMQudNblT9X3h8ZJjPU2yfZFrB8jA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-AW8v0wo6OV9pGdZvfiL5R2mgFuI8SCbF9FNWkcIR4f4E/gwL1Gk3vZqQ+hMQudNblT9X3h8ZJjPU2yfZFrB8jA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #000000;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-toggler {
+            border-color: #fff;
+        }
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .card {
+            border: none;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Tonny Mwangi.</h2>
+            <p class="lead">Hello World, welcome to my Digital Hub!
+                I am a software developer based in Nairobi, Kenya. Currently, I am enrolled in PLP Academy for a 4-month course on Software Development. I make dreams come true with my skills, enthusiasm, and creativity.
+            </p>
+    
+            <!-- Contact Information -->
+            <div class="contact-info mt-6 text-left">
+                <p class="d-inline"><i class="fas fa-envelope"></i><strong>Email</strong> :mwangiantony068@gmail.com</p>
+
+                <p class="d-inline"><i class="fas fa-phone"></i> <strong>Phone</strong>: +254757270468</p>
+
+               
+            </div>
+            
+        </div>
+    </section>
+    
+<hr>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Portfolio</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Example project card -->
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/TM White Big.png" class="card-img-top" alt="TM Adventures.">
+                        <div class="card-body">
+                            <h5 class="card-title">T.M Adventures.</h5>
+                            <p class="card-text">T.M Adventures booking website is a combination of creativity and innovation. 
+                                It has enhanced usability and performance to improve interactivity.</p>
+                                <a href="https://tm-adventureske.vercel.app/" target="_blank" class="btn btn-success">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Car jiji (1).png" class="card-img-top" alt="Car Jiji">
+                        <div class="card-body">
+                            <h5 class="card-title">Car JiJi.</h5>
+                            <p class="card-text">Car Jiji is a state of art website to ensure smooth scrolling, 
+                                readability, reliability, scalabilty, performance and exclusivity. Coded in HTML 5,
+                            CSS and JavaScript.</p>
+                            <a href="https://carjiji.vercel.app/" target="_blank" class="btn btn-success">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/Winerybig transparent.png" class="card-img-top" alt="Logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Vine Yard</h5>
+                            <p class="card-text">Vine Yard logo is an illustration of modern brand full of life, creativity and enthusiasim. 
+                                The logo is designed to catch attention on the first sight.</p>
+                            <a href="#" class="btn btn-success">View Project</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/HTML5_logo.png" alt="HTML Logo" class="img-fluid">
+                    <p class="mt-2">HTML</p>
+                </div>
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/CSS-Logo.png" alt="CSS Logo" class="img-fluid">
+                    <p class="mt-2">CSS</p>
+                </div>
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/Python-logo-notext.svg.png" alt="Python Logo" class="img-fluid">
+                    <p class="mt-2">Python</p>
+                </div>
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/bootstrap.jpeg" alt="Bootstrap Logo" class="img-fluid">
+                    <p class="mt-2">Bootstrap</p>
+                </div>
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/JavaScript-logo.png" alt="JavaScript Logo" class="img-fluid">
+                    <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="col-md-2 col-4 text-center">
+                    <img src="images/django-logo.png" alt="Django Logo" class="img-fluid">
+                    <p class="mt-2">Django</p>
+                </div>
+                <!-- Add other skills as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Experience</h2>
+            <div class="accordion" id="experienceAccordion">
+                <!-- Example experience item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Software Developer at T.M Adventures.- 2024 to Present.
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            At T.M Adventures, my role was developing software products, deploying them and maintaining
+                            them accordingly. I was also responsible for managing their Social Media platforms.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Software Developer at Car Jiji.- 2023 to 2024.
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            At Car Jiji, I was responsible for developing, updating and maintaining their car hiring website.
+                            I served here as the Lead IT and Senior Developer.
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other experiences -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Education Background.</h2>
+            <ul class="list-group list-group-flush">
+                <!-- Example education item -->
+                <li class="list-group-item">Software Development from PLP Academy - May 2024 to present</li>
+                <li class="list-group-item">JavaScript and Data Structures from freeCodeCamp - May to June 2024</li>
+                <li class="list-group-item">Responsive Web Design from freeCodeCamp - April to May 2024</li>
+                <li class="list-group-item">Bachelor of Commerce from University of Nairobi - 2020 to 2024</li>
+                <!-- Repeat for other education -->
+            </ul>
+        </div>
+    </section>
+<hr>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <p class="text-center">Fill out the form to contact me:</p>
+    
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Your Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Select a Service</label>
+                            <select class="form-select" id="service" name="service" required>
+                                <option value="" selected disabled>Select a service...</option>
+                                <option value="Service 1">Web Development</option>
+                                <option value="Service 2">Software Development</option>
+                                <option value="Service 3">Logo and Brand design</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Contact Form -->
+    
+            <!-- Social Media Links -->
+            <div class="text-center mt-4">
+                <div class="text-center mt-4">
+                    <a href="https://www.linkedin.com/in/antony-mwangi-a9626425b/" class="btn btn-success me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/ton-toh" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                <!-- Add other social media links -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<hr>
+<footer>
+    <p class="text-center">Copyright &copy; 2024 Tonny Mwangi. All Rights Reserved.</p>
+    <!-- Add your copyright notice -->
+</footer>
+</html>
