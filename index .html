@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vhukhudo Precious Nemafhohoni</title>
+    <link rel="stylesheet" href="./style.css">
+ <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <style>
+     /* General Reset and Base Styles */
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+     body {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         color: #333;
+     }
+     a {
+         text-decoration: none;
+         color: #916161;
+     }
+     ul {
+         list-style: none;
+     }
+     
+     /* Header Styles */
+     header {
+         background: linear-gradient(135deg, #ca8d98,#947e7e);
+         color: #fff;
+         padding: 20px;
+         text-align: center;
+     }
+     nav ul {
+         display: flex;
+         margin-bottom: 20px;
+     }
+     nav li {
+         margin: 0 15px;
+     }
+     nav a {
+         color: #916161;
+         font-weight: bold; 
+     
+         
+         }
+         
+     .hero {
+         margin-bottom: 20px;
+     }
+     .profile-pic {
+         border-radius: 50%;
+         width: 250px;
+         height: 250px;
+         object-fit: cover;
+         border: 5px solid #fff;
+         margin-bottom: 5px;
+     }
+     h1 {
+         font-size: 2.5em;
+         margin-bottom: 10px;
+     }
+     p {
+         font-size: 1.1em;
+     }
+     
+     /* Header and Navigation Styles */
+     header {
+         background-color: #333;
+         padding: 10px 0;
+         position: relative;
+     }
+     nav {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+     }
+     .nav-list {
+         list-style: none;
+         display: flex;
+         justify-content: flex-end;
+     }
+     .nav-item {
+         margin-left: 20px;
+     }
+     .nav-item a {
+         text-decoration: none;
+         color: #916161;
+         font-weight: bold;
+         padding: 10px 15px;
+         display: block;
+     }
+     .nav-item a:hover {
+         background-color: #575757;
+         border-radius: 5px;
+     }
+     
+     /* Section Styles */
+     section {
+         padding: 20px;
+         text-align: center;
+     }
+     h2 {
+         color:#916161 ;
+         margin-bottom: 20px;
+     }
+     ul {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 0;
+     }
+     li {
+         background: #f4f4f4;
+         margin: 10px;
+         padding: 15px 20px;
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+         transition: transform 0.3s ease-in-out;
+     }
+     li:hover {
+         transform: translateY(-5px);
+     }
+     
+     /* Contact Info Styles */
+     .contact-info {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+     }
+     .contact-item {
+         font-size: 1.2em;
+         display: flex;
+         align-items: center;
+     }
+     .contact-item i {
+         margin-right: 10px;
+         color: #333;
+     }
+     .contact-item a {
+         text-decoration: none;
+         color: #916161; /* Custom color */
+         font-weight: bold;
+     }
+     .contact-item a:hover {
+         text-decoration: underline;
+     }
+     
+     
+     
+     /* Footer Styles */
+     footer {
+         background:#916161;
+         color: #fff#916161;
+         padding: 10px;
+         text-align: center;
+     }
+     
+     /* Responsive Styles */
+     @media (max-width: 768px) {
+         nav ul {
+             flex-direction: column;
+         }
+         .profile-pic {
+             width: 120px;
+             height: 120px;
+         }
+         h1 {
+             font-size: 2em;
+         }
+         section {
+             padding: 10px;
+         }
+     }
+     
+     @media (max-width: 480px) {
+         nav ul {
+             margin: 0;
+         }
+         nav li {
+             margin: 5px 0;
+         }
+         .profile-pic {
+             width: 100px;
+             height: 100px;
+         }
+         h1 {
+             font-size: 1.5em;
+         }
+         p {
+             font-size: 1em;
+         }
+     }
+     .contact-info {
+         align-items: flex-start;
+     }
+     /* General Reset and Base Styles */
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+     body {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         color: #333;
+     }
+     a {
+         text-decoration: none;
+         color: #916161;
+     }
+     ul {
+         list-style: none;
+     }
+     
+     /* Header Styles */
+     header {
+         background: linear-gradient(135deg, #ca8d98,#947e7e);
+         color: #fff;
+         padding: 20px;
+         text-align: center;
+     }
+     nav ul {
+         display: flex;
+         margin-bottom: 20px;
+     }
+     nav li {
+         margin: 0 15px;
+     }
+     nav a {
+         color: #916161;
+         font-weight: bold; 
+          }
+         
+     .profile-pic {
+         border-radius: 50%;
+         width: 250px;
+         height: 250px;
+         object-fit: cover;
+         border: 5px solid #fff;
+         margin-bottom: 5px;
+     }
+     h1 {
+         font-size: 2.5em;
+         margin-bottom: 10px;
+     }
+     p {
+         font-size: 1.1em;
+     }
+     
+     /* Header and Navigation Styles */
+     header {
+         background-color: #333;
+         padding: 10px 0;
+         position: relative;
+     }
+     nav {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 20px;
+     }
+     .nav-list {
+         list-style: none;
+         display: flex;
+         padding-left: 0;
+     }
+     .nav-item {
+         float: left;
+         margin-right: 20px;
+     }
+     .nav-item a {
+         text-decoration: none;
+         color: #916161;
+         font-weight: bold;
+         padding: 10px 15px;
+         display: block;
+     }
+     .nav-item a:hover {
+         background-color: #575757;
+         border-radius: 5px;
+     }
+     
+     /* Section Styles */
+     section {
+         padding: 20px;
+         text-align: center;
+     }
+     h2 {
+         color:#916161 ;
+         margin-bottom: 20px;
+     }
+     ul {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 0;
+     }
+     li {
+         background: #f4f4f4;
+         margin: 10px;
+         padding: 15px 20px;
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+         transition: transform 0.3s ease-in-out;
+     }
+     li:hover {
+         transform: translateY(-5px);
+     }
+     
+     /* Contact Info Styles */
+     .contact-info {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+     }
+     .contact-item {
+         font-size: 1.2em;
+         display: flex;
+         align-items: center;
+     }
+     .contact-item i {
+         margin-right: 10px;
+         color: #333;
+     }
+     .contact-item a {
+         text-decoration: none;
+         color: #916161; /* Custom color */
+         font-weight: bold;
+     }
+     .contact-item a:hover {
+         text-decoration: underline;
+     }
+     
+     
+     
+     /* Footer Styles */
+     footer {
+         background:#916161;
+         color: #fff#916161;
+         padding: 10px;
+         text-align: center;
+     }
+     
+     /* Responsive Styles */
+     @media (max-width: 768px) {
+         nav ul {
+             flex-direction: column;
+         }
+         .profile-pic {
+             width: 120px;
+             height: 120px;
+         }
+         h1 {
+             font-size: 2em;
+         }
+         section {
+             padding: 10px;
+         }
+     }
+     
+     @media (max-width: 480px) {
+         nav ul {
+             margin: 0;
+         }
+         nav li {
+             margin: 5px 0;
+         }
+         .profile-pic {
+             width: 100px;
+             height: 100px;
+         }
+         h1 {
+             font-size: 1.5em;
+         }
+         p {
+             font-size: 1em;
+         }
+     }
+     .contact-info {
+         align-items: flex-start;
+     }
+    </style>
+  </head>      
+</head>
+<body>
+ <!-- Main Header with Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    
+</body>
+
+
+    <section id="about">
+        
+        <div>
+            <h1>Vhukhudo Precious Nemafhohoni</h1>
+            <img src="./Profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p style="text-align: center;">
+                Hello! I’m a recent BCom Accounting Honours graduate with a passion for software development and fintech solutions.
+            <details>
+                <summary>Read More</summary>
+                I have developed a strong foundation in financial principles and practices, which I aim to integrate with cutting-edge technology to create innovative solutions in the fintech industry.
+        </div>   
+    </p>
+    </details>
+
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+            <ul>
+                
+                <li>Financial Accounting</li>
+                <li>Auditing</li>
+                <li>Taxation</li>
+                <li>Management Accounting</li>
+                <li>Financial Reporting</li>
+                <li>Microsoft Excel</li>
+            </ul><br>
+            <h3>Self Development Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Version Control (Git)</li>
+                <li>Problem-Solving</li>
+            </ul>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1</h3>
+                <p>Created a personal portfolio website using HTML, CSS. Implemented responsive design principles to ensure compatibility across devices. Integrated interactive elements to enhance user experience.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p style="text-align: justify;"><strong>Bachelor of Commerce Honours in Accountancy</strong><br>
+       <strong> Attended:</strong> University of    Limpopo<br>
+        <strong>Graduation Year:</strong> 2023<br>
+        <strong>Relevant Coursework:</strong> Advanced Financial Accounting, Auditing, Taxation, Management Accounting</p><br>
+
+        <p style="text-align: justify;"><strong>Software Development Program</strong><br>
+        Enrolled: PLP Academy<br>
+        <strong>Enrollment Year:</strong> 2024 (May Cohort)<br>
+        <strong>Relevant Coursework:</strong> Python, JavaScript, HTML & CSS, Version Control (Git)</p>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="tel:+27794774624" class="contact-icon"><i class="fas fa-phone"></i></a>
+            <a href="mailto:nemafhohoni.vp@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/vhukhudo-nemafhohoni-379a62302" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vhukhodo Precious Nemafhohoni. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
