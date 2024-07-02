@@ -1,0 +1,22 @@
+HELLO
+Hi. I am Tabby Achieng. Welcome to my portfolio
+
+BIO:  
+I'm a final year student at JKUAT studying BSc. Electronics and computer 
+engineering. In my free time I like to do programming in C, Python and web development. 
+I have career interest in programming and hardware engineering. 
+
+SKILLS:
+Python
+C
+C++
+HTML
+CSS
+Circuit Design 
+
+EXPERIENCE
+1. Close-the-gap-Kenya: I Worked on PC and desktop repair and maintainance
+2. Mara Serena Hotel: Maintainance of generators, motors and food appliances like freezers
+3. JKUAT Nakuja Project: Designing flight computer circuits and PCBs. I was also a team lead 
+
+ 
