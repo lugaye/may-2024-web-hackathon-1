@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>portfolio</title>
+</head>
+<body>
+ <div class="portfolio">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h2 style="color: #292423;">africia <span style="color:#e6e6fa;">k</span></h2>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li class="hirebtn"><a href="docs/CVafricia.pdf" download>Hire me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="content">
+            <div class="wrapper">
+                <div class="col-left">
+                    <h1>Hello,<br>
+                    i am <span style="color:#e6e6fa; font-size:40px;">Africia Kerubo</span>,<br>
+                    Front End Developer</h1>
+                    <p>Interested in turning challenges into simple, elegant solutions.</p>
+                    <a href="#contact" class="mainbtn">
+                        Let's Get in Touch
+                    </a>
+                </div>
+                <div class="col-right" style="padding-left: 50px;">
+                    <img src="img/coder.svg" alt="coder img">
+                </div> 
+            </div>
+            <h1 style="color:#292423; font-size:40px; padding-top:120px;">Skills</h1>
+            <div class="wrapper" >
+                <div class="col-left">
+                    <h3 style="color:#e6e6fa; font-size:30px;">Technical Skills</h3>
+                  <ul>
+                    <li>React</li>
+                    <li>Visual Basic</li>
+                    <li>HTML5,Tailwind CSS,CSS3</li>
+                    <li>Responsive design</li>
+                    <li>Git,Github</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+                <div class="column">
+                    <h3 style="color:#e6e6fa; font-size:30px;">Non-Technical Skills</h3>
+                    <ul>
+                        <li>Problem solving</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Creativity</li>
+                      </ul>
+                </div> 
+            </div>
+            <h1 style="color:#292423; font-size:40px;padding-top:60px;">Projects</h1>
+            <div class="card">
+                <a href="https://github.com/africiak/Hostel-Management-System" target="_blank" rel="github repository">
+                    <img src="img/project1.png" alt="dashboard" style="height: 280px; width:300px;">
+                    <div class="card-content">
+                        <h3>Hostel Management System</h3>
+                        <p>VB.NET project for managing hostel operations.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper" style="padding-top: 60px; padding-bottom:20px">
+                <div class="col-left" >
+                    <h3 style="color:#e6e6fa; font-size:30px;">Experience</h3>
+                 <h4>Software Development Intern</h4>
+                 <h5>Candlesticks Investment Ltd</h5>
+                 <h4 style="padding-top: 5px;">Information Technology Administor</h4>
+                 <h5>Blessed Citron</h5>
+                 <h6>volunteering position</h6>
+                </div>
+                <div class="column">
+                    <h3 style="color:#e6e6fa; font-size:30px;">Education</h3>
+                    <h4>The Catholic University of Eastern Africa</h4>
+                    <h5>Bachelor of Sciene in Computer Science</h5>
+                </div> 
+        </div>
+        <div id="contact" class="contact-form">
+            <h1 style="color:#292423; font-size:40px; padding-top:60px;">Contact Me</h1>
+            <form action="http://localhost/my_project/send_email.php" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</div>   
+    </div>
+    <footer class="footer">
+        <span>Contacts</span>
+        <div class="footer-content">
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/africia-kerubo-5413482b7/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/africiak" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt=""></a></li>
+                <li><a href="mailto:keruboafricia@gmail.com"><img src="img/email.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="copyright" style="padding-top: 10px;">
+            <p>&copy; <span id="currentYear"></span> Copyright
+        </div>
+    </footer>
+ </div>
+ </div>
+</body>
+</html>
