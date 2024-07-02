@@ -1,0 +1,176 @@
+/* Styles for large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .slanted-text-1 {
+        transform: rotate(5deg);
+        display: inline-block;
+    }
+
+    .slanted-text {
+        transform: rotate(-5deg);
+        display: inline-block;
+    }
+
+    .icon-styles {
+        font-size: 1.2em;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+/* Styles for small devices (mobile phones) */
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .slanted-text-1 {
+        transform: rotate(5deg);
+        display: inline-block;
+    }
+
+    .slanted-text {
+        transform: rotate(-5deg);
+        display: inline-block;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    .icon-styles {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+/* Styles for medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .slanted-text-1 {
+        transform: rotate(5deg);
+        display: inline-block;
+    }
+
+    .slanted-text {
+        transform: rotate(-5deg);
+        display: inline-block;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .icon-styles {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
