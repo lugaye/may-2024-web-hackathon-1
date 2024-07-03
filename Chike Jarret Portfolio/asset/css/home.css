@@ -1,0 +1,430 @@
+/*Variables
+:root {
+  --primary: #000000;
+  --secondary: #ccc9c9;
+  --panel: #767e86;
+  --text-primary: #ffffff;
+  --text-secondary: #8d8d8d;
+}*/
+
+/*Basic Reset Styles*/
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+img {
+  transition: none;
+}
+
+h1, h3 {
+  color: white;
+  margin: 0.3rem 0;
+  line-height: 45px;
+}
+
+h1 {
+  margin-bottom: 0.5em; 
+}
+
+h4 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 0.9em;
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+  max-width: 35em;
+  font-weight: bold
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 4em 3em;
+}
+
+/*Common fLexbox and grid layout setup*/
+header,
+.menu,
+.theme-controls,
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .container,
+.header-body .container,
+.services, .counters,
+.projects .container > div:nth-child(1),
+.call-to-action,
+footer .container
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-counters,
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 2em;
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #fff;
+}
+
+.link {
+  color: white;
+}
+
+.link span {
+  margin-right: 0.2em;
+}
+
+.link:hover span {
+  margin-right: 1em;
+}
+
+/*Header*/
+header {
+  padding: 6em 3em 3em 3em;
+  background-image: url(/asset/img/flow.JPG);
+  min-height: 100vh;
+}
+
+header p {
+  margin-bottom: 1rem;
+}
+
+/*Navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em;
+  z-index: 3;
+  font-size: 1.1em;
+  background-color: #111011;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+}
+
+.brand:hover {
+  color: rgb(65, 28, 150);
+}
+
+.menu {
+  gap: 1.5em;
+}
+
+.navbar li a:hover {
+  color: rgb(152, 126, 214);
+}
+
+.menu-btn {
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: none;
+  opacity: 50%;
+}
+
+.menu-btn:hover{
+  opacity: 100%;
+}
+
+.navbar-active {
+  background: var(--secondary);
+  padding: 1em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+}
+
+.header-body {
+  width: 100%;
+}
+
+.header-body .container {
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  position: relative;
+  transition: transform .2s; 
+  
+  
+}
+
+.img1 {
+  width: 30%;
+  z-index: 0;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.profile-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+/*Theme Controls*/
+.profile-img:hover {
+  -webkit-filter: brightness(170%);
+  filter: brightness(170%);
+  transform: scale(1.5);
+  
+}
+
+.btn:hover {
+  background: rgb(74, 44, 206);
+}
+
+.color {
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+}
+
+/*===== About Section =====*/
+.about {
+  background: #6c41bd;
+}
+
+.services, .counters {
+  gap: 2em;
+}
+
+.service,
+.sub-counters > div {
+  background-color: #766d92;
+  width: 19.5em;
+  padding: 2em;
+}
+
+.service-icon {
+  font-size: em;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.service-main {
+  background: white
+}
+
+.service-main .link,
+.service-main .service-icon,
+.service-main h3,
+.service-main p {
+  color: #fff;
+}
+
+.service p {
+  margin: 1em 0;
+}
+
+.counters {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.main-counter {
+  width: 18.5em;
+}
+
+.main-counter h1,
+.sub-counters h2 {
+  color: white;
+}
+
+.main-counter h1 {
+  font-size: 4em;
+}
+
+.sub-counters h2 {
+  font-size: 2em;
+}
+
+/*===== Projects Section =====*/
+.projects {
+  background-color: #241e30;
+}
+
+.projects .container > div:nth-child(1) {
+  flex-wrap: wrap; 
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project img:hover {
+transform: scale(1.5);
+}
+
+/*Contact Section*/
+.contact {
+  background: white;
+}
+
+.call-to-action {
+  background-color: #45277e;
+  padding: 3em;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 3em;
+  -o-border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  border-radius: 20px ;
+}
+
+/*Footer*/
+footer {
+  background: #766d92; 
+}
+
+footer > div {
+  background: black;
+  padding: 2em;
+}
+
+.footer-menu {
+  gap: 2em;
+  padding: 2em;
+  font-weight: 600;
+}
+
+.footer-menu a:hover {
+  color: var(--accent);
+}
+
+footer .container {
+  gap: 2em;
+}
+
+.social-media li {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 0.5em;
+}
+
+.social-media a {
+  color: var(--text-secondary);
+}
+
+.social-media a:hover {
+  color: var(--text-primary);
+}
+
+@media screen and (max-width: 1065px) {
+  .profile-img {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*Toggle class, added later
+  in Javascript*/
+  .navbar .menu-open {
+    height: 12.5em;
+    padding: 1.5em;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu {
+    background: var(--panel);
+    position: absolute;
+    top: 4.5em;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding: 0 1.5em;
+    overflow-y: hidden;
+    flex-direction: column;
+    transition-timing-function: ease-in-out;
+  }
+  .sub-counters {
+    grid-template-columns: 1fr;
+  }
+  .services,
+  .counters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile-img,
+  .profile-img img {
+    width: 100%;
+  }
+}
