@@ -4,6 +4,13 @@ body {
     margin: 0px;
 }
 
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -17,12 +24,10 @@ body {
 
 /* Navbar Styles */
 .navbar-wrapper {
+
     display: flex;
     justify-content: space-between;
-    padding: 45px;
-
-    
-    
+    padding: 45px; 
 }
 
 .navbar-menu {
@@ -55,8 +60,6 @@ body {
 
     
 }
-
-
 
 
 .navbar-link-wrapper a {
@@ -223,8 +226,8 @@ grid-gap: 20px 20px;
 }
 
 .xb {
-    display: block;
-    position: relative;
+    display:block;
+    position:relative;
 }
 
 
@@ -441,12 +444,12 @@ a:-webkit-any-link {
 /* Projects Title Section */
 #portfolio-title {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 30px;
     background-color: #fff;
 }
 
 #portfolio-title h2 {
-    font-size: 32px;
+    font-size: 25px;
     color: #333;
     margin: 0;
 }
@@ -500,3 +503,73 @@ a:-webkit-any-link {
     font-size: 16px;
     color: #666;
 }
+
+
+.experience-skills-training-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    
+}
+
+.experience, .skills, .training {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.experience:hover, .skills:hover, .training:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience ul, .skills ul, .training ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience li, .skills li, .training li {
+    margin: 10px 0;
+}
+
+.skills, .training {
+    margin-bottom: 20px;
+}
+
+.skills i, .training i {
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+    }
+
+    .career-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .career-image {
+        margin-bottom: 20px;
+    }
+
+    .collection-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .education-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
