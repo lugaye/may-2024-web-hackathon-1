@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 255, 13);
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    
+    color: rgb(255, 0, 140);
+    margin: 0 15px;
+    text-decoration: none;
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+section {
+    padding: 20px 0;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    font-style: oblique;
+}
+
+
+p{
+    font-size: larger;
+}
+
+h2{
+    color: rgb(231, 8, 8);
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+h3{
+    color: darkmagenta;
+}
+.contact a {
+    color: #333;
+    text-decoration: none;
+}
+.projects img {
+    max-width: 100%;
+    height: auto;
+}
+.skills ul, .experience ul, .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+address{
+    font-style: italic;
+    text-align: center;
+    bottom: 0cm;
+  }
+  
