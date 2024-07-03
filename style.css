@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: #0c0c0c;
+    color: #d8dce7;
+    padding: 20px 0;
+    text-align: center;
+
+  }
+  
+  .header h1 {
+    margin: 0;
+    color:rgb(214, 100, 6);
+  }
+
+  
+  .header p {
+    margin: 10px 0;
+    color:#f8f8f8;
+    font-size: 23px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color:rgba(248, 248, 248, 0.945);
+    font-size: 20px;
+  }
+  
+  .contact-info li {
+    margin: 0 10px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Portfolio Styles */
+  .portfolio-section .project {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .portfolio-section img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .portfolio-section a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0073e6;
+  }
+  
+  /* Skills Styles */
+  .skills-section .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .skills-list li {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    border: 1px solid #ecebeb;
+    border-radius: 4px;
+    color:#0f0f0f
+  }
+  
+  /* Experience Styles */
+  .experience-section .job {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .experience-section h3 {
+    margin: 0;
+  }
+  
+  /* Education Styles */
+  .education-section .education-item {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .skills-section .skills-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Interests Styles */
+.interests-section {
+    padding: 60px 0;
+    background: #f9f9f9;
+  }
+  
+  .interests-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .interests-section ul li {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  /* Background Image */
+body {
+    background: url('backgroundimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .header, .portfolio-section, .skills-section, .experience-section, .education-section, .interests-section, .footer {
+    background: rgba(250, 242, 242, 0.651); /* Semi-transparent background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    text-align: center;
+    background-image: url('headerimage.jpg');
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    color: rgba(75, 24, 5, 0.904);
+  }
+  
+  /* Ensuring text readability over background */
+  body, h3, p, ul {
+    color: #0f0f0f;
+  }
+
