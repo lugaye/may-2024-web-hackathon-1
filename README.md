@@ -1,41 +1,60 @@
-# WEB HACKATHON - 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+## Portfolio Website Submission
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+### Description
 
-## Project Requirements
-### Personal Information: 
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+This is my submission for the Portfolio Website Hackathon. The website is a one-page portfolio that showcases my skills, projects, professional experience, and educational background.
 
-### Portfolio: 
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+### Features
 
-### Skills: 
-List your technical and non-technical skills.
+- **Personal Information**: Includes my name, a brief bio, contact information, and links to my social media profiles.
+- **Portfolio**: Showcases my projects with descriptions, images, and links to live demos or repositories.
+- **Skills**: Lists my technical and non-technical skills.
+- **Experience**: Details my professional experience, including job titles, companies, and descriptions of my roles.
+- **Education**: Includes my educational background.
 
-### Experience: 
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+## Additional Notes
+- The website is responsive and works well on different screen sizes.
+- I have followed best practices for HTML, CSS, and JavaScript to ensure clean and organized code.
 
-### Education: 
-Include your educational background.
+**To run my website on Ubuntu and view it in your web browser, you can use a simple HTTP server**
 
-## Submission Guidelines
-Repository Setup: Fork this repository and create a new branch for your project.
-Commit Messages: Use clear and descriptive commit messages to document your progress.
-Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes.
-Deadline: All submissions must be made by monday 1st July 12pm EAT
+* Here are steps to do this 
 
-## Judging Criteria
-Submissions will be judged based on the following criteria:
+1. **Open a terminal**
 
-Design: Visual appeal, creativity, and user interface design.
-Functionality: Responsiveness, performance, and interactivity.
-Content: Clarity, completeness, and presentation of information.
-Originality: Unique features, innovative approaches, and personal touches.
-Code Quality: Cleanliness, organization, and use of best practices.
+2. **Create a new directory for the project if you haven't already**
 
-Happy hacking and we look forward to seeing your amazing portfolio websites!
+```sh
+mkdir my-website
+cd my-website
+```
+3. **Fork the Repository**
 
+- Go to the repository provided for the hackathon.
+- Click on the "Fork" button in the top right corner to create a copy of the repository under your GitHub account.
 
+4.  **Clone the Forked Repository**
 
+- Clone the forked repository to your local machine
+
+```sh
+git clone <your-forked-repo-url>
+cd <repo-name>
+```
+
+5. **Start the HTTP server**
+
+- For Python 3:
+
+```sh
+python3 -m http.server 8000
+```
+
+- For Python 2:
+
+```sh
+python -m SimpleHTTPServer 8000
+```
+6. **Open your web browser** and go to **http://localhost:8000**
+
+Thank you for reviewing my submission!
