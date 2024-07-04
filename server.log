@@ -1,0 +1,28 @@
+nohup: ignoring input
+::1 - - [03/Jul/2024 16:28:25] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 16:28:25] code 404, message File not found
+::1 - - [03/Jul/2024 16:28:25] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 16:28:25] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 16:30:15] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 16:30:15] code 404, message File not found
+::1 - - [03/Jul/2024 16:30:15] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 17:06:05] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:06:05] code 404, message File not found
+::1 - - [03/Jul/2024 17:06:05] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 17:06:05] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:18:19] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:18:19] code 404, message File not found
+::1 - - [03/Jul/2024 17:18:19] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 17:18:19] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:25:30] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:25:30] code 404, message File not found
+::1 - - [03/Jul/2024 17:25:30] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 17:28:28] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 17:28:28] code 404, message File not found
+::1 - - [03/Jul/2024 17:28:28] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 17:28:29] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 18:28:11] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 18:28:11] code 404, message File not found
+::1 - - [03/Jul/2024 18:28:11] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 18:28:11] "GET /styles.css HTTP/1.1" 304 -
+

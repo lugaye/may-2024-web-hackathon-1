@@ -37,5 +37,3 @@ Code Quality: Cleanliness, organization, and use of best practices.
 
 Happy hacking and we look forward to seeing your amazing portfolio websites!
 
-
-
