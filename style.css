@@ -1,0 +1,18 @@
+html, body{
+  scroll-behavior: smooth;
+}
+ 
+.text-small {
+    font-size: 85%;
+  }
+  
+.dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+
+  
+
+
+  
+  
+
