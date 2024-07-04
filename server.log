@@ -21,3 +21,8 @@ nohup: ignoring input
 ::1 - - [03/Jul/2024 17:28:28] code 404, message File not found
 ::1 - - [03/Jul/2024 17:28:28] "GET /profile-pic.jpg HTTP/1.1" 404 -
 ::1 - - [03/Jul/2024 17:28:29] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 18:28:11] "GET / HTTP/1.1" 304 -
+::1 - - [03/Jul/2024 18:28:11] code 404, message File not found
+::1 - - [03/Jul/2024 18:28:11] "GET /profile-pic.jpg HTTP/1.1" 404 -
+::1 - - [03/Jul/2024 18:28:11] "GET /styles.css HTTP/1.1" 304 -
+
