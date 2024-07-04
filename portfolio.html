@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type='text/javascript'>
+        msg =" ..Welcome to my..";
+        msg ="..::Potfolio::.."+ msg;pos = 0;
+        function scrollMSG() {
+        document.title = msg.substring(pos, msg.length) + msg.substring(0, pos); pos++;
+        if (pos > msg.length) pos = 0
+        window.setTimeout("scrollMSG()",80);
+        }
+    
+        scrollMSG();
+    </script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eugene's Portfolio</title>
+    <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Eugene Kipngetich</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <figure class="avatar-box">
+            <img src="./assets/avatar-1.png" alt="Eugene Kipngetich" width="80">
+        </figure>
+        <h2>About</h2>
+        <p>Diligent security enthusiast, programmer with understanding in HTML, CSS, Javasript, PHP and MySQL.Currently am learning python and django and mobile app development with dart and flutter. Am specializing in scripting & programming, web application security, vulnerability assesment, penetration testing 
+            and learning to gaining understanding in offensive security.Throughout my academic persuits and research ,i have acquired specialized insight and knowledge in pentesting methodologies, networks and programming languages.</p>
+        <p>Am highly motivated to excel and become an exceptional cyber security professional. 
+            My passion for technology, particularly in security, drives me forward as i strive to achieve more in this field.</p>
+    </section>
+
+    <section id="skills">
+        <div class="service-icon-box">
+            <img src="./assets/logo.svg
+            " alt="design icon" width="40">
+        </div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: MySQL, CSS, HTML, javascript, php</li>
+            <li>Networks</li>
+            <li>Cybersecurity</li>
+            <li>Computer hardware & software</li>
+            <li>Technical support</li>
+            <li>Communication skils & Problem solving</li>
+            <li>Linux & Windows os</li>
+
+        </ul>
+    </section>
+
+    <section id="projects">
+        <div class="service-icon-box">
+            <img src="./assets/logo.svg
+            " alt="design icon" width="40">
+        </div>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Electricity Bill Calculator</h3>
+            <p>An electricity bill calculator system is a tool that allows users to estimate their electricity usage and calculate their monthly electricity bills based on that usage. 
+                These systems typically take into account multiple factors such as the number of people in the household
+                 and the types of appliances and electronics being used, in order to provide an accurate estimate of electricity consumption.</p>
+            <p>Users can input their data into the system, and the calculator will generate a detailed breakdown of their estimated electricity usage and corresponding costs. 
+                This information can be used to help users better understand their energy consumption habits and make adjustments to reduce their electricity bills.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="service-icon-box">
+            <img src="./assets/logo.svg
+            " alt="design icon" width="40">
+        </div>
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Attache - National Social Security Fund (NSSF)</h3>
+            <p>10th July - 10th October</p>
+            <h4>Responsibilities and Achievements</h4>
+            <ul>
+                <li>-Computer and hardware maintenance</li>
+                <li>-Network troubleshooting</li>
+                <li>-Software installation and configuration</li>
+                <li>-Managing and troubleshooting operating systems</li>
+                <li>-Renewal of licenses in computer software</li>
+                <li>-Documentation using MS Office</li>
+                <li>-Implementing solutions to meet company requirements</li>
+            </ul>
+        </div>
+    </section>    
+
+    <section id="education">
+        <div class="service-icon-box">
+            <img src="./assets/logo.svg
+            " alt="design icon" width="40">
+        </div>
+        <h2>Education</h2>
+        <p><h4>Diploma in Information Technology, Zetech University, 2021 - 2023</h4></p>
+        <p>Persued a career in Information Technology. In my learning period i also enrolled in CCNA and learned more in networks & network security.
+            Also learned basics in cybersecurity and i am learning more in depth and advancing in this field as a carrier.</p>
+    </section>
+
+    <section>
+        <form id="contact">
+            <h2>Contact Me</h2>
+              <div class="contact-info">
+                <a class="contact-link">Tel: +254 728 386 923</a>
+              </div>
+              <div class="contact-info">
+                <address>Location: Nairobi, Kenya</address>
+              </div>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/eugene-kipngetich-33b752268/">LinkedIn</a></li>
+            <li><a href="https://github.com/KigenTech">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
