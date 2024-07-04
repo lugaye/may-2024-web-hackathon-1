@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('power-learn-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgb(240, 156, 93);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    vertical-align: right;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section {
+    margin: 50px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p,
+section ul {
+    font-size: 1.2em;
+}
+
+section {
+    font-size: 1em;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 380px;
+    height: 380px;
+    align-items: flex-end;
+    animation: imgFloat 7s ease-in-out infinite;
+    border-radius: 53% 45% 55% 45%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+figure {
+    vertical-align: left;
+}
+
+th {
+    font-size: 2em;
+}
+
+i {
+    font-size: larger;
+}
+
+.fa-x-twitter {
+    color: black;
+}
+
+.fa-square-whatsapp {
+    color: rgb(17, 157, 7);
+}
+
+.fa-facebook {
+    color: rgb(25, 127, 199);
+}
+
+.fa-square-instagram {
+    color: rgb(200, 87, 6);
+}
+
+.fa-linkedin {
+    color: rgb(78, 153, 244);
+}
+
+.fa-discord {
+    color: rgb(117, 5, 222)
+}
