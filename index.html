@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee3438cc32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ----------Header Section--------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-contents">
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Jean D Amour</span><br>Kubwimana  From Rwanda</h1>
+            </div>
+
+            <div class="header-image">
+                <img src="images/back-image.png">
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- ---------About Section-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hello! I’m Kubwimana Jean D Amour, a Computer and Software Engineering student at the University of Rwanda with a focus on Artificial Intelligence and Machine Learning. Proficient in Java, JavaScript, C, C++, HTML, CSS, PHP, and Python, I am driven by continuous learning and adaptability, with accolades like the 2021 Excellence Award. I’m passionate about leveraging technology to solve real-world problems and am committed to contributing meaningfully to any team or project.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android and iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>UI/UX Design Training at University of Rwanda</li>
+                            <li><span>2021-2023</span><br>Web Development Training at KEPLA</li>
+                            <li><span>2021-2022</span><br>Software Development Training at ALX</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-Current</span><br>Full Stuck Software Development at PLP Academy</li>
+                            <li><span>2023-2024</span><br>Artificial Intelligence at ALX </li>
+                            <li><span>2022-Current</span><br>Computer and Software Engineering at University of Rwanda</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services Section-------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create dynamic, responsive websites that enhance your online presence. From design to robust backend systems, I deliver high-quality, user-friendly sites to meet your business goals.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and visually appealing interfaces that enhance user experience. My goal is to create engaging and user-friendly designs that meet your business needs and delight your users.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Apps Development</h2>
+                    <p>I develop high-quality, user-friendly mobile and web applications tailored to your needs. My focus is on creating functional, efficient, and engaging apps that enhance user experience and meet your business objectives.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Portfolio Section-------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Works</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/portfolio2.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The Social Media app which will connects you to the talented people around the world. Go om and create an acount and start to chat.</p>
+                        <a href="https://github.com/Jdamour12/Social-Book.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                    
+                <div class="work">
+                    <img src="images/portfolio6.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This the Online |Shopping App where you can visit and start to shop all electronic materials</p>
+                        <a href="https://github.com/Jdamour12/CoreStore.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio5.jpg">
+                    <div class="layer">
+                        <h3>Game App</h3>
+                        <p>This is the Game where you can play either with your friend or Computer. It was crated by AI based algorithm.</p>
+                        <a href="https://github.com/Jdamour12/Tic-Tac-Toe-With-AI.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------Contact Section-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i> jeandamourkubwimana0@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +250787171116</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.facebook.com/kubwimana.jeandamour.73?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/jeand250?s=09" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/jean_d_amour444?igsh=MW1nNmhhZGhkY2RpNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jean-d-amour/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Jdamour12" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/Jean D Amour's Resume.pdf" download class="btn btn-2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" cols="" placeholder="Your Message" required></textarea>
+                        <button class="btn btn-2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright &copy; All Rights reserved by Jean D Amour</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
