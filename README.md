@@ -1,41 +1,44 @@
-# WEB HACKATHON - 1
-Welcome to the Portfolio Website Hackathon! We are excited to have you join us in creating amazing portfolio websites. Below are the guidelines to ensure a smooth and productive hackathon experience.
+Tshifhiwa Maumela - Portfolio
 
-## Introduction
-The goal of this hackathon is to build a one page portfolio website that showcases your skills, projects, and professional experience. This is an excellent opportunity to create or enhance your personal brand and demonstrate your abilities to potential employers or clients.
+This repository contains the code and assets for Tshifhiwa Maumela's portfolio website.
+Overview
 
-## Project Requirements
-### Personal Information: 
-Include sections for your name, a brief bio, contact information, and links to your social media profiles (e.g., LinkedIn, GitHub).
+This portfolio showcases Tshifhiwa Maumela's skills, experience, and projects. It is designed to highlight his background in computer sciences and his dedication to tech education, particularly in public high schools.
+Features
 
-### Portfolio: 
-Showcase your projects with descriptions, images, and links to live demos or repositories.
+    Home Section: Introduction to Tshifhiwa Maumela with a brief overview of his mission and goals.
+    About Section: Detailed information about Tshifhiwa's background, skills, and contact information.
+    Service Section: Overview of services offered, including front-end development, tutoring, software development, technical consulting, digital marketing, and graphic designing.
+    Experience Section: Tshifhiwa's educational and professional journey.
+    Portfolio Section: Display of projects and accomplishments.
+    Contact Section: Form for contacting Tshifhiwa directly.
+    Light Mode and Dark Mode: Toggle between light and dark themes to suit your preference. The website dynamically adjusts its color scheme and images to provide optimal visibility and aesthetic appeal.
 
-### Skills: 
-List your technical and non-technical skills.
+Technologies Used
 
-### Experience: 
-Detail your professional experience, including job titles, companies, and descriptions of your roles.
+    HTML5
+    CSS3 (with custom styles)
+    JavaScript (for interactive elements and DOM manipulation)
+    Chart.js (for visualizing data in charts)
+    Font Awesome (for icons)
 
-### Education: 
-Include your educational background.
+Installation
 
-## Submission Guidelines
-Repository Setup: Fork this repository and create a new branch for your project.
-Commit Messages: Use clear and descriptive commit messages to document your progress.
-Pull Request: Submit a pull request to the main branch once you have completed your project. Include a brief description of your website and any additional notes.
-Deadline: All submissions must be made by monday 1st July 12pm EAT
+To run this project locally, clone the repository and open index.html in your web browser:
 
-## Judging Criteria
-Submissions will be judged based on the following criteria:
+bash
 
-Design: Visual appeal, creativity, and user interface design.
-Functionality: Responsiveness, performance, and interactivity.
-Content: Clarity, completeness, and presentation of information.
-Originality: Unique features, innovative approaches, and personal touches.
-Code Quality: Cleanliness, organization, and use of best practices.
+git clone <repository-url>
+cd <repository-folder>
 
-Happy hacking and we look forward to seeing your amazing portfolio websites!
+Usage
 
+Explore the different sections of the website:
 
+    Click on navigation links to jump to specific sections (e.g., Home, About, Portfolio).
+    Check out Tshifhiwa's skills and experience in the respective sections.
+    Download his CV from the About section.
+    View projects in the Portfolio section.
+    Contact Tshifhiwa using the form in the Contact section.
 
+See live https://maumelas1234.github.io/may-2024-web-hackathon-1/
