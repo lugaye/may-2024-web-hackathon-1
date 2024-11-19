@@ -1,0 +1,372 @@
+/* Base styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+  background-image: url(images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 10px;
+} 
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.download-resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+/* Styling for #top and #bottom IDs */
+#bottom {
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bottom a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+ #bottom a:hover {
+  color: #b32a00;
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.light-theme header {
+  background-color: #333;
+  color: #fff;
+}
+
+body.light-theme nav {
+  background: #444;
+  color: #fff;
+}
+
+body.light-theme nav ul li a {
+  color: #fff;
+  background-color: #333;
+}
+
+body.light-theme nav ul li a:hover {
+  background: #666;
+}
+
+body.light-theme section {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-theme ul li {
+  background: #e0e0e0;
+  border-color: #333;
+}
+
+body.light-theme button {
+  background: #333;
+  color: #fff;
+}
+
+body.light-theme button:hover {
+  background: #555;
+}
+
+body.light-theme footer {
+  background: #333;
+  color: #fff;
+}
+
+body.light-theme footer .social-media a {
+  color: #fff;
+}
+
+body.light-theme footer .social-media a:hover {
+  color: #aaa;
+}
+
+body.light-theme .download-resume {
+  background-color: #333;
+  color: #fff;
+}
+
+body.light-theme .download-resume:hover {
+  background-color: #555;
+}
+
+body.light-theme #top, body.light-theme #bottom {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-theme #top a, body.light-theme #bottom a {
+  color: #007bff;
+}
+
+body.light-theme #top a:hover, body.light-theme #bottom a:hover {
+  color: #0056b3;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark-theme header {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-theme nav {
+  background: #111;
+  color: #fff;
+}
+
+body.dark-theme nav ul li a {
+  color: #fff;
+  background-color: #222;
+}
+
+body.dark-theme nav ul li a:hover {
+  background: #444;
+}
+
+body.dark-theme section {
+  background: rgba(68, 68, 68, 0.8);
+}
+
+body.dark-theme ul li {
+  background: #555;
+  border-color: #f0f0f0;
+}
+
+body.dark-theme button {
+  background: #222;
+  color: #fff;
+}
+
+body.dark-theme button:hover {
+  background: #444;
+}
+
+body.dark-theme footer {
+  background: #222;
+  color: #fff;
+}
+
+body.dark-theme footer .social-media a {
+  color: #fff;
+}
+
+body.dark-theme footer .social-media a:hover {
+  color: #ccc;
+}
+
+body.dark-theme .download-resume {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-theme .download-resume:hover {
+  background-color: #444;
+}
+
+body.dark-theme #top, body.dark-theme #bottom {
+  background: rgba(68, 68, 68, 0.8);
+}
+
+body.dark-theme #top a, body.dark-theme #bottom a {
+  color: #4da3ff;
+}
+
+body.dark-theme #top a:hover, body.dark-theme #bottom a:hover {
+  color: #1a73e8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .theme-selector {
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  section {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  h2, h3 {
+      text-align: left;
+  }
+
+  form label, form input, form textarea, form button {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+   #bottom {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      padding: 15px;
+  }
+
+  nav {
+      padding: 5px;
+  }
+
+  nav ul li a {
+      padding: 5px;
+  }
+
+  section {
+      margin: 5px;
+      padding: 10px;
+  }
+
+  .download-resume {
+      padding: 8px 16px;
+  }
+
+  button {
+      padding: 8px;
+  }
+
+   #bottom {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
