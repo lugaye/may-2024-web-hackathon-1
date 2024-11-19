@@ -1,0 +1,150 @@
+.heroSection {
+    display: flex;
+    min-width: 375px;
+    max-width: 1280px;
+    padding: 48px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.heroCard {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 0px var(--spacing-system-guides-corner-radius-6, 24px);
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: var(--spacing-system-guides-corner-radius-3, 12px);
+    border: 1px solid var(--Gray-200, #EAECF0);
+    background: var(--Gradient-Linear-Color-20, linear-gradient(45deg, #E9DEFA 0%, #FFF6EB 100%));
+    overflow: hidden;
+    position: relative;
+}
+
+.productImage {
+    display: flex;
+    height: var(--Base-4-Premitives-148, 592px);
+    min-width: var(--Base-4-Premitives-72, 288px);
+    min-height: var(--spacing-system-guides-corner-radius-148, 592px);
+    max-height: var(--spacing-system-guides-corner-radius-148, 592px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    position: relative;
+}
+
+.heroImage {
+    flex: 1 0 0;
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+
+.favoriteButton {
+    position: absolute;
+    top: 10;
+    right: 10;
+}
+
+.productNamePrice {
+    display: flex;
+    min-width: var(--Base-4-Premitives-72, 288px);
+    padding: var(--spacing-system-guides-corner-radius-24, 96px) 0 var(--spacing-system-guides-corner-radius-6, 24px) 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-10, 40px);
+    flex: 1 0 0;
+}
+
+.detailsCTA {
+    display: flex;
+    max-width: var(--spacing-system-guides-corner-radius-72, 288px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-system-guides-corner-radius-12, 48px);
+    align-self: stretch;
+}
+
+.nameDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.productName {
+    display: flex;
+    min-width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--Base-4-Premitives-72, 288px);
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.productNameText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--colors-text-text-brand-secondary-700, #BF1343);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 126.667% */
+}
+
+.prodDescription {
+    display: flex;
+    height: 55px;
+    min-width: var(--Base-4-Premitives-72, 288px);
+    max-width: var(--Base-4-Premitives-72, 288px);
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.prodDescriptionText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    align-self: stretch;
+    
+    color: var(--Gray-600, #475467);
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.Herobtn{
+    display: flex;
+padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+justify-content: center;
+align-items: center;
+gap: var(--spacing-xs, 4px);
+align-self: stretch;
+border-radius: var(--radius-md, 8px);
+border: 1px solid var(--Component-colors-Components-Buttons-Primary-button-primary-border, #DA154D);
+background: var(--Component-colors-Components-Buttons-Primary-button-primary-bg, #DA154D);
+
+/* Shadows/shadow-xs */
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+color: #FFFFFF;
+text-decoration: none;
+}
+
